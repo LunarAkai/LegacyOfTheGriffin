@@ -93,9 +93,49 @@ lgr_norland_main = {
 				}
 			}
 
+			25 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
 			add_country_modifier = {
 				name = lgr_norse_attack_livonia
 				duration = 5475
+			}
+		}
+	}
+
+	lgr_norland_attack_scandinavia = {
+		position = 5
+		icon = mission_great_wall
+		required_missions = {
+			lgr_norland_survive
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 25
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			25 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				has_owner_religion = yes
+			}
+		}
+
+		effect = {
+			add_casus_belli = {
+				type = cb_crusade
+				target = SWE
+				months = 240
 			}
 		}
 	}
@@ -140,6 +180,114 @@ lgr_norland_main_side_religious = {
 			}
 		}
 	}
+
+	lgr_norland_war_with_the_heathens = {
+		icon = mission_mosque
+		position = 3
+		required_missions = {
+			lgr_norland_religious_start
+			lgr_norland_end_disaster
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				owned_by = LIV
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			offensive_war_with = LIV
+		}
+
+		effect = {
+			define_general = {
+				shock = 3
+				fire = 2
+				manuever = 1
+				siege = 3
+			}
+
+			east_prussia_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			west_prussia_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	lgr_norland_expel_the_heathens = {
+		icon = mission_mosque
+		position = 4
+		required_missions = {
+			lgr_norland_war_with_the_heathens
+		}
+
+		trigger = {
+			ROOT = {
+				num_of_owned_provinces_with = {
+					value = 5
+					has_owner_religion = yes
+					is_overseas = no
+				}
+			}
+		}
+
+		effect = {
+			add_adm_power = 100
+		}
+	}
+	
+}
+
+lgr_norland_religious_side_orders = {
+	slot = 1
+	generic = no 
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_dismantle_teutonic_order = {
+		icon = mission_mosque
+		position = 4
+		required_missions = {
+			lgr_norland_war_with_the_heathens
+		}
+
+		trigger = {
+			NOT = {
+				exists = TEU
+			}
+
+			43 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+			add_mil_power = 50
+		}
+	}
 }
 
 lgr_norland_diplomatic= {
@@ -173,6 +321,82 @@ lgr_norland_diplomatic= {
 			add_country_modifier = {
 				name = lgr_norse_diplomatic_gains
 				duration = 5475
+			}
+		}
+	}
+}
+
+lgr_norland_livonian_order_and_russia = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_controll_livonian_order = {
+		position = 4
+		icon = mission_alliances
+		required_missions = {
+			lgr_norland_survive
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = estonia_ingria_area
+				area = curonia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				OR = {
+					area = livonia_area
+					area = estonia_ingria_area
+					area = curonia_area
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_norse_controll_liv_order
+				duration = 5475
+			}
+
+			33 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+
+
+			hidden_effect = {
+				if = {
+					limit = {
+						MOS = {
+							exists = yes
+						}
+						
+					}
+					MOS = {
+						add_historical_friend = GNL
+					}
+
+				}
 			}
 		}
 	}

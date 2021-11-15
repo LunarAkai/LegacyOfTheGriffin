@@ -463,13 +463,28 @@ lgr_norland_end_disaster_desc:0 "Missing Loc"
 lgr_norland_survive_title:0 "Survive against Heathens"
 lgr_norland_survive_desc:0 "Missing Loc"
 
+lgr_norland_attack_scandinavia_title:0 "Attack Scandinavia"
+lgr_norland_attack_scandinavia_desc:0 "Missing Loc"
+
 #Religious Mission
 lgr_norland_religious_start_title:0 "Strength in Faith"
 lgr_norland_religious_start_desc:0 "Missing Loc"
+lgr_norland_war_with_the_heathens_title:0 "War against the Heathens"
+lgr_norland_war_with_the_heathens_desc:0 "Missing Loc"
+lgr_norland_expel_the_heathens_title:0 "Expel the Heathens"
+lgr_norland_expel_the_heathens_desc:0 "Missing Loc"
+
+#Religious Side Missions
+lgr_norland_dismantle_teutonic_order_title:0 "Dismantle Teutonic Order"
+lgr_norland_dismantle_teutonic_order_desc:0 "Missing Loc"
 
 #Diplomatic Missions
 lgr_norland_have_an_ally_title:0 "Get an Ally"
-lgr_norland_have_an_ally_desc:0 "Our heretic neighors want to conquer our lands, we will need an Ally who doesnt want to kill our families, if we want to survive"
+lgr_norland_have_an_ally_desc:0 "Our heretic neighors want to conquer our lands, we will need an Ally who doesnt want to kill our families, if we want to survive"^
+
+#Livonian Order And Russia
+lgr_norland_controll_livonian_order_title:0 "Control Livonian Order"
+lgr_norland_controll_livonian_order_desc:0 "Missing Loc"
 
 
 #GENERAL

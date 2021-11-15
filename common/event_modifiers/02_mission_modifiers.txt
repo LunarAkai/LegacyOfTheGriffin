@@ -123,3 +123,8 @@ lgr_norse_attack_livonia = {
 	land_morale = 0.15
 	discipline = 0.05
 }
+
+lgr_norse_controll_liv_order = {
+	culture_conversion_cost = -0.25
+	same_culture_advisor_cost = -0.33
+}

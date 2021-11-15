@@ -1,0 +1,22 @@
+norland_missionary_reform = {
+	icon = "strength_of_the_khalsa"
+	allow_normal_conversion = yes
+	legacy_equivalent = feudal_monarchy
+
+	potential = {	
+		OR = {
+			tag = GNL
+			was_tag = GNL
+		}
+	}
+	nation_designer_cost = 0
+
+	modifiers = {
+		global_missionary_strength = 0.02
+		missionary_maintenance_cost = -0.20
+	}
+
+	ai = {
+		factor = 50
+	}
+}
