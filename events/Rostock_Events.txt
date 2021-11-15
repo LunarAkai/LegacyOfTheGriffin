@@ -1,0 +1,181 @@
+namespace = lgr_rostock_events
+
+country_event = {
+	id = lgr_rostock_events.1
+
+	title = "lgr_rostock_events.1.t"
+	desc = "lgr_rostock_events.1.d"
+	is_triggered_only = yes
+
+	picture = ADVISOR_eventPicture
+
+	option = {
+		name = "lgr_rostock_events.1.a"
+
+		ai_chance = {
+			factor = 50
+		}
+
+
+		GRO = {
+			change_government = monarchy
+			define_ruler = {
+				name = "Friedrich Wilhelm"
+    			dynasty = "von Mecklenburg"
+				adm = 4
+				dip = 5
+				mil = 4
+				fixed = yes
+				age = 20
+				male = yes
+				claim = 80
+			}
+		}
+		
+	}
+
+	option = { 
+		name = "lgr_rostock_events.1.b"
+
+		ai_chance = {
+			factor = 50
+		}
+		GRO = {
+			add_republican_tradition = 50
+			add_adm_power = 50
+			add_dip_power = 40
+			add_mil_power = 35
+		}
+		
+	}
+}
+
+country_event = {
+
+	id = lgr_rostock_events.2
+	title = "lgr_rostock_events.2.t"
+	desc = "lgr_rostock_events.2.d"
+	is_triggered_only = yes
+
+	picture = ADVISOR_eventPicture
+
+	option = { #Trading Empire
+		name = "lgr_rostock_events.2.a"
+
+		change_tag = GHC
+
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 3
+				}
+			}
+			set_government_rank = 3
+		}
+
+		add_prestige = 20
+
+		add_country_modifier = {
+			name = lgr_rostock_trading_empire
+			duration = -1
+		}
+
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		swap_non_generic_missions = yes
+
+		emperor = {
+			add_opinion = {
+				who = root
+				modifier = opinion_left_empire
+			}
+		}
+
+		set_in_empire = no
+
+		emperor = {
+			country_event = { id = hre_event.5 }
+		}
+
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+
+		ai_chance = {
+			factor = 60
+		}
+
+		
+		
+	}
+
+	option = { #Military Empire
+		name = "lgr_rostock_events.2.b"
+
+		change_tag = GHE
+
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 3
+				}
+			}
+			set_government_rank = 3
+		}
+
+		add_prestige = 20
+
+		add_country_modifier = {
+			name = lgr_rostock_military_empire
+			duration = -1
+		}
+
+		if = {
+			limit = {
+				has_custom_ideas = no
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		swap_non_generic_missions = yes
+
+		emperor = {
+			add_opinion = {
+				who = root
+				modifier = opinion_left_empire
+			}
+		}
+
+		set_in_empire = no
+
+		emperor = {
+			country_event = { id = hre_event.5 }
+		}
+
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 7300
+		}
+
+		ai_chance = {
+			factor = 40
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.2.c"
+		ai_chance = {
+			factor = 0
+		}
+
+		GRO = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+}

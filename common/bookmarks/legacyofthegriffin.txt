@@ -1,0 +1,15 @@
+bookmark = {
+	name = "LEGACY_OF_THE_GRIFFIN_NAME"
+	desc = "LEGACY_OF_THE_GRIFFIN_DESC"
+	date = 1444.11.11
+
+	center = 46
+	default = yes
+
+	country = GRO #trade focused
+	country = GWE #conquesd heavy 
+	country = GAT #wide brandenburg
+	country = GSU #tall brandenburg
+	country = GNL #Norland
+	
+}

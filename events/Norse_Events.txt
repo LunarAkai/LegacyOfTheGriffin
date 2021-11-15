@@ -1,0 +1,39 @@
+namespace = lgr_norse_events
+
+country_event = {
+	id = lgr_norse_events.1
+
+	title = "lgr_norse_events.1.t"
+	desc = "lgr_norse_events.1.d"
+	is_triggered_only = yes
+
+	picture = VILLAGE_BURNING_eventPicture
+
+	option = {
+		name = "lgr_norse_events.1.a"
+		ai_chance = {
+			factor = 1
+		}
+
+		add_stability = -6
+	}
+}
+
+country_event = {
+	id = lgr_norse_events.2
+
+	title = "lgr_norse_events.2.t"
+	desc = "lgr_norse_events.2.d"
+	is_triggered_only = yes
+
+	picture = VILLAGE_BURNING_eventPicture
+
+	option = {
+		name = "lgr_norse_events.2.a"
+		ai_chance = {
+			factor = 1
+		}
+
+		add_stability = 1
+	}
+}

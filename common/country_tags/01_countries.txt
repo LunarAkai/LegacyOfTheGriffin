@@ -1,0 +1,22 @@
+#Legacy of the Griffin
+
+#Mecklenburg
+GRO = "countries/Rostock.txt"
+GWI = "countries/Wismar.txt"
+GSW = "countries/Schwerin.txt"
+GWE = "countries/Werle.txt"
+GBA = "countries/Barth.txt"
+GSP = "countries/Stolp.txt"
+
+#Mecklenburg Formables
+GHE = "countries/Hanseatic_Empire.txt" #Monarchy => formed by Rostock
+GHC = "countries/Hanseatic_Commenwealth.txt" #Trade Republic => formed by Rostock
+
+#Brandenburg
+GHG = "countries/Havelberg.txt"
+GEW = "countries/Eberswalde.txt"
+GAT = "countries/Altmark.txt" #Wide Brandenburg
+GSU = "countries/Spandau.txt" #Tall Brandenburg
+
+#Scandinvia
+GNL = "countries/Norland.txt" #Norse Refuge

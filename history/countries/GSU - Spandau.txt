@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = saxon
+religion = catholic
+technology_group = western
+capital = 4945 # Spandau
+fixed_capital = 4945
+
+
+1444.1.1 = {
+	monarch = {
+		name = "Albrecht"
+		dynasty = "von Hohenzollern"
+		birth_date = 1427.9.21
+		adm = 4
+		dip = 5
+		mil = 2
+	}
+}

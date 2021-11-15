@@ -1,0 +1,179 @@
+lgr_norland_main = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_stablize_the_army = {
+		icon = kingdom_of_lombardy
+		position = 1
+		required_missions = {  }
+
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.8
+		}
+
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = lgr_norse_mission_stable_army
+				duration = 5475
+			}
+		}
+	}
+
+	lgr_norland_end_disaster = {
+		icon = kingdom_of_lombardy
+		position = 2
+		required_missions = {  
+			lgr_norland_stablize_the_army
+			lgr_norland_religious_start
+			lgr_norland_have_an_ally
+		}
+
+		trigger = {
+			army_size_percentage = 0.5
+			manpower_percentage = 0.3
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	lgr_norland_survive = {
+		icon = mission_great_wall
+		position = 3
+		required_missions = {
+			lgr_norland_end_disaster
+		}
+
+		trigger = {
+			is_year = 1454
+			owns_core_province = 35
+			is_subject = no
+		}
+
+		effect = {
+			curonia_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			estonia_ingria_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			livonia_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			add_country_modifier = {
+				name = lgr_norse_attack_livonia
+				duration = 5475
+			}
+		}
+	}
+}
+
+lgr_norland_main_side_religious = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_religious_start = {
+		icon = mission_mosque
+		position = 1
+		required_missions = {  }
+
+		provinces_to_highlight = {
+			province_id = 35
+			NOT = {
+				has_tax_building_trigger = yes
+			}
+		}
+
+		trigger = {
+			35 = {
+				has_tax_building_trigger = yes
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = lgr_norse_norse_religion
+				duration = 5475
+			}
+		}
+	}
+}
+
+lgr_norland_diplomatic= {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_have_an_ally = {
+		icon = mission_alliances
+		position = 1
+		required_missions = {  }
+
+		trigger = {
+			num_of_allies = 1
+			calc_true_if = {
+				all_ally = { has_opinion = { who = ROOT value = 75 } }
+				amount = 1
+			}
+		}
+
+		effect = {
+			add_prestige = 10
+			add_country_modifier = {
+				name = lgr_norse_diplomatic_gains
+				duration = 5475
+			}
+		}
+	}
+}
