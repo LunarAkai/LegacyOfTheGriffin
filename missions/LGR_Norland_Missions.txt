@@ -12,7 +12,7 @@ lgr_norland_main = {
 	has_country_shield = yes
 
 	lgr_norland_stablize_the_army = {
-		icon = kingdom_of_lombardy
+		icon = army_reforms
 		position = 1
 		required_missions = {  }
 
@@ -182,7 +182,7 @@ lgr_norland_main_side_religious = {
 	}
 
 	lgr_norland_war_with_the_heathens = {
-		icon = mission_mosque
+		icon = mission_conquer_romania
 		position = 3
 		required_missions = {
 			lgr_norland_religious_start
@@ -231,7 +231,7 @@ lgr_norland_main_side_religious = {
 	}
 
 	lgr_norland_expel_the_heathens = {
-		icon = mission_mosque
+		icon = evengelize_the_faith
 		position = 4
 		required_missions = {
 			lgr_norland_war_with_the_heathens
@@ -268,7 +268,7 @@ lgr_norland_religious_side_orders = {
 	has_country_shield = yes
 
 	lgr_norland_dismantle_teutonic_order = {
-		icon = mission_mosque
+		icon = knights_of_the_new_world
 		position = 4
 		required_missions = {
 			lgr_norland_war_with_the_heathens
@@ -286,6 +286,37 @@ lgr_norland_religious_side_orders = {
 
 		effect = {
 			add_mil_power = 50
+		}
+	}
+
+	lgr_norland_integrate_prussian_culture = {
+		icon = an_army_with_a_state
+		position = 5
+		required_missions = {
+			lgr_norland_dismantle_teutonic_order
+		}
+
+		trigger = {
+			army_tradition = 40
+
+			ROOT = {
+				num_of_owned_provinces_with = {
+					AND = {
+						area = east_prussia_area
+						area = west_prussia_area
+					}
+					value = 4
+					has_owner_religion = yes
+				}
+			}
+
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_norse_norse_prussia
+				duration = -1
+			}
 		}
 	}
 }
@@ -341,7 +372,7 @@ lgr_norland_livonian_order_and_russia = {
 
 	lgr_norland_controll_livonian_order = {
 		position = 4
-		icon = mission_alliances
+		icon = mission_conquer_riga
 		required_missions = {
 			lgr_norland_survive
 		}
@@ -396,6 +427,130 @@ lgr_norland_livonian_order_and_russia = {
 						add_historical_friend = GNL
 					}
 
+				}
+			}
+		}
+	}
+
+	lgr_norland_dev_our_homelands = {
+		position = 6
+		icon = develop_provence
+		required_missions = {
+			lgr_norland_controll_livonian_order
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = livonia_area
+				area = estonia_ingria_area
+				area = curonia_area
+			}
+			NOT = { 
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT 
+					development = 20
+				}
+			}
+		}
+
+		trigger = {
+			AND = {
+				capital_scope = {
+					development = 25
+				}
+	
+				num_of_owned_provinces_with = {
+					OR = {
+						area = livonia_area
+						area = estonia_ingria_area
+						area = curonia_area
+					}
+					development = 20
+					value = 5
+				}
+			}
+		}
+
+		effect = {
+
+			custom_tooltip = tooltip_lgr_norse_dev_homelands
+
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							area = livonia_area
+							area = estonia_ingria_area
+							area = curonia_area
+						}
+					}
+					add_province_modifier = {
+						name = lgr_norse_dev_homeland
+						duration = 7300
+					}
+				}	
+			}
+			
+		}
+	}
+}
+
+lgr_norland_baltic_trade_and_navy = {
+	slot = 5
+	generic = no 
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_baltic_fleet = {
+		position = 3
+		icon = mission_danzig_or_war
+		required_missions = {
+			
+		}
+
+		trigger = {
+				num_of_galley = 15
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_galleys
+				duration = 3650
+			}
+		}
+	}
+
+	lgr_norland_competitive_trading = {
+		position = 5
+		icon = mission_develop_nevas_port
+		required_missions = {
+			lgr_norland_controll_livonian_order
+			lgr_norland_baltic_fleet
+		}
+
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 33
+				}
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				add_unit_construction = {
+					type = heavy_ship
+					amount = 3
+					cost = 0.1
+					speed = 0.5
 				}
 			}
 		}

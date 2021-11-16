@@ -478,6 +478,9 @@ lgr_norland_expel_the_heathens_desc:0 "Missing Loc"
 lgr_norland_dismantle_teutonic_order_title:0 "Dismantle Teutonic Order"
 lgr_norland_dismantle_teutonic_order_desc:0 "Missing Loc"
 
+lgr_norland_integrate_prussian_culture_title:0 "Prussian Culture"
+lgr_norland_integrate_prussian_culture_desc:0 "Missing Loc"
+
 #Diplomatic Missions
 lgr_norland_have_an_ally_title:0 "Get an Ally"
 lgr_norland_have_an_ally_desc:0 "Our heretic neighors want to conquer our lands, we will need an Ally who doesnt want to kill our families, if we want to survive"^
@@ -486,6 +489,15 @@ lgr_norland_have_an_ally_desc:0 "Our heretic neighors want to conquer our lands,
 lgr_norland_controll_livonian_order_title:0 "Control Livonian Order"
 lgr_norland_controll_livonian_order_desc:0 "Missing Loc"
 
+lgr_norland_dev_our_homelands_title:0 "Focus on our Homelands"
+lgr_norland_dev_our_homelands_desc:0 "Missing Loc"
+
+#Trade Missions
+lgr_norland_baltic_fleet_title:0 "Baltic Fleet"
+lgr_norland_baltic_fleet_desc:0 "Missing Loc"
+
+lgr_norland_competitive_trading_title:0 "Compete in Trading"
+lgr_norland_competitive_trading_desc:0 "Missing Loc"
 
 #GENERAL
 #TAGS

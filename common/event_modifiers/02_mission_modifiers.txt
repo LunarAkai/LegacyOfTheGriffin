@@ -128,3 +128,19 @@ lgr_norse_controll_liv_order = {
 	culture_conversion_cost = -0.25
 	same_culture_advisor_cost = -0.33
 }
+
+lgr_norse_dev_homeland = {
+	local_development_cost = -0.15
+	local_build_time = -0.15
+}
+
+lgr_norse_norse_prussia = {
+	num_accepted_cultures = 1
+	land_morale = 0.05
+}
+
+#COMMON
+
+lgr_galleys = {
+	galley_power = 0.10
+}
