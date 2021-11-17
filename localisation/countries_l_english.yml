@@ -1400,40 +1400,5 @@
  MRK:0 "Marrakesh"
  MRK_ADJ:0 "Marrakesh"
 
-#Legacy of the Griffin
-#Mecklenburg
-GRO:0 "Rostock"
-GRO_ADJ:0 "Rostocker"
-GWI:0 "Wismar"
-GWI_ADJ:0 "Wismarer"
-GRZ:0 "Ratzeburg"
-GRZ_ADJ:0 "Ratzeburger"
-GSW:0 "Schwerin"
-GSW_ADJ:0 "Schweiner"
-GWE:0 "Werle"
-GWE_ADJ:0 "Werler"
-GBA:0 "Barth"
-GBA_ADJ:0 "Barther"
-GSP:0 "Stolp"
-GSP_ADJ:0 "Stolper"
 
-#Mecklenburg Formables
-GHE:0 "Hanseatic Empire"
-GHE_ADJ:0 "Hanseatic"
-GHC:0 "Hanseatic Commenwealth"
-GHC_ADJ:0 "Hanseatic"
-
-#Brandenburg
-GHG:0 "Havelberg"
-GHG_ADJ:0 "Havelberger"
-GEW:0 "Eberswalde"
-GEW_ADJ:0 "Eberswalder"
-GAT:0 "Altmark"
-GAT_ADJ:0 "Altmarker"
-GSU:0 "Spandau"
-GSU_ADJ:0 "Spandauer"
-
-#Scandinvia
-GNL:0 "Norland"
-GNL_ADJ:0 "Norlander"
 

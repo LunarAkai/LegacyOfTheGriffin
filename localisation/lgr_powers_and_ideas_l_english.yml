@@ -1,0 +1,58 @@
+﻿l_english:
+#LEGACY OF THE GRIFFIN
+#Rostock
+GRO_ideas:0 "Rostocker Ideas"
+GRO_ideas_start:0 "Rostocker Traditions"
+GRO_ideas_bonus:0 "Rostocker Ambition"
+
+lgr_ros_hanseatic_fleet:0 "Hanseatic Fleet"
+lgr_ros_hanseatic_fleet_desc:0 "test"
+
+lgr_ros_stadtrat:0 "Stadtrat"
+lgr_ros_stadtrat_desc:0 "test"
+
+lgr_ros_hanseatic_efficiency:0 "Hanseatic Efficiency"
+lgr_ros_hanseatic_efficiency_desc:0 "test"
+
+lgr_ros_army_strength:0 "Army of the North"
+lgr_ros_army_strength_desc:0 "test"
+
+lgr_ros_diplomatic_connections:0 "Diplomatic Connections"
+lgr_ros_diplomatic_connections_desc:0 "test"
+
+lgr_ros_gilden:0 "Handelsgilden"
+lgr_ros_gilden_desc:0 "Test"
+
+lgr_ros_powerful_traders:0 "Powerful Merchants"
+lgr_ros_powerful_traders_desc:0 "test"
+
+#Hanseatic Empire
+GHE_ideas:0 "Hanseatic Ideas"
+GHE_ideas_start:0 "Hanseatic Traditions"
+GHE_ideas_bonus:0 "Hanseatic Ambition"
+
+lgr_ghe_prussian_disipline:0 "Prussian Discipline"
+lgr_ghe_prussian_disipline_desc:0 "Missing Loc"
+
+lgr_ghe_backstein:0 "Backsteingotik"
+lgr_ghe_backstein_desc:0 "Missing Loc"
+
+lgr_ghe_hanseatic_guilds:0 "Hanseatic Guilds"
+lgr_ghe_hanseatic_guilds_desc:0 "Missing Loc"
+
+lgr_ghe_infrantry:0 "Unmatched Quality"
+lgr_ghe_infrantry_desc:0 "Missing Loc"
+
+lgr_ghe_tolerance:0 "Missing Loc"
+lgr_ghe_tolerance_desc:0 "Missing Loc"
+
+lgr_ghe_tax:0 "Tax System"
+lgr_ghe_tax_desc:0 "Missing Loc"
+
+lgr_ghe_build_an_empire:0 "Empire Ambitions"
+lgr_ghe_build_an_empire_desc:0 "Missing Loc"
+
+#Hanseatic Commenwealth
+GHC_ideas:0 "Hanseatic Ideas"
+GHC_ideas_start:0 "Hanseatic Traditions"
+GHC_ideas_bonus:0 "Hanseatic Ambition"

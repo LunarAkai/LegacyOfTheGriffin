@@ -40,6 +40,7 @@ lgr_norland_main = {
 		}
 
 		trigger = {
+			stability = 1
 			army_size_percentage = 0.5
 			manpower_percentage = 0.3
 		}
@@ -251,7 +252,32 @@ lgr_norland_main_side_religious = {
 			add_adm_power = 100
 		}
 	}
-	
+
+	lgr_norland_spread_the_true_faith = {
+		icon = gory_to_the_black_army
+		position = 6
+		required_missions = {
+			lgr_norland_expel_the_heathens
+		}
+
+		trigger = {
+			calc_true_if = {
+				all_neighbor_country = {
+					NOT = { is_subject_of = ROOT }
+					religion = ROOT
+				}
+				amount = 2
+				desc = tooltip_lgr_norse_spread_the_true_faith
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_norse_spread_the_true_faith
+				duration = 7300
+			}
+		}
+	}
 }
 
 lgr_norland_religious_side_orders = {
@@ -286,6 +312,10 @@ lgr_norland_religious_side_orders = {
 
 		effect = {
 			add_mil_power = 50
+			add_country_modifier = {
+				name = lgr_military_tradition
+				duration = 7300
+			}
 		}
 	}
 

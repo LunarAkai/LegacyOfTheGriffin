@@ -1,0 +1,40 @@
+﻿l_english:
+#LEGACY OF THE GRIIFIN
+#Rostock Mission Modifiers
+rising_baltic_trade_power:0 "Rising Baltic Trade Power"
+lgr_increased_baltic_trade:0 "Increased Baltic Trade"
+lgr_prepare_for_war:0 "Prepare for War"
+lgr_rostock_port:0 "Prospering Rostock Port"
+lgr_rostock_growing_port:0 "Invest in our Home Port"
+lgr_rostock_upgraded_port:0 "Trade Investments"
+lgr_rostock_weaken_denmark:0 "Weakened Denmark"
+lgr_rostock_the_strait_is_ours:0 "The Strait is ours!"
+lgr_rostock_colonial_efforts:0 "Colonial Efforts"
+lgr_rostock_vas_free_city:0 "Vassalized Free City"
+lgr_rostock_raided_province:0 "Raided Province"
+lgr_rostock_march_on_berlin:0 "March On Berlin"
+lgr_rostock_victory_in_brandenburg:0 "Victory In Brandenburg!"
+lgr_rostock_united_mecklenburg:0 "United Mecklenburg!"
+lgr_rostock_get_rich:0 "Hanseatic Banks"
+lgr_rostock_london:0 "London is Ours!"
+lgr_rostock_fortify_mecklenburg:0 "Fortify Mecklenburg!"
+lgr_rostock_pommerania:0 "Mecklenburg Pommerania"
+lgr_rostock_stockholm:0 "Tamed the Swedish Lion"
+lgr_rostock_trading_empire:0 "A True Trading Empire"
+lgr_rostock_military_empire:0 "A True Military Empire"
+lgr_rostock_empire_discipline:0 "Empire Discipline"
+lgr_rostock_cmw_heavy_ships:0 "Heavy Ships"
+
+#Norse Mission Modifiers 
+lgr_norse_dev_homeland:0 "Prosperty in our Homelands"
+lgr_norse_norse_prussia:0 "Norse Prussia"
+lgr_norse_controll_liv_order:0 "Tame Livonian Order"
+lgr_norse_attack_livonia:0 "Prepare for War"
+lgr_norse_diplomatic_gains:0 "Diplomatic Gains"
+lgr_norse_norse_religion:0 "Strength in Faith"
+lgr_norse_mission_stable_army:0 "Stable Army"
+lgr_norse_spread_the_true_faith:0 "Spread the true Faith"
+
+#Common Mission Modifiers
+lgr_galleys:0 "Galley Fleet"
+lgr_military_tradition:0 "Military Tradition"

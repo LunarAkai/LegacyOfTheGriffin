@@ -139,8 +139,18 @@ lgr_norse_norse_prussia = {
 	land_morale = 0.05
 }
 
+lgr_norse_spread_the_true_faith = {
+	tolerance_own = 1
+	enforce_religion_cost = -0.25
+}
+
 #COMMON
 
 lgr_galleys = {
 	galley_power = 0.10
+}
+
+lgr_military_tradition = {
+	army_tradition_decay = -0.03
+	drill_gain_modifier = 0.10
 }

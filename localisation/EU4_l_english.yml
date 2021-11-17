@@ -5049,6 +5049,4 @@
  NO_UNPAUSE_PLAYERS_BEHIND_TOO_MUCH:0 "Before unpausing you need to wait for the following player(s) to catch up:\n$PLAYERS|Y$"
  NO_SPEEDUP_PLAYERS_BEHIND_TOO_MUCH:0 "Before increasing the game speed you need to wait for the following player(s) to catch up:\n$PLAYERS|Y$"
 
-#LEGACY OF THE GRIFFIN
-LEGACY_OF_THE_GRIFFIN_NAME:0 "LEGACY OF THE GRIFFIN"
-LEGACY_OF_THE_GRIFFIN_DESC:0 "Lorem Ipsum & Stuff"
+

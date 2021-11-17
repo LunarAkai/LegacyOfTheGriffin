@@ -2359,12 +2359,4 @@
  oe_jesuit_unrest:1 "Jesuit Unrest"
  desc_oe_jesuit_unrest:1 "Jesuits in this area are upset by our government's intervention in a theological debate."
 
-#LEGACY OF THE GRIIFIN
-#Rostock Mission Modifiers
-rising_baltic_trade_power:0 "Rising Baltic Trade Power"
 
-#Norse Mission Modifiers 
-lgr_norse_dev_homeland:0 "Prosperty in our Homelands"
-
-#Common Mission Modifiers
-lgr_galleys:0 "Galley Fleet"

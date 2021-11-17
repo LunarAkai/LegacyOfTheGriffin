@@ -1,0 +1,27 @@
+﻿l_english:
+
+############################################################
+#LGR
+############################################################
+#ROSTOCK
+#radical Reform?
+lgr_rostock_events.1.t:0 "Radical Reforms?"
+lgr_rostock_events.1.d:0 "Missing Localisation"
+lgr_rostock_events.1.a:0 "Missing Localisation"
+lgr_rostock_events.1.b:0 "Missing Localisation"
+#A true Empire
+lgr_rostock_events.2.t:0 "A True Empire?"
+lgr_rostock_events.2.d:0 "Missing Loc"
+lgr_rostock_events.2.a:0 "Invest in a Trade Empire"
+lgr_rostock_events.2.b:0 "Invest in a strong Army"
+lgr_rostock_events.2.c:0 "We should not abandon our roots!"
+
+#NORSE ECLIPSE
+norse_eclipse:0 "Norse Eclipse"
+desc_norse_eclipse:0 "Missing Loc"
+
+lgr_norse_events.1.t:0 "Norse Eclipse"
+lgr_norse_events.1.d:0 "Missing Loc"
+
+lgr_norse_events.2.t:0 "Missing Loc"
+lgr_norse_events.2.d:0 "Missing Loc"
