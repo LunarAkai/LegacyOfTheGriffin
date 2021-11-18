@@ -1,7 +1,8 @@
 norland_missionary_reform = {
-	icon = "strength_of_the_khalsa"
+	icon = "rioting_burning_2"
 	allow_normal_conversion = yes
 	legacy_equivalent = feudal_monarchy
+	force_conversion_gives_global_holy_war_released_modifier = yes
 
 	potential = {	
 		OR = {
@@ -11,9 +12,8 @@ norland_missionary_reform = {
 	}
 	nation_designer_cost = 0
 
-	modifiers = {
-		global_missionary_strength = 0.02
-		missionary_maintenance_cost = -0.20
+	effect = {
+		custom_tooltip = lgr_norse_crusade_tt
 	}
 
 	ai = {

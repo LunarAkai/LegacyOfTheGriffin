@@ -1,0 +1,20 @@
+cb_norse_crusade = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		has_reform = norland_missionary_reform
+		is_neighbor_of = FROM
+	
+
+		OR = {
+			government = monarchy
+			claim = FROM
+			cb_on_religious_enemies = yes
+		}
+		NOT = { religion = FROM }
+		NOT = {	has_matching_religion = FROM }
+		is_revolutionary = no
+	}
+
+	war_goal = superiority_norse_crusade
+}

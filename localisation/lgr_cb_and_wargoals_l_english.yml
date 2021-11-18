@@ -1,0 +1,11 @@
+﻿l_english:
+#CASUS BELLI
+cb_norse_crusade:0 "Norse Crusade"
+cb_norse_crusade_desc:0 "They have the wrong Religion!"
+
+#WARGOALS
+superiority_norse_crusade:0 "Missing Loc sup_norse_crusade"
+superiority_norse_crusade_desc:0 "War goal is to show superiority against heathens and heretics"
+
+#WARNAMES
+NORSE_CRUSADE_WAR_NAME:0 "$ORDER$$FIRST$ Norse Crusade against $SECOND_NAME$"

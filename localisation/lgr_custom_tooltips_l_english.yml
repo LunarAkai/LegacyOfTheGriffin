@@ -3,3 +3,6 @@ tooltip_lgr_norse_dev_homelands:0 "Every owned province in Livonia, Estonia, and
 
 lgr_norse_true_faith_int:0 ""
 tooltip_lgr_norse_spread_the_true_faith:0 " neighbouring countries that are not our subjects are §Y[Root.Religion.GetName]§!"
+
+#Norse Crusade
+lgr_norse_crusade_tt:0 "Unlocks §YNorse Crusade§! Casus Belli. Allowing us to convert §YHeathens§! to the true faith"

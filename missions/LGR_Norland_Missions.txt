@@ -17,6 +17,7 @@ lgr_norland_main = {
 		required_missions = {  }
 
 		trigger = {
+			has_disaster = norse_eclipse
 			army_size_percentage = 1
 			manpower_percentage = 0.8
 		}
@@ -41,8 +42,8 @@ lgr_norland_main = {
 
 		trigger = {
 			stability = 1
-			army_size_percentage = 0.5
-			manpower_percentage = 0.3
+			army_size_percentage = 1
+			manpower_percentage = 0.5
 		}
 
 		effect = {
@@ -168,6 +169,7 @@ lgr_norland_main_side_religious = {
 		}
 
 		trigger = {
+			has_disaster = norse_eclipse
 			35 = {
 				has_tax_building_trigger = yes
 			}
@@ -370,6 +372,7 @@ lgr_norland_diplomatic= {
 		required_missions = {  }
 
 		trigger = {
+			has_disaster = norse_eclipse
 			num_of_allies = 1
 			calc_true_if = {
 				all_ally = { has_opinion = { who = ROOT value = 75 } }

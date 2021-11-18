@@ -25,9 +25,16 @@ country_event = {
 	title = "lgr_norse_events.2.t"
 	desc = "lgr_norse_events.2.d"
 	is_triggered_only = yes
+	major = yes
 
 	picture = VILLAGE_BURNING_eventPicture
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_norse_eclipse
+		}
+	}
+	
 	option = {
 		name = "lgr_norse_events.2.a"
 		ai_chance = {

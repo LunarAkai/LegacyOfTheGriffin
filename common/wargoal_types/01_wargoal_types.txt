@@ -1,0 +1,42 @@
+superiority_norse_crusade = {
+    type = superiority
+    attacker = {
+
+        badboy_factor = 2
+		prestige_factor = 2
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = yes
+		}
+
+        peace_options = { 
+            po_demand_provinces
+			po_change_religion
+			po_release_vassals
+        }
+
+        country_desc = ALL_INFIDELS
+		prov_desc = ALL_PROVS
+    }
+
+    defender = {
+		badboy_factor = 1
+		prestige_factor = 2
+		peace_cost_factor = 1
+		
+		allowed_provinces = {
+			always = yes
+		}
+		
+		peace_options = {
+			po_demand_provinces
+			po_release_vassals
+		}
+		
+		country_desc = ALL_INFIDELS
+		prov_desc = ALL_PROVS
+	}
+
+    war_name = NORSE_CRUSADE_WAR_NAME
+}

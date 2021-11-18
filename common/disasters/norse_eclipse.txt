@@ -37,7 +37,8 @@ norse_eclipse = {
 
 	modifier = {
 		all_power_cost = 0.15
-		global_manpower_modifier = -0.5
+		stability_cost_modifier = 0.33
 		global_missionary_strength = -1
+		enforce_religion_cost = 0.99
 	}
 }

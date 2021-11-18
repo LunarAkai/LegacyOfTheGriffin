@@ -56,3 +56,29 @@ lgr_ghe_build_an_empire_desc:0 "Missing Loc"
 GHC_ideas:0 "Hanseatic Ideas"
 GHC_ideas_start:0 "Hanseatic Traditions"
 GHC_ideas_bonus:0 "Hanseatic Ambition"
+
+#Norse / Norland
+GNL_ideas:0 "Norse Ideas"
+GNL_ideas_start:0 "Norse Traditions"
+GNL_ideas_bonus:0 "Norse Ambition"
+
+lgr_norse_united_against_heathens:0 "United against heathens"
+lgr_norse_united_against_heathens_desc:0 "Missing Loc"
+
+lgr_norse_make_norse_great_again:0 "Viking Culture"
+lgr_norse_make_norse_great_again_desc:0 "Missing Loc"
+
+lgr_norse_remember_the_forefathers:0 "Remember the forefathers"
+lgr_norse_remember_the_forefathers_desc:0 "Missing Loc"
+
+lgr_norse_norse_future:0 "Norse future"
+lgr_norse_norse_future_desc:0 "Missing Loc"
+
+lgr_norse_norse_missionaries_idea:0 "Norse Missionaries"
+lgr_norse_norse_missionaries_idea_desc:0 "Missing Loc"
+
+lgr_norse_viking_traditions:0 "Viking Traditions"
+lgr_norse_viking_traditions_desc:0 "Missing Loc"
+
+lgr_norse_crusade_against_the_world:0 "Crusade against the world"
+lgr_norse_crusade_against_the_world_desc:0 "Missing Loc"
