@@ -52,14 +52,20 @@ lgr_rostock_north_sea_trade_desc:0 "more sea"
 #colonial missions
 lgr_rostock_build_a_high_sea_fleet_title:0 "High Sea Fleet"
 lgr_rostock_build_a_high_sea_fleet_desc:0 "colony pls"
+
 lgr_rostock_colonize_north_america_title:0 "A new continent"
 lgr_rostock_colonize_north_america_desc:0 "Natives? Neverheard of them"
+
+lgr_rostock_easter_islands_title:0 "Easter Island"
+lgr_rostock_easter_islands_desc:0 "Missing Loc"
 
 #conquest side
 lgr_rostock_deal_with_Hamburg_title:0 "Hamburg Port"
 lgr_rostock_deal_with_Hamburg_desc:0 "1 Hamburger pls"
+
 lgr_rostock_weser_area_title:0 "Expand our Coastline"
 lgr_rostock_weser_area_desc:0 "Bremer Stadtmusikanten and stuff"
+
 lgr_rostock_british_trade_title:0 "Foothold in Britain"
 lgr_rostock_british_trade_desc:0 "Missing Loc"
 

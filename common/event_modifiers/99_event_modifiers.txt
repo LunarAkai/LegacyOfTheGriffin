@@ -1,0 +1,20 @@
+#Rostock University Rektor Elections
+lgr_rostock_rektor_dev = {
+	development_cost = -0.05
+}
+
+lgr_rostock_rektor_religious = {
+	global_missionary_strength = 0.01
+}
+
+lgr_rostock_rektor_idea_cost = {
+	idea_cost = -0.1
+}
+
+lgr_rostock_rektor_reform = {
+	reform_progress_growth = 0.1
+}
+
+lgr_rostock_rektor_military = {
+	land_morale = 0.1
+}

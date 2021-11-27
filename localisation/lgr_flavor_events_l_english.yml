@@ -16,6 +16,15 @@ lgr_rostock_events.2.a:0 "Invest in a Trade Empire"
 lgr_rostock_events.2.b:0 "Invest in a strong Army"
 lgr_rostock_events.2.c:0 "We should not abandon our roots!"
 
+#Election of the Rektor
+lgr_rostock_events.3.t:0 "Election of the Rektor"
+lgr_rostock_events.3.d:0 "Missing Loc"
+lgr_rostock_events.3.a:0 "Research with a focus on developing our homelands"
+lgr_rostock_events.3.b:0 "Elect a theologian as the head of the university"
+lgr_rostock_events.3.c:0 "Focus on secular research"
+lgr_rostock_events.3.e:0 "The mayor of Rostock should be the new Rektor"
+lgr_rostock_events.3.f:0 "Military research should be our top priority"
+
 #NORSE ECLIPSE
 norse_eclipse:0 "Norse Eclipse"
 desc_norse_eclipse:0 "Missing Loc"

@@ -776,6 +776,36 @@ lgr_rostock_colonial_missions = {
 			add_dip_power = 100
 		}
 	}
+
+	lgr_rostock_easter_islands = {
+		icon = support_the_bulk_trades
+		position = 7
+		required_missions = {
+			lgr_rostock_colonize_north_america
+		}
+
+		provinces_to_highlight = {
+			province_id = 1988
+		}
+
+		trigger = {
+			ROOT = {
+				has_discovered = 1988
+			}
+		}
+
+		effect = {
+			define_advisor = {
+				type = navigator
+				name = "Carl Friedrich Behrens"
+				skill = 4
+				cost_multiplier = 0.25
+				culture = pommeranian
+				religion = GRO
+			}
+		}
+		
+	}
 }
 
 
@@ -1107,7 +1137,9 @@ lgr_rostock_dev = {
 		}
 
 		effect = {
-			add_treasury = 200
+			country_event = {
+				id = lgr_rostock_events.3
+			}
 		}
 
 	}

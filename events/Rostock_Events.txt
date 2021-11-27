@@ -179,3 +179,71 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = lgr_rostock_events.3
+	title = "lgr_rostock_events.3.t"
+	desc = "lgr_rostock_events.3.d"
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		AND = {
+			mission_completed = lgr_rostock_dev_university
+			OR = {
+				tag = GRO
+				tag = GHE
+				tag = GHC
+			}
+			NOT = {
+				OR = {
+					has_country_modifier = lgr_rostock_rektor_dev
+					has_country_modifier = lgr_rostock_rektor_religious
+					has_country_modifier = lgr_rostock_rektor_idea_cost
+					has_country_modifier = lgr_rostock_rektor_reform
+					has_country_modifier = lgr_rostock_rektor_military
+				}
+			}
+		}	
+	}
+
+	option = {
+		name = "lgr_rostock_events.3.a"
+		add_country_modifier = {
+			name = lgr_rostock_rektor_dev
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.3.b"
+		add_country_modifier = {
+			name = lgr_rostock_rektor_religious
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.3.c"
+		add_country_modifier = {
+			name = lgr_rostock_rektor_idea_cost
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.3.e"
+		add_country_modifier = {
+			name = lgr_rostock_rektor_reform
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.3.f"
+		add_country_modifier = {
+			name = lgr_rostock_rektor_military
+			duration = 3650
+		}
+	}
+
+}
