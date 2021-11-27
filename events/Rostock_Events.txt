@@ -1,7 +1,7 @@
 namespace = lgr_rostock_events
 
 country_event = {
-	id = lgr_rostock_events.1
+	id = lgr_rostock_events.1 #monarchy?
 
 	title = "lgr_rostock_events.1.t"
 	desc = "lgr_rostock_events.1.d"
@@ -181,7 +181,7 @@ country_event = {
 }
 
 country_event = {
-	id = lgr_rostock_events.3
+	id = lgr_rostock_events.3 #Rektor
 	title = "lgr_rostock_events.3.t"
 	desc = "lgr_rostock_events.3.d"
 	picture = ELECTION_REPUBLICAN_eventPicture
@@ -212,6 +212,9 @@ country_event = {
 			name = lgr_rostock_rektor_dev
 			duration = 3650
 		}
+		ai_chance = {
+			factor = 20
+		}
 	}
 
 	option = {
@@ -219,6 +222,9 @@ country_event = {
 		add_country_modifier = {
 			name = lgr_rostock_rektor_religious
 			duration = 3650
+		}
+		ai_chance = {
+			factor = 20
 		}
 	}
 
@@ -228,6 +234,9 @@ country_event = {
 			name = lgr_rostock_rektor_idea_cost
 			duration = 3650
 		}
+		ai_chance = {
+			factor = 20
+		}
 	}
 
 	option = {
@@ -235,6 +244,9 @@ country_event = {
 		add_country_modifier = {
 			name = lgr_rostock_rektor_reform
 			duration = 3650
+		}
+		ai_chance = {
+			factor = 20
 		}
 	}
 
@@ -244,6 +256,299 @@ country_event = {
 			name = lgr_rostock_rektor_military
 			duration = 3650
 		}
+		ai_chance = {
+			factor = 20
+		}
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.4 #Domfehde Start
+	title = "lgr_rostock_events.4.t"
+	desc = "lgr_rostock_events.4.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_rostock_domfehde
+		}
+	}
+	option = {
+		name = "lgr_rostock_events.4.a"
+		ai_chance = {
+			factor = 1
+		}
+
+		add_stability = -1
+
+		capital = {
+			spawn_rebels = {
+				type = leadered_peasant_rebels
+				size = 2
+			}
+		}
+		
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.5 #Domfehde End
+	title = "lgr_rostock_events.5.t"
+	desc = "lgr_rostock_events.5.d"
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "lgr_rostock_events.5.a"
+		ai_chance = {
+			factor = 1
+		}
+		if = {
+			limit = {
+				NOT = { stability = 3 }
+			}
+			add_stability = 1
+		}
+		if = {
+			limit = {
+				stability = 3
+			}
+			add_adm_power = 50
+		}
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.6 #Domfehde Random Rebels
+	title = "lgr_rostock_events.6.t"
+	desc = "lgr_rostock_events.6.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "lgr_rostock_events.6.a"
+		ai_chance = {
+			factor = 1
+		}
+
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.7 #Domfehde Boldewan First Act
+	title = "lgr_rostock_events.7.t"
+	desc = "lgr_rostock_events.7.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_year = 1489
+		NOT = { has_country_flag = lgr_rostock_boldewan_appears }
 	}
 
+	immediate = {
+		set_country_flag = lgr_rostock_boldewan_appears
+	}
+
+	option = {
+		name = "lgr_rostock_events.7.a"
+		ai_chance = {
+			factor = 1
+		}
+
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.8 #Domfehde Boldewan Second
+	title = "lgr_rostock_events.8.t"
+	desc = "lgr_rostock_events.8.d"
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		AND = {
+			is_year = 1489
+			has_country_flag = lgr_rostock_boldewan_appears
+		}
+		
+	}
+	option = {
+		name = "lgr_rostock_events.8.a" #Make Boldewan Ruler
+		ai_chance = {
+			factor = 50
+		}
+		GRO = {
+			exile_ruler_as = stadtrat_exiled_rostock
+		}
+		GRO = {
+			define_ruler = {
+				name = "Dietrich Boldewan"
+				age = 28
+				adm = 2
+				dip = 1
+				mil = 6
+				male = yes
+			}
+		}
+		GRO = {
+			add_republican_tradition = -50
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+			}
+		}
+	}
+
+	option = {
+		name = "lgr_rostock_events.8.b" #Exile Boldewan
+		ai_chance = {
+			factor = 50
+		}
+
+		GRO = {
+			add_republican_tradition = 10
+		}
+		46 = {
+			spawn_rebels = {
+				size = 3
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.9 #Domfehde Dompropst murdered
+	title = "lgr_rostock_events.9.t"
+	desc = "lgr_rostock_events.9.d"
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_country_flag = lgr_rostock_dompropst_murdered
+		}
+	}
+
+	immediate = {
+		set_country_flag = lgr_rostock_dompropst_murdered
+	}
+
+	option = { #murdered
+
+		name = "lgr_rostock_events.9.a"
+
+		GRO = {
+			if = {
+				limit = {
+					GRO = {
+						religion = catholic
+					}
+				}
+				add_papal_influence = -50
+			}
+			if = {
+				limit = {
+					GRO = {
+						OR = {
+							religion = protestant
+						}
+					}
+				}
+
+				add_church_power = -100
+			}
+			if = {
+				limit = {
+					GRO = {
+						NOT = {
+							OR = {
+								religion = protestant
+								religion = catholic
+							}
+							
+						}
+					}
+				}
+				add_adm_power = -100
+			}
+			
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = leadered_peasant_rebels
+			}
+		}
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.10 #Domfehde Boldewan First Act
+	title = "lgr_rostock_events.10.t"
+	desc = "lgr_rostock_events.10.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = "lgr_rostock_events.10.a"
+
+		random_owned_province = {
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels
+			}
+		}
+	}
 }

@@ -25,6 +25,39 @@ lgr_rostock_events.3.c:0 "Focus on secular research"
 lgr_rostock_events.3.e:0 "The mayor of Rostock should be the new Rektor"
 lgr_rostock_events.3.f:0 "Military research should be our top priority"
 
+#Domfehde
+rostock_domfehde:0 "Rostocker Domfehde"
+desc_rostock_domfehde:0 "Missing Loc"
+
+lgr_rostock_events.4.t:0 "Rostocker Domfehde"
+lgr_rostock_events.4.d:0 "Missing Loc"
+lgr_rostock_events.4.a:0 "We live in worrying times!"
+
+lgr_rostock_events.5.t:0 "End of the Domfehde"
+lgr_rostock_events.5.d:0 "Missing Loc"
+lgr_rostock_events.5.a:0 "Good news!"
+
+lgr_rostock_events.6.t:0 "Peasants revolt!"
+lgr_rostock_events.6.d:0 "Missing Loc"
+lgr_rostock_events.6.a:0 "Oh no!"
+
+lgr_rostock_events.7.t:0 "Dietrich Boldewan appears"
+lgr_rostock_events.7.d:0 "Missing Loc"
+lgr_rostock_events.7.a:0 "This is worrying."
+
+lgr_rostock_events.8.t:0 "Make Boldewan Mayor?"
+lgr_rostock_events.8.d:0 "Missing Loc"
+lgr_rostock_events.8.a:0 "Make him mayor!"
+lgr_rostock_events.8.b:0 "Boldewan can rule his prision cell!"
+
+lgr_rostock_events.9.t:0 "Dean of the cathedral murdered!"
+lgr_rostock_events.9.d:0 "Missing Loc"
+lgr_rostock_events.9.a:0 "This is terrible!"
+
+lgr_rostock_events.10.t:0 "Noble revolt!"
+lgr_rostock_events.10.d:0 "Missing Loc"
+lgr_rostock_events.10.a:0 "Oh no!"
+
 #NORSE ECLIPSE
 norse_eclipse:0 "Norse Eclipse"
 desc_norse_eclipse:0 "Missing Loc"

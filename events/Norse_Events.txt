@@ -1,7 +1,7 @@
 namespace = lgr_norse_events
 
 country_event = {
-	id = lgr_norse_events.1
+	id = lgr_norse_events.1 #Norse Eclipse
 
 	title = "lgr_norse_events.1.t"
 	desc = "lgr_norse_events.1.d"
@@ -20,7 +20,7 @@ country_event = {
 }
 
 country_event = {
-	id = lgr_norse_events.2
+	id = lgr_norse_events.2 #End Norse Eclipse
 
 	title = "lgr_norse_events.2.t"
 	desc = "lgr_norse_events.2.d"

@@ -1130,10 +1130,16 @@ lgr_rostock_dev = {
 		required_missions = { lgr_rostock_dev_trade_center }
 
 		trigger = {
-			num_of_owned_provinces_with = {
-				value = 5
-				has_building = university
+			AND = {
+				46 = {
+					has_building = university
+				}
+				num_of_owned_provinces_with = {
+					value = 5
+					has_building = university
+				}
 			}
+			
 		}
 
 		effect = {
@@ -1366,7 +1372,56 @@ lgr_rostock_side_other = {
 			}
 		}
 	}
+}
 
+lgr_rostock_flavour_mission = {
+	slot = 5
+	generic = no
+	ai= yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GRO
+			tag = GHC
+			tag = GHE
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_rostock_flav_better_than_luebeck = {
+		position = 7
+		icon = mission_hanseatic_city
+		required_missions = {
+			
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 45 # the target province city which should be lower than your capital city
+					ROOT = {
+						capital_scope = { NOT = { higher_development_than = 46 } }
+					}
+				}
+			}
+		}
+		trigger = {
+			AND = {
+				capital_scope = { higher_development_than = 45 }
+				monthly_income = HSA
+			}
+			
+		}
+		effect = {
+			add_country_modifier = {
+				name = lgr_rostock_overshine_luebeck
+				duration = 7300
+			}
+		}
+	}
 }
 
 lgr_rostock_commenwealth = {

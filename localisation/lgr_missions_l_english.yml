@@ -73,6 +73,10 @@ lgr_rostock_british_trade_desc:0 "Missing Loc"
 lgr_rostock_hegemon_be_rich_title:0 "Baltic Bank"
 lgr_rostock_hegemon_be_rich_desc:0 "Missing Localisation"
 
+#Flavour Missions
+lgr_rostock_flav_better_than_luebeck_title:0 "Overshine Lübeck"
+lgr_rostock_flav_better_than_luebeck_desc:0 "Missing Loc"
+
 #other mission
 lgr_rostock_fortify_our_homelands_title:0 "Fortify Mecklenburg"
 lgr_rostock_fortify_our_homelands_desc:0 "Missing Loc"

@@ -1,6 +1,9 @@
 ﻿l_english:
 tooltip_lgr_norse_dev_homelands:0 "Every owned province in Livonia, Estonia, and Curonia Area gets '§YProsperty in our Homelands§!' for 20 years, giving the following effects:\nLocal Development Cost: §G-15.0%§!\nLocal Build Time: §G-15.0%§!"
 
+#Rostock
+lgr_rostock_rostocker_domfehde_active_for_10_years:0 "Disaster has been active for 10 years."
+
 lgr_norse_true_faith_int:0 ""
 tooltip_lgr_norse_spread_the_true_faith:0 " neighbouring countries that are not our subjects are §Y[Root.Religion.GetName]§!"
 
