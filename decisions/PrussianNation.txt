@@ -355,7 +355,9 @@ country_decisions = {
 					tag = GWI
 					tag = GRZ
 					tag = GSW
-					tag = GWE }
+					tag = GWE
+					tag = GHC
+					tag = GHE }
 			OR = {
 				NOT = { exists = PRU }
 				ai = no

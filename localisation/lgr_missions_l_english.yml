@@ -16,7 +16,7 @@ lgr_rostock_increase_trade_power_title:0 "Baltic Trade"
 lgr_rostock_increase_trade_power_desc:0 "Baltic Sea stuff"
 lgr_rostock_dev_warnemuende_port_title:0 "Warnemünde Port"
 lgr_rostock_dev_warnemuende_port_desc:0 "Wasser"
-lgr_rostock_dev_build_buildings_title:0 "Trade Infrstructure"
+lgr_rostock_dev_build_buildings_title:0 "Trade Infrastructure"
 lgr_rostock_dev_build_buildings_desc:0 "Trade Stuff" 
 lgr_rostock_dev_trade_center_title:0 "Dominate Baltic Trade"
 lgr_rostock_dev_trade_center_desc:0 "More Trade Stuff"
@@ -76,6 +76,20 @@ lgr_rostock_hegemon_be_rich_desc:0 "Missing Localisation"
 #Flavour Missions
 lgr_rostock_flav_better_than_luebeck_title:0 "Overshine Lübeck"
 lgr_rostock_flav_better_than_luebeck_desc:0 "Missing Loc"
+lgr_flav_rostock_hanseatic_cities_title:0 "Hanseatic Cities"
+lgr_flav_rostock_hanseatic_cities_desc:0 "Missing Loc"
+lgr_rostock_flav_economic_powerhouse_title:0 "Economic Powerhouse"
+lgr_rostock_flav_economic_powerhouse_desc:0 "Missing Loc"
+
+#flavour side Mission
+lgr_rostock_big_baltic_fleet_title:0 "Rule the Baltic"
+lgr_rostock_big_baltic_fleet_desc:0 "Missing Loc"
+
+lgr_rostock_flav_high_trade_income_title:0 "High trade income"
+lgr_rostock_flav_high_trade_income_desc:0 "Missing Loc"
+
+lgr_rostock_flav_access_to_gold_title:0 "Access to Gold"
+lgr_rostock_flav_access_to_gold_desc:0 "Missing Loc"
 
 #other mission
 lgr_rostock_fortify_our_homelands_title:0 "Fortify Mecklenburg"
@@ -102,6 +116,9 @@ lgr_rostock_emp_test_title:0 "Empire's Army"
 lgr_rostock_emp_test_desc:0 "missing loc"
 lgr_rostock_emp_discipline_title:0 "Prussian Discipline"
 lgr_rostock_emp_discipline_desc:0 "Missing Loc"
+
+
+
 
 #NORSE / NORLAND
 #Main

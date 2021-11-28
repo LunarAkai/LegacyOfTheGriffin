@@ -86,7 +86,7 @@ lgr_rostock_stockholm = {
 lgr_rostock_trading_empire = {
 	trade_efficiency = 0.2
 	global_trade_power = 0.1
-	ship_recruit_speed = -0.15
+	navy_tradition_decay = -0.1
 	naval_forcelimit_modifier = 0.25
 }
 
@@ -109,6 +109,20 @@ lgr_rostock_cmw_heavy_ships = {
 lgr_rostock_overshine_luebeck = {
 	prestige_from_naval = 0.15
 	navy_tradition_decay = -0.03
+}
+
+lgr_rostock_big_baltic_navy = {
+	local_ship_repair = 0.2
+	local_sailors_modifier = 0.1
+}
+
+lgr_rostock_owns_hanseatic_cities = {
+	global_tax_modifier = 0.10
+	inflation_reduction = 0.05
+}
+
+lgr_rostock_economic_powerhouse = {
+	administrative_efficiency = 0.05
 }
 
 #NORSE

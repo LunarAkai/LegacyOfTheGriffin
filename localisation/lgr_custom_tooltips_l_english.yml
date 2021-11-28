@@ -7,5 +7,7 @@ lgr_rostock_rostocker_domfehde_active_for_10_years:0 "Disaster has been active f
 lgr_norse_true_faith_int:0 ""
 tooltip_lgr_norse_spread_the_true_faith:0 " neighbouring countries that are not our subjects are §Y[Root.Religion.GetName]§!"
 
+lgr_rostock_rule_the_baltic_tooltip:0 "No country:\n   Has a port on the §YBaltic Sea§!.\n   Has a larger fleet than §Y[Root.GetName]§!."
+
 #Norse Crusade
 lgr_norse_crusade_tt:0 "Unlocks §YNorse Crusade§! Casus Belli. Allowing us to convert §YHeathens§! to the true faith"

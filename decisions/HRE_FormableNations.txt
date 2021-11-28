@@ -188,6 +188,8 @@ country_decisions = {
 				tag = GRZ
 				tag = GSW
 				tag = GWE
+				tag = GHC
+				tag = GHE
 			}
 		}
 		provinces_to_highlight = {

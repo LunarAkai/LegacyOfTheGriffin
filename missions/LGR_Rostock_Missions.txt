@@ -187,7 +187,7 @@ lgr_rostock_missions_main = {
 			lgr_rostock_berlin
 		}
 		trigger = {
-			GRO = { 
+			ROOT = { 
 				total_development = 150
 			}
 				
@@ -215,7 +215,7 @@ lgr_rostock_missions_main = {
 		}
 
 		trigger = {
-			GRO = { 
+			ROOT = { 
 				total_development = 500
 				army_size = 100
 				navy_size = 100
@@ -801,7 +801,7 @@ lgr_rostock_colonial_missions = {
 				skill = 4
 				cost_multiplier = 0.25
 				culture = pommeranian
-				religion = GRO
+				religion = ROOT
 			}
 		}
 		
@@ -1151,7 +1151,7 @@ lgr_rostock_dev = {
 	}
 
 	lgr_rostock_great_power = {
-		icon = mission_high_income
+		icon = imperial_ascendancy
 		position = 5
 		required_missions = {
 			lgr_rostock_dev_university
@@ -1422,6 +1422,238 @@ lgr_rostock_flavour_mission = {
 			}
 		}
 	}
+
+	lgr_flav_rostock_hanseatic_cities = {
+		position = 8
+		icon = defend_the_city
+		required_missions = {
+			lgr_rostock_flav_better_than_luebeck
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 44 #hamburg
+				province_id = 45 #lübeck
+				province_id = 1874 #bremen
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			AND = {
+				owns_core_province = 44
+				owns_core_province = 45
+				owns_core_province = 1874
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_rostock_owns_hanseatic_cities
+				duration = 7300
+			}
+		}
+	}
+
+	lgr_rostock_flav_economic_powerhouse = {
+		position = 10
+		icon = the_ostend_company
+		required_missions = {
+			lgr_flav_rostock_hanseatic_cities
+		}
+
+		trigger = {
+			ROOT = {
+				if = {
+					limit = {
+						AND = {
+							exists = ENG
+							NOT = {
+								exists = GBR
+							}
+						}
+						
+					}
+					AND = {
+						monthly_income = HAB
+						monthly_income = ENG
+						monthly_income = FRA
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							exists = GBR
+							NOT = {
+								exists = ENG
+							}
+						}
+						
+					}
+					AND = {
+						monthly_income = HAB
+						monthly_income = GBR
+						monthly_income = FRA
+					}
+				}
+				if = {
+					limit = {
+						AND = {
+							NOT = { exists = HAB }
+							NOT = { exists = GBR }
+							NOT = { exists = ENG }
+							NOT = { exists = FRA }
+						}
+						
+					}
+					monthly_income = 50
+				}
+					
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_rostock_economic_powerhouse
+				duration = -1
+			}
+		}
+	}
+}
+
+lgr_rostock_flav_side_mission = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+		has_dlc = "Origins"
+	}potential = {
+		has_dlc = "Emperor"
+		has_dlc = "Origins"
+		OR = {
+			tag = GRO
+			tag = GHC
+			tag = GHE
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_rostock_big_baltic_fleet = {
+		position = 8
+		icon = overshadow_venice
+		required_missions = {
+			lgr_rostock_flav_better_than_luebeck
+		}
+
+		provinces_to_highlight = {
+			is_capital = yes
+			owner = {
+				any_owned_province = {
+					has_port = yes
+					sea_zone = {
+						area = baltic_area
+					}
+				}
+				navy_size = root
+				NOT = { tag = ROOT }
+			}
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lgr_rostock_rule_the_baltic_tooltip
+				NOT = {
+					any_known_country = {
+						any_owned_province = {
+							has_port = yes
+							sea_zone = {
+								area = baltic_area
+							}
+						}
+						navy_size = root
+					}
+				}
+			}
+			
+		}
+
+		effect = {
+			46 = {
+				add_province_modifier = {
+					name = lgr_rostock_big_baltic_navy
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	lgr_rostock_flav_high_trade_income = {
+		position = 9
+		icon = balance_the_estates
+		required_missions = {
+			lgr_rostock_big_baltic_fleet
+		}
+
+		trigger = {
+			trade_income_percentage = 0.5
+		}
+
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							dip = 5
+							dip = 6
+						}
+					}
+				}
+				change_dip = 2
+			}
+			if = {
+				limit = {
+					dip = 5
+				}
+				change_dip = 1
+				ROOT = {
+					add_dip_power = 50
+				}
+			}
+			if = {
+				limit = {
+					dip = 6
+				}
+				ROOT = {
+					add_dip_power = 100
+				}
+			}
+			
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+
+	lgr_rostock_flav_access_to_gold = {
+		position = 10
+		icon = dominant_economy
+		required_missions = {
+			lgr_rostock_flav_high_trade_income
+		}
+
+		trigger = {
+			gold_income = 10
+		}
+
+		effect = {
+			unlock_estate_privilege = {
+				estate_privilege = estate_burghers_control_over_the_mint
+			}
+		}
+	}
 }
 
 lgr_rostock_commenwealth = {
@@ -1451,7 +1683,7 @@ lgr_rostock_commenwealth = {
 
 		effect = {
 			add_navy_tradition = 50
-			GRO = {
+			ROOT = {
 				add_dip_power = 100
 			}
 		}
@@ -1506,7 +1738,7 @@ lgr_rostock_empire = {
 
 		effect = {
 			add_army_tradition = 50
-			GRO = {
+			ROOT = {
 				add_mil_power = 100
 			}
 		}
