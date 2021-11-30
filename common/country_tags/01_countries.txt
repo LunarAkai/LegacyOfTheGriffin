@@ -20,3 +20,4 @@ GSU = "countries/Spandau.txt" #Tall Brandenburg
 
 #Scandinvia
 GNL = "countries/Norland.txt" #Norse Refuge
+GSM = "countries/Sami.txt"
