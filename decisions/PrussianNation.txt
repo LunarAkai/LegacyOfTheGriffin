@@ -68,6 +68,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_prussia_flag }
+			NOT = { has_country_flag = lgr_started_as_spandau }
 			OR = {
 				ai = no
 				is_playing_custom_nation = no
@@ -357,7 +358,12 @@ country_decisions = {
 					tag = GSW
 					tag = GWE
 					tag = GHC
-					tag = GHE }
+					tag = GHE 
+					tag = GAT
+					tag = GSU
+					tag = GEW
+					tag = RUP
+					tag = GHG }
 			OR = {
 				NOT = { exists = PRU }
 				ai = no

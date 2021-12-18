@@ -1,0 +1,168 @@
+namespace = lgr_custom_achievements
+
+country_event = { #Brandenburg-Prussia, Start as Altmark, form Brandenburg and have Prussia as a Vassal
+	id = lgr_custom_achievements.1
+
+	title = "lgr_custom_achievements.1.t"
+	desc = "lgr_custom_achievements.1.d"
+
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			was_tag = GAT
+			tag = BRA
+			has_switched_nation = no
+			PRU = {
+				vassal_of = ROOT
+			}
+			ironman = yes
+		}
+	}
+
+	option = {
+		name = "lgr_custom_achievements.1.a"
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = { #WHYYYYY, As Spandau own the entire Russian Region
+	id = lgr_custom_achievements.2
+
+	title = "lgr_custom_achievements.2.t"
+	desc = "lgr_custom_achievements.2.d"
+
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			tag = GSU
+			has_switched_nation = no
+			owns_all_provinces = {
+				region = russia_region
+			}
+			ironman = yes
+		}
+	}
+
+	option = {
+		name = "lgr_custom_achievements.2.a"
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = { #Got them!, Starting as Denmark conquer all of Germany by 1550
+	id = lgr_custom_achievements.3
+
+	title = "lgr_custom_achievements.3.t"
+	desc = "lgr_custom_achievements.3.d"
+
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = DAN
+				was_tag = DAN
+			}
+			has_switched_nation = no
+			owns_all_provinces = {
+				region = north_german_region
+			}
+			owns_all_provinces = {
+				region = south_german_region
+			}
+			ironman = yes
+			NOT = {
+				is_year = 1551
+			}
+		}
+	}
+
+	option = {
+		name = "lgr_custom_achievements.3.a"
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = { #Legacy of the Griffin, Complete the mission tree of Rostock
+	id = lgr_custom_achievements.4
+	
+	title = "lgr_custom_achievements.4.t"
+	desc = "lgr_custom_achievements.4.d"
+
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = GRO
+				was_tag = GRO
+			}
+			has_switched_nation = no
+			ironman = yes
+
+			mission_completed = lgr_rostock_befriend_luebeck
+			mission_completed = lgr_rostock_conquer_ostmecklenburg
+			mission_completed = lgr_rostock_deal_with_schwerin
+			mission_completed = lgr_rostock_unite_mecklenburg
+			mission_completed = lgr_rostock_radical_reforms
+			mission_completed = lgr_rostock_legacy_of_the_griffin
+			mission_completed = lgr_rostock_true_empire
+			mission_completed = lgr_rostock_build_light_ships
+			mission_completed = lgr_rostock_intervene_in_bra
+			mission_completed = lgr_rostock_berlin
+			mission_completed = lgr_rostock_bra_dominate_central_germany
+			mission_completed = lgr_rostock_deal_with_the_pirates
+			mission_completed = lgr_rostock_secure_the_island
+			mission_completed = lgr_rostock_secure_the_strait
+			mission_completed = lgr_rostock_north_sea_trade
+			mission_completed = lgr_rostock_build_a_high_sea_fleet
+			mission_completed = lgr_rostock_colonize_north_america
+			mission_completed = lgr_rostock_easter_islands
+			mission_completed = lgr_rostock_conquest_raise_an_army
+			mission_completed = lgr_rostock_deal_with_Hamburg
+			mission_completed = lgr_rostock_weser_area
+			mission_completed = lgr_rostock_british_trade
+			mission_completed = lgr_rostock_dev_warnemuende_port
+			mission_completed = lgr_rostock_dev_build_buildings
+			mission_completed = lgr_rostock_dev_trade_center
+			mission_completed = lgr_rostock_dev_university
+			mission_completed = lgr_rostock_great_power
+			mission_completed = lgr_rostock_hegemon_be_rich
+			mission_completed = lgr_rostock_fortify_our_homelands
+			mission_completed = lgr_rostock_tame_pomerania
+			mission_completed = lgr_rostock_build_galleys
+			mission_completed = lgr_rostock_stockholm
+			mission_completed = lgr_rostock_flav_better_than_luebeck
+			mission_completed = lgr_flav_rostock_hanseatic_cities
+			mission_completed = lgr_rostock_flav_economic_powerhouse
+			mission_completed = lgr_rostock_big_baltic_fleet
+			mission_completed = lgr_rostock_flav_high_trade_income
+			mission_completed = lgr_rostock_flav_access_to_gold
+		}
+	}
+
+	option = {
+		name = "lgr_custom_achievements.4.a"
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+	}
+}
+
+#Ideas:

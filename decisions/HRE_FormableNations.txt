@@ -683,6 +683,12 @@ country_decisions = {
 			}
 			NOT = { tag = BRA }
 			NOT = { tag = SAX }
+			NOT = { tag = GAT }
+			NOT = { tag = GSU }
+			NOT = { tag = SAX }
+			NOT = { tag = RUP }
+			NOT = { tag = GEW }
+			NOT = { tag = GHG }
 		}
 		provinces_to_highlight = {
 			OR = {
