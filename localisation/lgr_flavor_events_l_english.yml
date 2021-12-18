@@ -6,19 +6,19 @@
 #ROSTOCK
 #radical Reform?
 lgr_rostock_events.1.t:0 "Radical Reforms?"
-lgr_rostock_events.1.d:0 "Missing Localisation"
-lgr_rostock_events.1.a:0 "Missing Localisation"
-lgr_rostock_events.1.b:0 "Missing Localisation"
+lgr_rostock_events.1.d:0 "Mecklenburg is united under our wise rule. But some people say that a rebulic may be a good form of ruling for small cities, but a mighty realm like ours should be ruled by a king."
+lgr_rostock_events.1.a:0 "Let us crown a king!"
+lgr_rostock_events.1.b:0 "We can not abbandon our republican roots!"
 #A true Empire
 lgr_rostock_events.2.t:0 "A True Empire?"
-lgr_rostock_events.2.d:0 "Missing Loc"
+lgr_rostock_events.2.d:0 "Our Realm is massive. Our mighty Empire will be compared with the Roman Empire. We can and should invest in our imperial claim."
 lgr_rostock_events.2.a:0 "Invest in a Trade Empire"
 lgr_rostock_events.2.b:0 "Invest in a strong Army"
 lgr_rostock_events.2.c:0 "We should not abandon our roots!"
 
 #Election of the Rektor
 lgr_rostock_events.3.t:0 "Election of the Rektor"
-lgr_rostock_events.3.d:0 "Missing Loc"
+lgr_rostock_events.3.d:0 "We should determine the path of our mighty university for the coming years."
 lgr_rostock_events.3.a:0 "Research with a focus on developing our homelands"
 lgr_rostock_events.3.b:0 "Elect a theologian as the head of the university"
 lgr_rostock_events.3.c:0 "Focus on secular research"

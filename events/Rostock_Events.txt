@@ -339,7 +339,7 @@ country_event = {
 
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = leadered_peasant_rebels
 			}
 		}
@@ -371,20 +371,20 @@ country_event = {
 
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = noble_rebels
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
-				type = leadered_peasant_rebels
+				size = 1
+				type = peasant_rebels
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
 				size = 2
-				type = leadered_peasant_rebels
+				type = peasant_rebels
 			}
 		}
 	}
@@ -428,7 +428,7 @@ country_event = {
 		}
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = leadered_peasant_rebels
 			}
 		}
@@ -524,8 +524,8 @@ country_event = {
 		}
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
-				type = leadered_peasant_rebels
+				size = 1
+				type = peasant_rebels
 			}
 		}
 		add_stability = -1
@@ -546,7 +546,7 @@ country_event = {
 
 		random_owned_province = {
 			spawn_rebels = {
-				size = 2
+				size = 1
 				type = noble_rebels
 			}
 		}
