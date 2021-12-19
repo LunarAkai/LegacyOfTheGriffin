@@ -163,6 +163,12 @@ lgr_norse_spread_the_true_faith = {
 	enforce_religion_cost = -0.25
 }
 
+
+#Altmark
+lgr_altmark_connected_lands = {
+	prestige_decay = -0.05
+}
+
 #COMMON
 
 lgr_galleys = {

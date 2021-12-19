@@ -1,7 +1,7 @@
 ﻿l_english:
-#Brandenburg-Prussia
-lgr_custom_achievements.1.t:0 "Brandenburg-Prussia"
-lgr_custom_achievements.1.d:0 "You've earned the achievement >>Brandenburg-Prussia<< - Start as Altmark, form Brandenburg and have Prussia as a Vassal."
+#Prussia-Brandenburg
+lgr_custom_achievements.1.t:0 "Prussia-Brandenburg"
+lgr_custom_achievements.1.d:0 "You've earned the achievement >>Prussia-Brandenburg<< - Start as Altmark, form Brandenburg have your capital in Königsberg, while Prussia controls Berlin."
 lgr_custom_achievements.1.a:0 "Nice"
 
 #WHYYYYY
@@ -18,3 +18,8 @@ lgr_custom_achievements.3.a:0 "Nice"
 lgr_custom_achievements.4.t:0 "Legacy Of The Griffin"
 lgr_custom_achievements.4.d:0 "You've earned the achievement >>Legacy Of The Griffin<< - Complete the mission tree of Rostock."
 lgr_custom_achievements.4.a:0 "Nice"
+
+#Fischbrötchen
+lgr_custom_achievements.5.t:0 "Fischbrötchen"
+lgr_custom_achievements.5.d:0 "You've earned the achievement >>Fischbrötchen<< - As Stolp own every province producing fish while being the leading producer of grain "
+lgr_custom_achievements.5.a:0 "Nice"

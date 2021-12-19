@@ -1,6 +1,6 @@
 namespace = lgr_custom_achievements
 
-country_event = { #Brandenburg-Prussia, Start as Altmark, form Brandenburg and have Prussia as a Vassal
+country_event = { #Prussia-Brandenburg, Start as Altmark, form Brandenburg have your capital in Königsberg, while Prussia controls Berlin
 	id = lgr_custom_achievements.1
 
 	title = "lgr_custom_achievements.1.t"
@@ -13,10 +13,17 @@ country_event = { #Brandenburg-Prussia, Start as Altmark, form Brandenburg and h
 		AND = {
 			was_tag = GAT
 			tag = BRA
+			
 			has_switched_nation = no
+
 			PRU = {
-				vassal_of = ROOT
+				controls = 50
 			}
+
+			ROOT = {
+				capital = 41
+			}
+
 			ironman = yes
 		}
 	}
@@ -158,6 +165,43 @@ country_event = { #Legacy of the Griffin, Complete the mission tree of Rostock
 
 	option = {
 		name = "lgr_custom_achievements.4.a"
+		ai_chance = {
+			factor = 1
+		}
+		add_prestige = 5
+	}
+}
+
+country_event = { #Fischbrötchen, As Stolp own every province producing fish while being the leading producer of grain
+	id = lgr_custom_achievements.5
+	
+	title = "lgr_custom_achievements.5.t"
+	desc = "lgr_custom_achievements.5.d"
+
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		AND = {
+			OR = {
+				tag = GSP
+			}
+			has_switched_nation = no
+			ironman = yes
+
+			owns_all_provinces = {
+				trade_goods = fish
+			}
+
+			production_leader = {
+				trade_goods = grain
+			}
+		}
+
+	}
+
+	option = {
+		name = "lgr_custom_achievements.5.a"
 		ai_chance = {
 			factor = 1
 		}

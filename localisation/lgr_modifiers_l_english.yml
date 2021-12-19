@@ -45,6 +45,9 @@ lgr_norse_norse_religion:0 "Strength in Faith"
 lgr_norse_mission_stable_army:0 "Stable Army"
 lgr_norse_spread_the_true_faith:0 "Spread the true Faith"
 
+#Altmark Mission Modifiers
+lgr_altmark_connected_lands:0 "Connected Land"
+
 #Common Mission Modifiers
 lgr_galleys:0 "Galley Fleet"
 lgr_military_tradition:0 "Military Tradition"

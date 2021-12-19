@@ -1,7 +1,9 @@
 ﻿l_english:
 
 #LEGACY OF THE GRIFFIN
+############################################################################
 #ROSTOCK
+############################################################################
 lgr_rostock_befriend_luebeck_title:0 "Alliance with Lübeck"
 lgr_rostock_befriend_luebeck_desc:0 "We will need allies if we want to expand our realm..."
 lgr_rostock_conquer_ostmecklenburg_title:0 "Conquer Werle"
@@ -103,8 +105,9 @@ lgr_rostock_great_power_title:0 "Among Great Powers"
 lgr_rostock_great_power_desc:0 "We have big ambitions. The world should acknowledge our claim to be a great power."
 
 
-
+############################################################################
 #NORSE / NORLAND
+############################################################################
 #Main
 lgr_norland_stablize_the_army_title:0 "Stable Army"
 lgr_norland_stablize_the_army_desc:0 "Missing Loc"
@@ -154,6 +157,22 @@ lgr_norland_baltic_fleet_desc:0 "Missing Loc"
 
 lgr_norland_competitive_trading_title:0 "Compete in Trading"
 lgr_norland_competitive_trading_desc:0 "Missing Loc"
+
+############################################################################
+#ALTMARK MISSIONS
+############################################################################
+#Main
+lgr_altmark_mission_main_prepare_for_battle_title:0 "Prepare for Battle"
+lgr_altmark_mission_main_prepare_for_battle_desc:0 "Brandenburg is divided, we should push for a unification of the Brandenburgian Lands"
+
+lgr_altmark_missions_main_Altmark_And_Spandau_united_title:0 "Unite the two thrones"
+lgr_altmark_missions_main_Altmark_And_Spandau_united_desc:0 "The two major duchies in the Brandenburgian lands are Altmark and Spandau. Gaining control over Spandau would be a huge step forward in our path to unite Brandenburg"
+
+#Side Left
+lgr_altmark_missions_side_l_connect_our_lands_title:0 "Connect our lands"
+lgr_altmark_missions_side_l_connect_our_lands_desc:0 "Our home province of Altmark is disconnected from our seat of government in Berlin. The people in Altmark aren't happy about this situation."
+
+
 
 #GENERAL
 #TAGS

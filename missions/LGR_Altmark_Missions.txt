@@ -1,0 +1,145 @@
+lgr_altmark_missions_main = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_altmark_mission_main_prepare_for_battle = {
+		icon = a_show_of_strength
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.75
+		}
+
+		effect = {
+			add_casus_belli = {
+				target = GSU
+				type = cb_restore_personal_union
+				months = 120
+			}
+		}
+	}
+
+	lgr_altmark_missions_main_Altmark_And_Spandau_united = {
+		icon = renovate_berlin
+		position = 2
+		required_missions = {
+			lgr_altmark_mission_main_prepare_for_battle
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4945
+			}
+			NOT = { country_or_non_sovereign_subject_holds = root }
+		}
+
+		trigger = {
+			OR = {
+				GSU = {
+					is_subject_of = ROOT
+				}
+				AND = {
+					GSU = { exists  = no }
+					GAT = {
+						owns_core_province = 4945
+					}
+				}
+				
+			}
+			
+		}
+		effect = {
+
+			4786 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			mittelmark_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			neumark_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+lgr_altmark_mission_side_left = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_altmark_missions_side_l_connect_our_lands = {
+		icon = connect_further_austria
+		position = 3
+		required_missions = {
+			lgr_altmark_missions_main_Altmark_And_Spandau_united
+		}
+
+		provinces_to_highlight = {
+			province_id = 2964
+			OR = {
+				NOT = { owned_by = root }
+				is_in_capital_area = no
+			}
+		}
+
+		trigger = {
+			2964 = {
+				owned_by = root
+				is_in_capital_area = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_altmark_connected_lands
+				duration = 7300
+			}
+		}
+	}
+}
