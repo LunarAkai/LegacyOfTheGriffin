@@ -43,8 +43,8 @@ country_event = { #WHYYYYY, As Spandau own the entire Russian Region
 		AND = {
 			tag = GSU
 			has_switched_nation = no
-			owns_all_provinces = {
-				region = russia_region
+			russia_region = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			ironman = yes
 		}
@@ -75,11 +75,11 @@ country_event = { #Got them!, Starting as Denmark conquer all of Germany by 1550
 				was_tag = DAN
 			}
 			has_switched_nation = no
-			owns_all_provinces = {
-				region = north_german_region
+			north_german_region = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
-			owns_all_provinces = {
-				region = south_german_region
+			south_german_region = {
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			ironman = yes
 			NOT = {
@@ -164,5 +164,3 @@ country_event = { #Legacy of the Griffin, Complete the mission tree of Rostock
 		add_prestige = 5
 	}
 }
-
-#Ideas:
