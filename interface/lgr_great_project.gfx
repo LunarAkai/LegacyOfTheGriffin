@@ -1,0 +1,8 @@
+spriteTypes = { 
+	
+    spriteType = {
+        name = "GFX_great_project_lgr_st_peters_church"	
+        texturefile = "gfx//interface//great_projects//lgr_st_peters_church.dds"
+    }
+
+}

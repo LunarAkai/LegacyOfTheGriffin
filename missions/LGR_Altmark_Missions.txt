@@ -96,6 +96,73 @@ lgr_altmark_missions_main = {
 			}
 		}
 	}
+
+	lgr_altmark_mission_main_united_brandenburg = {
+		icon = electorate_of_brandenburg
+		position = 4
+		required_missions = {
+			lgr_altmark_missions_main_Altmark_And_Spandau_united
+			lgr_altmark_missions_side_l_connect_our_lands
+			lgr_altmark_missions_side_r_strong_army
+
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4945
+				province_id = 1759
+				province_id = 4748 
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			OR = {
+				ROOT = {
+					senior_union_with = GSU
+				}
+				AND = {
+					GSU = {
+						exists = no
+					}
+					GAT = {
+						owns_core_province = 4945
+						owns_core_province = 1759
+						owns_core_province = 4748
+					}
+				}
+				
+			}
+			grown_by_development = 30
+		}
+
+		effect = {
+
+			if = {
+				limit = {
+					ROOT = {
+						senior_union_with = GSU
+					}
+				}
+
+				ROOT = {
+					inherit = GSU
+				}
+			}
+
+			ROOT = {
+				change_tag = BRA
+				swap_non_generic_missions = yes
+				add_country_modifier = {
+					name = "centralization_modifier"
+					duration = 3650
+				}
+				
+				add_prestige = 20
+			}
+			
+		}
+	}
 }
 
 lgr_altmark_mission_side_left = {
@@ -141,5 +208,45 @@ lgr_altmark_mission_side_left = {
 				duration = 7300
 			}
 		}
+	}
+}
+
+lgr_altmark_side_right_mission = { 
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAT
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_altmark_missions_side_r_strong_army = {
+		icon = mission_teutonic_knights
+		position = 3
+		required_missions = {
+			lgr_altmark_missions_main_Altmark_And_Spandau_united
+		}
+
+		trigger = {
+			ROOT = {
+				army_tradition = 30
+			}
+		}
+
+		effect = {
+			ROOT = {
+				add_manpower = 5
+				create_general = {
+					tradition = 50
+				}
+			}
+		}
+
 	}
 }
