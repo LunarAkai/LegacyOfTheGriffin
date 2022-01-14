@@ -1,0 +1,614 @@
+﻿lgr_tBrandenburg_Missions_main = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_tbrandenburg_dev_grown = {
+		icon = renovate_berlin
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			
+		}
+		
+		trigger = {
+			ROOT = {
+				grown_by_development = 80
+			}
+		}
+
+		effect = {
+			rostock_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			schwerin_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			
+			lower_saxony_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			
+			if = {
+				limit = {
+					exists = BRU
+				}
+				add_casus_belli = {
+					target = BRU
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						exists = BRU
+					}
+				}
+				braunschweig_area = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	lgr_tbrandenburg_spandau_merc = {
+		position = 3
+		icon = mercenary_companies
+		required_missions = {
+			lgr_tbrandenburg_dev_grown
+		}
+
+		trigger = {
+			AND = {
+				ROOT = {
+					owns_core_province = 4945
+				}
+				army_tradition = 35
+				mil_power = 100
+			}
+		}
+
+		effect = {
+			hidden_effect = {
+				set_country_flag = lgr_unlocked_spandau_mercs
+			}
+			add_mil_power = -100			
+			custom_tooltip = lgr_unlocked_spandau_mercs_tooltip
+		}
+	}
+}
+
+lgr_tbrandenburg_missions_mecklenburg_and_beyond = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_tbrandenburg_mecklenburg_beyond_rostock_port = {
+		icon = overshadow_venice
+		position = 2
+		required_missions = {
+			lgr_tbrandenburg_dev_grown
+		}
+
+		trigger = {
+			46 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					base_production = 10
+				}
+			}
+		}
+
+		effect = {
+			46 = {
+				add_province_modifier = {
+					name = lgr_tbra_rostock_port
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	lgr_tbrandenburg_build_galleys = {
+		icon = mission_galleys_in_port
+		position = 3
+		required_missions = {
+			lgr_tbrandenburg_mecklenburg_beyond_rostock_port
+		}
+		trigger = { 
+			AND = {
+				navy_size_percentage = 1
+				num_of_galley = 10
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = lgr_tbra_galley_fleet
+				duration = -1
+			}
+		}
+	}
+
+	lgr_tbrandenburg_challenge_luebeck = {
+		icon = defend_the_city
+		position = 4
+		required_missions = {
+			lgr_tbrandenburg_build_galleys
+		}
+
+		trigger = {
+			AND = {
+				trade_income_percentage = 0.40
+
+				if = {
+					limit = {
+						exists = HSA
+					}
+					monthly_income = HSA
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							exists = HSA
+						}
+						
+					}
+					monthly_income = 10
+				}
+				
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				if = {
+					limit = {
+						province_has_center_of_trade_of_level = 1
+						NOT = { province_has_center_of_trade_of_level = 3 }
+					}
+					add_center_of_trade_level = 1
+				}
+				else_if = {
+					limit = {
+						NOT = { province_has_center_of_trade_of_level = 1 }
+					}
+					center_of_trade = 1
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 1
+					add_base_manpower = 1
+				}
+			}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+lgr_tbrandenburg_missions_dev_capital = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_tbrandenburg_spandau_citadell = {
+		icon = fortress_switzerland
+		position = 1
+		required_missions = {  }
+		provinces_to_highlight = {
+			
+		}
+
+		trigger = {
+			capital_scope = {
+				fort_level = 3
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = lgr_tbra_fortified_capital
+					duration = -1
+				}
+			}
+
+			define_advisor = {
+				type = fortification_expert
+				name = "Rocco Guerrini"
+				skill = 2
+				culture = tuscan
+				cost_multiplier = 0.5
+			}
+		}
+	}
+
+	lgr_tbrandenburg_prosperity_in_capital_area = {
+		icon = bohemian_crystal
+		position = 2
+		required_missions = {
+			lgr_tbrandenburg_spandau_citadell
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4945
+				province_id = 4944
+				province_id = 4748
+				province_id = 1759
+				province_id = 51
+				province_id = 50				
+			}
+			
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = lgr_tbrandenburg_prosperity_in_capital_area_tooltip
+				AND = {
+					4945 = {
+						is_prosperous = yes
+					}
+					4944 = {
+						is_prosperous = yes
+					}
+					4748 = {
+						is_prosperous = yes
+					}
+					1759 = {
+						is_prosperous = yes
+					}
+					51 = {
+						is_prosperous = yes
+					}
+					50 = {
+						is_prosperous = yes
+					}
+					
+					ROOT = {
+						owns_core_province = 4945
+						owns_core_province = 4944
+						owns_core_province = 4748
+						owns_core_province = 1759
+						owns_core_province = 51
+						owns_core_province = 50
+					}
+				}
+			}
+		}
+
+		effect = {
+			mittelmark_area = {
+				add_province_modifier = {
+					name = lgr_tbra_prosperity_in_mittelmark
+					duration = 7300
+				}
+			}	
+		}
+	}
+
+	lgr_tbrandenburg_byzantium_of_the_north = {
+		icon = convert_the_holy_lands
+		position = 3
+		required_missions = {
+			lgr_tbrandenburg_prosperity_in_capital_area
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4945
+			} NOT = {
+				4945 = {
+					development = 35
+				}
+			}
+		}
+
+		trigger = {
+			AND = {
+				4945 = {
+					owned_by = ROOT
+					development = 35
+					has_building = university
+				}
+			}
+			treasury = 2000
+		}
+
+		effect = {
+			country_event = {
+				id = lgr_spandau_events.1
+			}
+		}
+	}
+
+
+}
+
+lgr_tbrandenburg_missions_northgerman_expansion = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_tbrandenburg_subjugate_brunswick = {
+		icon = conquer_lower_saxony
+		position = 2
+		required_missions = { 
+			lgr_tbrandenburg_dev_grown
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = BRU
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			OR = {
+				BRU = {
+					vassal_of = ROOT
+				}
+				owns_all_provinces = {
+					area = braunschweig_area
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					BRU = {
+						vassal_of = ROOT
+					}
+				}
+
+				BRU = {
+					add_country_modifier = {
+						name = lgr_tbra_bru_subjugated
+						duration = -1
+					}
+				}
+			}
+
+			country_event = {
+				id = lgr_spandau_events.2
+			}
+		}
+	}
+
+	lgr_tbrandenburg_german_question_mission = {
+		icon = the_balance_of_power
+		position = 4
+		required_missions = { 
+			lgr_tbrandenburg_subjugate_brunswick
+		}
+
+		trigger = {
+			OR = {
+				is_emperor = yes
+					calc_true_if = {
+						all_subject_country = {
+							same_continent = ROOT
+							culture_group = germanic
+							capital_scope = {
+								region = north_german_region
+							}
+							
+						}
+						amount = 3
+					}
+				
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					is_emperor = yes
+				}
+				add_imperial_influence = 15
+			}
+
+			if = {
+				limit = {
+					is_emperor = no
+				}
+				add_dip_power = 100
+			}
+
+			add_prestige = 25
+		}
+	}
+}
+
+
+lgr_prussian_missions_main_slot = { #copied from vanilla
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_emp_brapru_reclaim_neumark = {
+		icon = mission_have_two_subjects
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				province_id = 49
+				province_id = 4747
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			owns_core_province = 49
+			owns_core_province = 4747
+		}
+		effect = {
+			vorpommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hinter_pommern_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	lgr_emp_brapru_conquer_pomerania = {
+		icon = mission_hanseatic_city
+		position = 3
+		required_missions = { lgr_emp_brapru_reclaim_neumark }
+		provinces_to_highlight = {
+			OR = {
+				area = vorpommern_area
+				area = hinter_pommern_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 4
+				OR = {
+					area = vorpommern_area
+					area = hinter_pommern_area
+				}
+			}
+		}
+		effect = {
+			add_legitimacy = 10
+			west_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_prussia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mittelmark_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}

@@ -27,7 +27,7 @@ lgr_rostock_cmw_heavy_ships:0 "Heavy Ships"
 lgr_rostock_overshine_luebeck:0 "Overshine Lübeck"
 lgr_rostock_big_baltic_navy:0 "Rule the Baltic"
 lgr_rostock_owns_hanseatic_cities:0 "Victory within the Hanse"
-lgr_rostock_economic_powerhouse:0 "Economic powerhouse"
+lgr_rostock_economic_powerhouse:0 "Economic hegemon"
 #rektor election
 lgr_rostock_rektor_dev:0 "Focus on developing"
 lgr_rostock_rektor_religious:0 "Focus on religion"
@@ -47,6 +47,21 @@ lgr_norse_spread_the_true_faith:0 "Spread the true Faith"
 
 #Altmark Mission Modifiers
 lgr_altmark_connected_lands:0 "Connected Land"
+
+#Spandau Mission Modifiers
+lgr_spandau_a_true_ren_city:0 "A true Renaissance City"
+lgr_spandau_economic_competition:0 "Economic competition"
+
+#Tall Brandenburg Mission Modifiers
+lgr_tbra_fortified_capital:0 "Spandau Citadel"
+lgr_tbra_prosperity_in_mittelmark:0 "Prosperity in Mittelmark"
+lgr_tbra_rostock_port:0 "Rostock Port"
+lgr_tbra_galley_fleet:0 "Brandenburg Baltic Fleet"
+lgr_tbra_bru_subjugated:0 "Subjugation of Brunswick"
+lgr_tbra_constantinople_of_the_north:0 "Constantinople of the North"
+lgr_tbra_push_for_emperor_modifier:0 "Ambitions for Holy Roman Emperor"
+lgr_tbra_without_hab_modifier:0 "Ambitions for a unification of Germany"
+lgr_gnc_fra_formed_german_confederation:0 "Germany formed a conferadtion!"
 
 #Common Mission Modifiers
 lgr_galleys:0 "Galley Fleet"

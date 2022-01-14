@@ -1,0 +1,25 @@
+#
+# Spandau Merc
+#
+
+lgr_spandau_company = {
+	regiments_per_development = 0.05
+	home_province = 4945 #Spandau
+	cavalry_weight = 0.2
+	cavalry_cap = 4
+	cost_modifier = -0.5
+	sprites = {
+		westerngfx_sprite_pack
+	}
+	trigger = {
+		has_country_flag = lgr_unlocked_spandau_mercs
+		religion_group = christian
+		capital_scope = {
+			continent = europe
+		}
+	}
+
+	modifier = {
+		discipline = 0.05
+	}
+}

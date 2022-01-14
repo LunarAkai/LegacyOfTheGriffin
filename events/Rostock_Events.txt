@@ -64,14 +64,7 @@ country_event = {
 
 		change_tag = GHC
 
-		if = {
-			limit = {
-				NOT = {
-					government_rank = 3
-				}
-			}
-			set_government_rank = 3
-		}
+	
 
 		add_prestige = 20
 
@@ -100,6 +93,15 @@ country_event = {
 		emperor = {
 			country_event = { id = hre_event.5 }
 		}
+		
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 3
+				}
+			}
+			set_government_rank = 3
+		}
 
 		add_country_modifier = {
 			name = "centralization_modifier"
@@ -118,15 +120,6 @@ country_event = {
 		name = "lgr_rostock_events.2.b"
 
 		change_tag = GHE
-
-		if = {
-			limit = {
-				NOT = {
-					government_rank = 3
-				}
-			}
-			set_government_rank = 3
-		}
 
 		add_prestige = 20
 
@@ -154,6 +147,15 @@ country_event = {
 
 		emperor = {
 			country_event = { id = hre_event.5 }
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					government_rank = 3
+				}
+			}
+			set_government_rank = 3
 		}
 
 		add_country_modifier = {

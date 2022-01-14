@@ -1,4 +1,4 @@
-lgr_altmark_missions_main = {
+﻿lgr_spandau_missions_main = {
 	slot = 3
 	generic = no
 	ai = yes
@@ -7,13 +7,13 @@ lgr_altmark_missions_main = {
 	}potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = GAT
+			tag = GSU
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
-	lgr_altmark_mission_main_prepare_for_battle = {
+	lgr_spandau_prepare_for_war = {
 		icon = a_show_of_strength
 		position = 1
 		required_missions = {  }
@@ -25,47 +25,87 @@ lgr_altmark_missions_main = {
 			army_size_percentage = 1
 			manpower_percentage = 0.75
 			num_of_generals = 1
-
 		}
 
 		effect = {
 			add_casus_belli = {
-				target = GSU
+				target = GAT
 				type = cb_restore_personal_union
 				months = 120
 			}
 		}
 	}
 
-	lgr_altmark_missions_main_Altmark_And_Spandau_united = {
+	lgr_spandau_missions_main_spandau_altmark_united = {
 		icon = renovate_berlin
 		position = 2
 		required_missions = {
-			lgr_altmark_mission_main_prepare_for_battle
+			lgr_spandau_prepare_for_war
 		}
+
 		provinces_to_highlight = {
 			OR = {
-				province_id = 4945
+				province_id = 50
 			}
 			NOT = { country_or_non_sovereign_subject_holds = root }
 		}
 
 		trigger = {
 			OR = {
-				GSU = {
+				GAT = {
 					is_subject_of = ROOT
 				}
 				AND = {
-					GSU = { exists  = no }
-					GAT = {
-						owns_core_province = 4945
+					GAT = { exists  = no }
+					GSU = {
+						owns_core_province = 50
 					}
 				}
-				
+			}
+		}
+
+		effect = {
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						AND = {
+							ROOT = {
+								is_part_of_hre = yes
+							}
+							hre_size = 1
+
+							OR = {
+								emperor = {
+									OR = {
+										has_opinion = {
+											who = ROOT
+											value = 150
+										}
+										alliance_with = ROOT
+									}
+								}
+								ROOT = {
+									is_emperor = yes
+								}
+							}	
+						}
+					}
+	
+					GAT = {
+						elector = no
+					}
+					GSU = {
+						elector = yes
+					}
+					
+				}
 			}
 			
-		}
-		effect = {
+			custom_tooltip = lgr_spandau_austria_elector_tooltip 
+				
+			
+			
 
 			4786 = {
 				if = {
@@ -97,25 +137,17 @@ lgr_altmark_missions_main = {
 				}
 			}
 		}
+
+		
 	}
 
-	lgr_altmark_mission_main_united_brandenburg = {
+	lgr_spandau_main_united_brandenburg = {
 		icon = electorate_of_brandenburg
 		position = 4
 		required_missions = {
-			lgr_altmark_missions_main_Altmark_And_Spandau_united
-			lgr_altmark_missions_side_l_connect_our_lands
-			lgr_altmark_missions_side_r_strong_army
-
-		}
-
-		provinces_to_highlight = {
-			OR = {
-				province_id = 4945
-				province_id = 1759
-				province_id = 4748 
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			lgr_spandau_mission_ren
+			lgr_spandau_missions_main_spandau_altmark_united
+			lgr_spandau_unite_compete_in_economy
 		}
 
 		trigger = {
@@ -124,21 +156,22 @@ lgr_altmark_missions_main = {
 					ROOT = {
 						senior_union_with = GAT
 					}
-					GSU = {
+					GAT = {
 						NOT = {
 							liberty_desire = 50
 						}
 					}
 				}
+				
 				AND = {
-					GSU = {
+					GAT = {
 						exists = no
 					}
-					GAT = {
-						owns_core_province = 50
+					GSU = {
 						owns_core_province = 4945
-						owns_core_province = 1759
-						owns_core_province = 4748
+						owns_core_province = 50
+						owns_core_province = 2964
+						owns_core_province = 2969
 					}
 				}
 				
@@ -147,23 +180,23 @@ lgr_altmark_missions_main = {
 		}
 
 		effect = {
-
 			if = {
 				limit = {
 					AND = {
 						ROOT = {
-							senior_union_with = GSU
+							senior_union_with = GAT
 						}
-						GSU = {
+						GAT = {
 							NOT = {
 								liberty_desire = 50
 							}
 						}
 					}
+					
 				}
 
 				ROOT = {
-					inherit = GSU
+					inherit = GAT
 				}
 			}
 
@@ -178,12 +211,11 @@ lgr_altmark_missions_main = {
 				
 				add_prestige = 20
 			}
-			
 		}
 	}
 }
 
-lgr_altmark_mission_side_left = {
+lgr_spandau_missions_side_ren = {
 	slot = 2
 	generic = no
 	ai = yes
@@ -192,44 +224,57 @@ lgr_altmark_mission_side_left = {
 	}potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = GAT
+			tag = GSU
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
-	lgr_altmark_missions_side_l_connect_our_lands = {
-		icon = connect_further_austria
+	lgr_spandau_mission_ren = {
+		icon = continue_the_renaissance
 		position = 3
 		required_missions = {
-			lgr_altmark_missions_main_Altmark_And_Spandau_united
+			lgr_spandau_missions_main_spandau_altmark_united
 		}
 
 		provinces_to_highlight = {
-			province_id = 2964
-			OR = {
-				NOT = { owned_by = root }
-				is_in_capital_area = no
+			AND = {
+				province_id = 4945
+				NOT = {
+					4945 = {
+						development = 15
+					}
+				}
 			}
 		}
 
 		trigger = {
-			2964 = {
-				owned_by = root
-				is_in_capital_area = yes
+			AND = {
+				ROOT = {
+					owns_core_province = 4945
+				}
+				4945 = {
+					development = 15
+				}
 			}
 		}
 
 		effect = {
-			add_country_modifier = {
-				name = lgr_altmark_connected_lands
-				duration = 7300
+			4945 = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 50
+				}
+				add_province_modifier = {
+					name = lgr_spandau_a_true_ren_city
+					duration = 7300
+				}
 			}
 		}
 	}
 }
 
-lgr_altmark_side_right_mission = { 
+lgr_spandau_mission_side_unite_brandenburg_realm = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -238,31 +283,45 @@ lgr_altmark_side_right_mission = {
 	}potential = {
 		has_dlc = "Emperor"
 		OR = {
-			tag = GAT
+			tag = GSU
 		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 
-	lgr_altmark_missions_side_r_strong_army = {
-		icon = mission_teutonic_knights
+	lgr_spandau_unite_compete_in_economy = {
+		icon = reform_the_state
 		position = 3
 		required_missions = {
-			lgr_altmark_missions_main_Altmark_And_Spandau_united
+			lgr_spandau_missions_main_spandau_altmark_united
+		}
+
+		provinces_to_highlight = {
+			AND = {
+				province_id = 4945
+				NOT = {
+					4945 = {
+						base_tax = 8
+					}
+				}
+			}
 		}
 
 		trigger = {
-			ROOT = {
-				army_tradition = 30
+			AND = {
+				ROOT = {
+					monthly_income = 5
+				}
+				4945 = {
+					base_tax = 8
+				}
 			}
 		}
 
 		effect = {
-			ROOT = {
-				add_manpower = 5
-				create_general = {
-					tradition = 50
-				}
+			add_country_modifier = {
+				name = lgr_spandau_economic_competition
+				duration = 7300
 			}
 		}
 

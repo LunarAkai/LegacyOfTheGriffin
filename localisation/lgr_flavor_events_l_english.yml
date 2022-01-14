@@ -67,3 +67,18 @@ lgr_norse_events.1.d:0 "Missing Loc"
 
 lgr_norse_events.2.t:0 "Missing Loc"
 lgr_norse_events.2.d:0 "Missing Loc"
+
+#TALL BRANDENBURG // SPANDAu
+
+lgr_spandau_events.1.t:0 "Constantinople of the North"
+lgr_spandau_events.1.d:0 "Missing Loc"
+
+lgr_spandau_events.1.a:0 "Lets renovate our great city of Spandau!"
+lgr_spandau_events.1.b:0 "It's too expensive!"
+
+#The German Question
+lgr_spandau_events.2.t:0 "The German Question"
+lgr_spandau_events.2.d:0 "Missing Loc"
+
+lgr_spandau_events.2.a:0 "We should claim the title of the Holy Roman Emperor"
+lgr_spandau_events.2.b:0 "We should unite Germany on our own, without the von Habsburg!"

@@ -1409,10 +1409,31 @@ lgr_rostock_flavour_mission = {
 			}
 		}
 		trigger = {
-			AND = {
-				capital_scope = { higher_development_than = 45 }
-				monthly_income = HSA
+			if = {
+				limit = {
+					exists = HSA
+				}
+
+				AND = {
+					capital_scope = { higher_development_than = 45 }
+					monthly_income = HSA
+				}
 			}
+
+			if = {
+				limit = {
+					NOT = { exists = HSA }
+				}
+				
+				AND = {
+					capital_scope = {
+						development = 20
+					}
+					monthly_income = 6.0
+				}
+			}
+
+			
 			
 		}
 		effect = {

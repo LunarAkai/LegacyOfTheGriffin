@@ -148,3 +148,95 @@ GNL_ideas = {
 	}
 
 }
+
+LGR_TBRA_ideas = { #Tall Brandenburg/Spandau // Base
+	start = {
+		development_cost = -0.10
+		build_cost = -0.10
+	}
+	bonus = {
+		technology_cost = -0.05
+	}
+	trigger = {
+		AND = {
+			tag = BRA
+			was_tag = GSU	
+		}
+	}
+	free = yes
+
+	lgr_tbra_properity_in_spandau = {
+		global_prosperity_growth = 0.1
+	}
+
+	lgr_tbra_spandau_diplomatic_skill = {
+		diplomatic_reputation = 1
+	}
+
+	lgr_tbra_efficient_goverment = {
+		state_governing_cost = -0.15
+	}
+
+	lgr_tbra_peace_in_our_lands = {
+		global_unrest = -2
+	}
+
+	lgr_tbra_tax_collecting = {
+		global_tax_modifier = 0.15
+	}
+
+	lgr_tbra_interest_banking = {
+		interest = -0.5
+	}
+
+	lgr_tbra_great_spandau = {
+		infantry_power = 0.10
+		core_creation = -0.05
+	}
+}
+
+LGR_GNC_ideas = { #North German Confederation 
+	start = {
+		development_cost = -0.10
+		army_tradition = 0.5
+	}
+	bonus = {
+		administrative_efficiency = 0.05
+	}
+	trigger = {
+		tag = GNC
+	}
+	free = yes
+
+	lgr_gnc_unrest = {
+		global_unrest = -2
+	}
+
+	lgr_gnc_legitimacy = {
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+	}
+
+	lgr_gnc_diplomatic_rep = {
+		diplomatic_reputation = 1
+	}
+
+	lgr_gnc_trade_eff = {
+		trade_efficiency = 0.1
+	}
+
+	lgr_gnc_blut_und_eisen = {
+		infantry_power = 0.10
+		artillery_cost = -0.2
+	}
+
+	lgr_gnc_kohle_und_stahl = {
+		global_trade_goods_size_modifier = 0.15
+	}
+
+	lgr_gnc_navy = {
+		heavy_ship_power = 0.10
+	}
+}
+

@@ -17,6 +17,7 @@ GHG = "countries/Havelberg.txt"
 GEW = "countries/Eberswalde.txt"
 GAT = "countries/Altmark.txt" #Wide Brandenburg
 GSU = "countries/Spandau.txt" #Tall Brandenburg
+GNC = "countries/Northgermanconferadtion.txt" #North German Conferadtion
 
 #Scandinvia
 GNL = "countries/Norland.txt" #Norse Refuge

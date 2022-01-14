@@ -2,19 +2,19 @@
 #Legacy of the Griffin
 #Mecklenburg
 GRO:0 "Rostock"
-GRO_ADJ:0 "Rostocker"
+GRO_ADJ:0 "Rostock"
 GWI:0 "Wismar"
-GWI_ADJ:0 "Wismarer"
+GWI_ADJ:0 "Wismar"
 GRZ:0 "Ratzeburg"
-GRZ_ADJ:0 "Ratzeburger"
+GRZ_ADJ:0 "Ratzeburg"
 GSW:0 "Schwerin"
-GSW_ADJ:0 "Schweiner"
+GSW_ADJ:0 "Schwerin"
 GWE:0 "Werle"
-GWE_ADJ:0 "Werler"
+GWE_ADJ:0 "Werle"
 GBA:0 "Barth"
-GBA_ADJ:0 "Barther"
+GBA_ADJ:0 "Barth"
 GSP:0 "Stolp"
-GSP_ADJ:0 "Stolper"
+GSP_ADJ:0 "Stolp"
 
 #Mecklenburg Formables
 GHE:0 "Hanseatic Empire"
@@ -24,14 +24,16 @@ GHC_ADJ:0 "Hanseatic"
 
 #Brandenburg
 GHG:0 "Havelberg"
-GHG_ADJ:0 "Havelberger"
+GHG_ADJ:0 "Havelberg"
 GEW:0 "Eberswalde"
-GEW_ADJ:0 "Eberswalder"
+GEW_ADJ:0 "Eberswalde"
 GAT:0 "Altmark"
-GAT_ADJ:0 "Altmarker"
+GAT_ADJ:0 "Altmarke"
 GSU:0 "Spandau"
-GSU_ADJ:0 "Spandauer"
+GSU_ADJ:0 "Spandau"
+GNC:0 "North German Confederation"
+GNC_ADJ:0 "North German"
 
 #Scandinvia
 GNL:0 "Norland"
-GNL_ADJ:0 "Norlander"
+GNL_ADJ:0 "Norland"

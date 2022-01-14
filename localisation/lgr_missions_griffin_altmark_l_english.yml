@@ -1,0 +1,22 @@
+﻿l_english:
+#Legacy of the Griffin - 1.0
+############################################################################
+#ALTMARK MISSIONS
+############################################################################
+#Main
+lgr_altmark_mission_main_prepare_for_battle_title:0 "Prepare for Battle"
+lgr_altmark_mission_main_prepare_for_battle_desc:0 "Brandenburg is divided, we should push for a unification of the Brandenburgian Lands"
+
+lgr_altmark_missions_main_Altmark_And_Spandau_united_title:0 "Unite the two thrones"
+lgr_altmark_missions_main_Altmark_And_Spandau_united_desc:0 "The two major duchies in the Brandenburgian lands are Altmark and Spandau. Gaining control over Spandau would be a huge step forward in our path to unite Brandenburg"
+
+lgr_altmark_mission_main_united_brandenburg_title:0 "United Brandenburg"
+lgr_altmark_mission_main_united_brandenburg_desc:0 "Missing Loc"
+
+#Side Left
+lgr_altmark_missions_side_l_connect_our_lands_title:0 "Connect our lands"
+lgr_altmark_missions_side_l_connect_our_lands_desc:0 "Our home province of Altmark is disconnected from our seat of government in Berlin. The people in Altmark aren't happy about this situation."
+
+#Side Right
+lgr_altmark_missions_side_r_strong_army_title:0 "Strong Army"
+lgr_altmark_missions_side_r_strong_army_desc:0 "The military plays an important role in our society. We could benefit greatly, if we improve our army."

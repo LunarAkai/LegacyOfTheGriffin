@@ -1025,7 +1025,11 @@ BRA_ideas = {
 	}
 	
 	trigger = {
-		tag = BRA
+		AND = {
+			tag = BRA
+			was_tag = GAT
+		}
+		
 	}
 	free = yes		#will be added at load.
 	

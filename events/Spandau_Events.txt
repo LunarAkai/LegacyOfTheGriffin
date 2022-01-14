@@ -1,1 +1,83 @@
 namespace = lgr_spandau_events
+
+country_event = {
+
+	id = lgr_spandau_events.1 #Constantinople of the North
+	title = "lgr_spandau_events.1.t"
+	desc = "lgr_spandau_events.1.d"
+	is_triggered_only = yes
+
+	picture = GREAT_BUILDING_eventPicture
+
+	option = {
+		name = lgr_spandau_events.1.a
+
+		ai_chance = {
+			factor = 100
+		}
+
+		4945 = {
+			add_province_modifier = {
+				name = lgr_tbra_constantinople_of_the_north
+				duration = -1
+			}
+		}
+		add_treasury = -2000
+	}
+
+	option = {
+		name = lgr_spandau_events.1.b
+
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -20
+	}
+}
+
+country_event = {
+	id = lgr_spandau_events.2 #The German Question
+	title = "lgr_spandau_events.2.t"
+	desc = "lgr_spandau_events.2.d"
+	is_triggered_only = yes
+
+	picture = REFORM_eventPicture
+
+	option = {
+		name = lgr_spandau_events.2.a 
+
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+			set_country_flag = lgr_tbrandenburg_push_for_emperorship
+		}
+
+		add_country_modifier = {
+			name = lgr_tbra_push_for_emperor_modifier
+			duration = -1
+		}
+	}
+
+	option = {
+		name = lgr_spandau_events.2.b
+
+		ai_chance = {
+			factor = 50
+		}
+
+		hidden_effect = {
+			set_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+			set_country_flag = lgr_tbrandenburg_allow_dis_northgerman_confederation
+		}
+
+		add_country_modifier = {
+			name = lgr_tbra_without_hab_modifier
+			duration = -1
+		}
+
+		custom_tooltip = lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip
+	}
+}

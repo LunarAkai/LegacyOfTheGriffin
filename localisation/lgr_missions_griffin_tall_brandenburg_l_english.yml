@@ -1,0 +1,48 @@
+﻿l_english:
+#LEGACY OF THE GRIFFIN - 1.0
+############################################################################
+#TALL BRANDENBURG / SPANDAU
+############################################################################
+
+#Main Missions
+lgr_tbrandenburg_dev_grown_title:0 "Strong Brandenburg"
+lgr_tbrandenburg_dev_grown_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_spandau_merc_title:0 "Spandau Company"
+lgr_tbrandenburg_spandau_merc_desc:0 "Missing Loc"
+
+#Mecklenburg and Beyond
+lgr_tbrandenburg_mecklenburg_beyond_rostock_port_title:0 "Rostock Port"
+lgr_tbrandenburg_mecklenburg_beyond_rostock_port_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_build_galleys_title:0 "Build galley fleet"
+lgr_tbrandenburg_build_galleys_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_challenge_luebeck_title:0 "Challenge Lübeck"
+lgr_tbrandenburg_challenge_luebeck_desc:0 "Missing Loc"
+
+
+#North German Expansion 
+lgr_tbrandenburg_subjugate_brunswick_title:0 "Subjugate Brunswick"
+lgr_tbrandenburg_subjugate_brunswick_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_german_question_mission_title:0 "German Question"
+lgr_tbrandenburg_german_question_mission_desc:0 "Missing Loc"
+
+
+#Dev Capital Mission
+lgr_tbrandenburg_spandau_citadell_title:0 "Spandau Citadel"
+lgr_tbrandenburg_spandau_citadell_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_prosperity_in_capital_area_title:0 "Prosperity in Mittelmark"
+lgr_tbrandenburg_prosperity_in_capital_area_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_byzantium_of_the_north_title:0 "Desired City"
+lgr_tbrandenburg_byzantium_of_the_north_desc:0 "Missing Loc"
+
+#pommerania
+lgr_emp_brapru_reclaim_neumark_title:0 "Reclaim Neumark"
+lgr_emp_brapru_reclaim_neumark_desc:0 "The province of Neumark was once an integral part of Brandenburg. It was leased to the Teutonic Knights, but they have neglected the land, causing its local burghers to demand a return to the old administration."
+
+lgr_emp_brapru_conquer_pomerania_title:0 "Conquer Pomerania"
+lgr_emp_brapru_conquer_pomerania_desc:0 "We have rights to succession to the Duchy of Pomerania. The only way to ensure that our claims are not forgotten is to seize the region by force."

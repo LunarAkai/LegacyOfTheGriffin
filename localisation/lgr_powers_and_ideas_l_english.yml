@@ -82,3 +82,56 @@ lgr_norse_viking_traditions_desc:0 "Missing Loc"
 
 lgr_norse_crusade_against_the_world:0 "Crusade against the world"
 lgr_norse_crusade_against_the_world_desc:0 "Missing Loc"
+
+#Tall Brandenburg / Spandau
+LGR_TBRA_ideas:0 "Brandenburg Ideas"
+LGR_TBRA_ideas_start:0 "Brandenburg Traditions"
+LGR_TBRA_ideas_bonus:0 "Brandenburg Ambition"
+
+lgr_tbra_properity_in_spandau:0 "Prosperity in Spandau"
+lgr_tbra_properity_in_spandau_desc:0 "Missing Loc"
+
+lgr_tbra_spandau_diplomatic_skill:0 "Spandau Diplomats"
+lgr_tbra_spandau_diplomatic_skill_desc:0 "Missing Loc"
+
+lgr_tbra_efficient_goverment:0 "Efficient Government"
+lgr_tbra_efficient_goverment_desc:0 "Missing Loc"
+
+lgr_tbra_peace_in_our_lands:0 "Peace in our lands"
+lgr_tbra_peace_in_our_lands_desc:0 "Missing Loc"
+
+lgr_tbra_tax_collecting:0 "Tax system"
+lgr_tbra_tax_collecting_desc:0 "Missing Loc"
+
+lgr_tbra_interest_banking:0 "Advanced Banking"
+lgr_tbra_interest_banking_desc:0 "Missing Loc"
+
+lgr_tbra_great_spandau:0 "Great Spandau"
+lgr_tbra_great_spandau_desc:0 "Missing Loc"
+
+#North German Conferadtion
+LGR_GNC_ideas:0 "North German Ideas"
+LGR_GNC_ideas_start:0 "North German Traditions"
+LGR_GNC_ideas_bonus:0 "North German Ambition"
+
+lgr_gnc_unrest:0 "Peace in our lands"
+lgr_gnc_unrest_desc:0 "Missing Loc"
+
+lgr_gnc_legitimacy:0 "German Crown"
+lgr_gnc_legitimacy_desc:0 "Missing Loc"
+
+lgr_gnc_diplomatic_rep:0 "Diplomatic Succes"
+lgr_gnc_diplomatic_rep_desc:0 "Missing Loc"
+
+lgr_gnc_trade_eff:0 "Neue Hanse"
+lgr_gnc_trade_eff_desc:0 "Missing Loc"
+
+lgr_gnc_blut_und_eisen:0 "Blut und Eisen"
+lgr_gnc_blut_und_eisen_desc:0 "Missing Loc"
+
+lgr_gnc_kohle_und_stahl:0 "Kohle und Stahl"
+lgr_gnc_kohle_und_stahl_desc:0 "Missing Loc"
+
+lgr_gnc_navy:0 "Naval Ambitions"
+lgr_gnc_navy_desc:0 "Missing Loc"
+

@@ -74,7 +74,11 @@ country_decisions = {
 				is_playing_custom_nation = no
 			}
 			NOT = { has_reform = celestial_empire } 
-			tag = BRA
+			AND = {
+				tag = BRA
+				was_tag = GAT
+			}
+			
 			OR = {
 				NOT = { exists = PRU }
 				ai = no
@@ -354,7 +358,6 @@ country_decisions = {
 			NOT = { tag = PRU
 					tag = GRO
 					tag = GWI
-					tag = GRZ
 					tag = GSW
 					tag = GWE
 					tag = GHC
@@ -363,7 +366,8 @@ country_decisions = {
 					tag = GSU
 					tag = GEW
 					tag = RUP
-					tag = GHG }
+					tag = GHG
+					tag = GNC }
 			OR = {
 				NOT = { exists = PRU }
 				ai = no

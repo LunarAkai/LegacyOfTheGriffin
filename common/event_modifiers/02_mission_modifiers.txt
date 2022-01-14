@@ -169,6 +169,60 @@ lgr_altmark_connected_lands = {
 	prestige_decay = -0.05
 }
 
+#SPANDAU
+
+lgr_spandau_a_true_ren_city = {
+	local_development_cost = -0.10
+}
+
+lgr_spandau_economic_competition = {
+	inflation_reduction = 0.10
+	tax_income = 5
+}
+
+#Tall Brandenburg / Spandau
+
+lgr_tbra_fortified_capital = {
+	local_defensiveness = 0.25
+	garrison_growth = 0.10
+}
+
+lgr_tbra_prosperity_in_mittelmark = {
+	local_build_time = -0.20
+	local_build_cost = -0.10
+}
+
+lgr_tbra_rostock_port = {
+	ship_recruit_speed = -0.25
+}
+
+lgr_tbra_galley_fleet= {
+	navy_tradition_decay = -0.03
+	trade_efficiency = 0.05
+}
+
+lgr_tbra_bru_subjugated = {
+	liberty_desire = -100
+}
+
+lgr_tbra_constantinople_of_the_north = {
+	local_development_cost = -0.33
+	local_unrest = -10
+	local_institution_spread = 0.2
+	local_prosperity_growth = 0.15
+}
+
+lgr_tbra_push_for_emperor_modifier = {
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.35
+	imperial_authority = 0.02
+}
+
+lgr_tbra_without_hab_modifier = {
+	diplomatic_upkeep = 2
+	liberty_desire_from_subject_development = -0.35
+}
+
 #COMMON
 
 lgr_galleys = {

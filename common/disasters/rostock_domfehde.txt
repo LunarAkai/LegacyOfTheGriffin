@@ -6,6 +6,12 @@ rostock_domfehde = {
 		NOT = {
 			has_country_flag = had_rostock_domfehde
 		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+		}
 		is_free_or_tributary_trigger = yes
 		normal_or_historical_nations = yes
 		uses_doom = no
@@ -15,6 +21,13 @@ rostock_domfehde = {
 		AND = {
 			has_any_disaster = no
 			is_year = 1483
+		}
+		NOT = {
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
+			
 		}
 	}
 

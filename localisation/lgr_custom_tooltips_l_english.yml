@@ -11,3 +11,12 @@ lgr_rostock_rule_the_baltic_tooltip:0 "No country:\n   Has a port on the §YBalt
 
 #Norse Crusade
 lgr_norse_crusade_tt:0 "Unlocks §YNorse Crusade§! Casus Belli. Allowing us to convert §YHeathens§! to the true faith"
+
+#Spandau
+lgr_spandau_austria_elector_tooltip:0 "If the §YEmperor§! has an opinion of §Y150§! towards us, is §Yallied to us§! or if we are the Emperor, the Emperor will transfer the elector status of Altmark to us!  \n"
+
+#Tall Brandenburg / <= Spandau
+lgr_tbrandenburg_prosperity_in_capital_area_tooltip:0 "Every Province in the §YMittelmark-Area§! must be owned by §Y[Root.GetName]§! and must have §YProsperity§!"
+lgr_tbrandenburg_prosperity_mission_upgrade:0 "If we complete this mission, our idea §YProsperity in Spandau§! will be improved!"
+lgr_unlocked_spandau_mercs_tooltip:0 "Unlocks the §YSpandau Citadele Company§! based in §YSpandau§! With a modifier of §G+5% Discipline§! and a base cost reduction of §G50%§!."
+lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip:0 "\n Unlocks a decision allowing us to form the §YNorth German Confederation§! if we meet the requirements."
