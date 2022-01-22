@@ -4,13 +4,21 @@ tooltip_lgr_norse_dev_homelands:0 "Every owned province in Livonia, Estonia, and
 #Rostock
 lgr_rostock_rostocker_domfehde_active_for_10_years:0 "Disaster has been active for 10 years."
 
+lgr_rostock_rule_the_baltic_tooltip:0 "No country:\n   Has a port on the §YBaltic Sea§!.\n   Has a larger fleet than §Y[Root.GetName]§!."
+
+#Norse
+lgr_norse_crusade_tt:0 "Unlocks §YNorse Crusade§! Casus Belli. Allowing us to convert §YHeathens§! to the true faith"
+
 lgr_norse_true_faith_int:0 ""
 tooltip_lgr_norse_spread_the_true_faith:0 " neighbouring countries that are not our subjects are §Y[Root.Religion.GetName]§!"
 
-lgr_rostock_rule_the_baltic_tooltip:0 "No country:\n   Has a port on the §YBaltic Sea§!.\n   Has a larger fleet than §Y[Root.GetName]§!."
+tooltip_lgr_norse_attack_the_empire:0 " countries within the Holy Roman Empire is/are at war with §Y[Root.GetName]§!"
 
-#Norse Crusade
-lgr_norse_crusade_tt:0 "Unlocks §YNorse Crusade§! Casus Belli. Allowing us to convert §YHeathens§! to the true faith"
+tooltip_lgr_norse_norse_empire:0 " countries within the Holy Roman Empire that are not our subjects are §Y[Root.Religion.GetName]§!"
+
+lgr_norse_convert_scandinavia_tooltip:0 "Every owned province in the §YScandinavia Region§! gets §YConverted to the true faith§! giving the following effect: \nYears of Seperatism §G-10§!"
+
+lgr_norland_own_crownland_tooltip:0 "[Root.GetName] gains §G10 Absolutism§!"
 
 #Spandau
 lgr_spandau_austria_elector_tooltip:0 "If the §YEmperor§! has an opinion of §Y150§! towards us, is §Yallied to us§! or if we are the Emperor, the Emperor will transfer the elector status of Altmark to us!  \n"
@@ -20,3 +28,5 @@ lgr_tbrandenburg_prosperity_in_capital_area_tooltip:0 "Every Province in the §Y
 lgr_tbrandenburg_prosperity_mission_upgrade:0 "If we complete this mission, our idea §YProsperity in Spandau§! will be improved!"
 lgr_unlocked_spandau_mercs_tooltip:0 "Unlocks the §YSpandau Citadele Company§! based in §YSpandau§! With a modifier of §G+5% Discipline§! and a base cost reduction of §G50%§!."
 lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip:0 "\n Unlocks a decision allowing us to form the §YNorth German Confederation§! if we meet the requirements."
+lgr_tbrandenburg_kick_bohemia_out_of_the_hre:0 "If we choosed to §YBuild an Empire without the von Habsburg§! in the §YGerman Question Event§! and if the §YEmperor§! has at least an opinion of 190 towards us, or if §Ywe are the Emperor§!. §YBohemia§! gets an Event that might force them out of the HRE"
+lgr_tbrandenburg_weaken_poland_pu_tooltip:0 "If we are the §YNorth German Confederation§! we will gain a §YRestore Personal Union Casus Belli§! on Poland."

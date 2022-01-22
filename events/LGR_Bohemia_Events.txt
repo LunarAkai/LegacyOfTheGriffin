@@ -1,0 +1,87 @@
+namespace = lgr_bohemia_events
+
+country_event = {
+	id = lgr_bohemia_events.1 
+
+	title = "lgr_bohemia_events.1.t"
+	desc = "lgr_bohemia_events.1.d"
+
+	is_triggered_only = yes
+
+	picture = ADVISOR_eventPicture
+
+	option = {
+		name = "lgr_bohemia_events.1.a"
+
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 80
+				BRA = {
+					army_strength = {
+						who = BOH
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = -20
+				BOH = {
+					army_strength = {
+						who = BRA
+						value = 1
+					}
+				}
+			}
+		}
+
+		BOH = {
+			set_in_empire = no
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = BRA
+				months = 120
+			}
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = emperor
+				months = 120
+			}
+		}
+	}
+
+	option = {
+		name = "lgr_bohemia_events.1.b"
+
+		ai_chance = {
+			factor = 80
+			modifier = {
+				factor = -80
+				BRA = {
+					army_strength = {
+						who = BOH
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 20
+				BOH = {
+					army_strength = {
+						who = BRA
+						value = 1
+					}
+				}
+			}
+		}
+
+		BOH = {
+			add_casus_belli = {
+				type = cb_insult
+				target = BRA
+				months = 120
+			}
+		}
+	}
+
+}

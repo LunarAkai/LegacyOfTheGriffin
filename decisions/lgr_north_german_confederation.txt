@@ -25,7 +25,7 @@ country_decisions = {
 			is_nomad = no
 			is_at_war = no
 			is_emperor = no
-			adm_tech = 10
+			adm_tech = 17
 			AND = {
 				owns_core_province = 4945 #Spandau
 				owns_core_province = 50 #Berlin
@@ -101,12 +101,7 @@ country_decisions = {
 				country_event = { id = hre_event.5 }
 			}
 
-			GNC = { set_government_rank = 3 }
-
-			reverse_add_opinion = {
-				who = FRA
-				modifier = lgr_gnc_fra_formed_german_confederation
-			}
+			GNC = { set_government_rank = 2 }
 
 			add_prestige = 25
 			set_country_flag = lgr_formed_north_german_confed_flag		

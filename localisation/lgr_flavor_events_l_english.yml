@@ -82,3 +82,14 @@ lgr_spandau_events.2.d:0 "Missing Loc"
 
 lgr_spandau_events.2.a:0 "We should claim the title of the Holy Roman Emperor"
 lgr_spandau_events.2.b:0 "We should unite Germany on our own, without the von Habsburg!"
+
+#Unification of Germany
+lgr_spandau_events.3.t:0 "Proclamation of the German Empire"
+lgr_spandau_events.3.d:0 "Missing Loc"
+lgr_spandau_events.3.a:0 "Unity and justice and freedom for the German fatherland!"
+
+#BOHEMIA 
+lgr_bohemia_events.1.t:0 "Brandenburg wants us to leave the Empire"
+lgr_bohemia_events.1.d:0 "The new kingdom of Brandenburg, who stole our lusatian lands, wants us to leave to Holy Roman Empire. If they have the emperor on their side, we might have no other option..."
+lgr_bohemia_events.1.a:0 "Fine,... we will leave."
+lgr_bohemia_events.1.b:0 "We will never leave the Empire!"

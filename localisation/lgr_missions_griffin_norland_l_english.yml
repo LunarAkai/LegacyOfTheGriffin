@@ -16,11 +16,20 @@ lgr_norland_survive_desc:0 "Missing Loc"
 lgr_norland_attack_scandinavia_title:0 "Attack Scandinavia"
 lgr_norland_attack_scandinavia_desc:0 "Missing Loc"
 
+lgr_norland_sweden_mission_title:0 "Return to Stockholm"
+lgr_norland_sweden_mission_desc:0 "Missing Loc"
+
+lgr_norland_norway_mission_title:0 "Reintegrate Norway"
+lgr_norland_norway_mission_desc:0 "Missing Loc"
+
+lgr_norland_Viking_home_title:0 "Odin's Empire"
+lgr_norland_Viking_home_desc:0 "Missing Loc"
+
 #Religious Mission
 lgr_norland_religious_start_title:0 "Strength in Faith"
 lgr_norland_religious_start_desc:0 "Missing Loc"
 
-lgr_norland_war_with_the_heathens_title:0 "War against the Heathens"
+lgr_norland_war_with_the_heathens_title:0 "War against the Order"
 lgr_norland_war_with_the_heathens_desc:0 "Missing Loc"
 
 lgr_norland_expel_the_heathens_title:0 "Expel the Heathens"
@@ -29,12 +38,33 @@ lgr_norland_expel_the_heathens_desc:0 "Missing Loc"
 lgr_norland_spread_the_true_faith_title:0 "Spread the True Faith"
 lgr_norland_spread_the_true_faith_desc:0 "Missing Loc"
 
+lgr_norland_convert_scandinavia_title:0 "Convert Scandinavia"
+lgr_norland_convert_scandinavia_desc:0 "Missing Loc"
+
+lgr_norland_humiliate_denmark_title:0 "Humiliate Denmark"
+lgr_norland_humiliate_denmark_desc:0 "Missing Loc"
+
+lgr_norland_hanse_title:0 "Rival the Hanse"
+lgr_norland_hanse_desc:0 "Missing Loc"
+
+lgr_norland_invade_england_title:0 "Invasion of England"
+lgr_norland_invade_england_desc:0 "Missing Loc"
+
 #Religious Side Missions
 lgr_norland_dismantle_teutonic_order_title:0 "Dismantle Teutonic Order"
 lgr_norland_dismantle_teutonic_order_desc:0 "Missing Loc"
 
 lgr_norland_integrate_prussian_culture_title:0 "Prussian Culture"
 lgr_norland_integrate_prussian_culture_desc:0 "Missing Loc"
+
+lgr_norland_attack_the_empire_title:0 "Attack the Empire"
+lgr_norland_attack_the_empire_desc:0 "Missing Loc"
+
+lgr_norland_norse_empire_title:0 "Holy Norse Empire"
+lgr_norland_norse_empire_desc:0 "Missing Loc"
+
+lgr_norland_dismantle_hre_title:0 "Dismantle the Empire"
+lgr_norland_dismantle_hre_desc:0 "Missing Loc"
 
 #Diplomatic Missions
 lgr_norland_have_an_ally_title:0 "Get an Ally"
@@ -47,9 +77,44 @@ lgr_norland_controll_livonian_order_desc:0 "Missing Loc"
 lgr_norland_dev_our_homelands_title:0 "Focus on our Homelands"
 lgr_norland_dev_our_homelands_desc:0 "Missing Loc"
 
+lgr_norland_finland_mission_title:0 "Invade Finland"
+lgr_norland_finland_mission_desc:0 "Missing Loc"
+
+lgr_norland_seize_neva_title:0 "Seize Neva"
+lgr_norland_seize_neva_desc:0 "Missing Loc"
+
 #Trade Missions
 lgr_norland_baltic_fleet_title:0 "Baltic Fleet"
 lgr_norland_baltic_fleet_desc:0 "Missing Loc"
 
 lgr_norland_competitive_trading_title:0 "Compete in Trading"
 lgr_norland_competitive_trading_desc:0 "Missing Loc"
+
+lgr_norland_ally_muscovy_title:0 "Ally Muscovy"
+lgr_norland_ally_muscovy_desc:0 "Missing Loc"
+
+lgr_norland_rule_ruthenia_title:0 "Rule Ruthenia"
+lgr_norland_rule_ruthenia_desc:0 "Missing Loc"
+
+#Buildings Missions 
+lgr_norland_build_temples_title:0 "Build Temples"
+lgr_norland_build_temples_desc:0 "Missing Loc"
+
+lgr_norland_own_crownland_title:0 "Feudal reforms"
+lgr_norland_own_crownland_desc:0 "Missing Loc"
+
+lgr_norland_golden_age_title:0 "Golden Empire"
+lgr_norland_golden_age_desc:0 "Missing Loc"
+
+#Buildings Side Missions
+lgr_norland_build_universities_title:0 "Education for our people"
+lgr_norland_build_universities_desc:0 "Missing Loc"
+
+lgr_norland_among_great_powers_title:0 "Among great powers"
+lgr_norland_among_great_powers_desc:0 "Missing Loc"
+
+lgr_norland_hegemon_title:0 "Norse Hegemon"
+lgr_norland_hegemon_desc:0 "Missing Loc"
+
+#Tags
+LGR_ODINS_EMPIRE:0 "Odin's Empire"

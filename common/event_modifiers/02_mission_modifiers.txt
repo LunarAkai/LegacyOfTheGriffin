@@ -163,6 +163,37 @@ lgr_norse_spread_the_true_faith = {
 	enforce_religion_cost = -0.25
 }
 
+lgr_norse_norse_empire = {
+	imperial_authority_value = -0.15
+}
+
+lgr_norse_convert_scandinavia = {
+	years_of_nationalism = -10
+}
+
+lgr_norse_landskrona = {
+	local_build_cost = -0.25
+	local_development_cost = -0.25
+}
+
+lgr_norse_rule_ruthenia = {
+	cavalry_power = 0.10
+}
+
+lgr_norse_odins_empire = {
+	galley_power = 0.15
+	light_ship_power = 0.10
+}
+
+lgr_norse_universities = {
+	technology_cost = -0.05
+}
+
+lgr_norse_invade_england = {
+	naval_morale = 0.10
+	naval_tradition_from_battle = 0.2
+}
+
 
 #Altmark
 lgr_altmark_connected_lands = {
@@ -214,13 +245,47 @@ lgr_tbra_constantinople_of_the_north = {
 
 lgr_tbra_push_for_emperor_modifier = {
 	diplomatic_reputation = 2
-	improve_relation_modifier = 0.35
-	imperial_authority = 0.02
+	improve_relation_modifier = 0.2
+	imperial_authority_value = 0.03
 }
 
 lgr_tbra_without_hab_modifier = {
 	diplomatic_upkeep = 2
 	liberty_desire_from_subject_development = -0.35
+}
+
+lgr_tbra_germanized_lusatia = {
+	culture_conversion_cost = -0.2
+}
+
+lgr_tbra_conquer_poland = {
+	cavalry_power = 0.15
+}
+
+lgr_tbra_noble_priv = {
+	advisor_pool = 1
+}
+
+lgr_tbra_lead_the_reformation = {
+	global_missionary_strength = 0.02
+}
+
+lgr_tbra_religious_leadership = {
+	warscore_cost_vs_other_religion = -0.15
+	land_morale = 0.10
+}
+
+lgr_tbra_true_faith = {
+	tolerance_own = 1
+}
+
+lgr_tbra_german_netherlands = {
+	global_trade_power = 0.15
+}
+
+lgr_tbra_humilate_austria = {
+	prestige = 1
+	legitimacy = 1
 }
 
 #COMMON
@@ -232,4 +297,8 @@ lgr_galleys = {
 lgr_military_tradition = {
 	army_tradition_decay = -0.03
 	drill_gain_modifier = 0.10
+}
+
+lgr_grateful_vassal = {
+	liberty_desire = -50
 }

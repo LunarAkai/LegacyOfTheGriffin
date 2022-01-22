@@ -7,8 +7,8 @@ bookmark = {
 	default = yes
 
 	country = GRO #trade focused
-	country = GWE #conquesd heavy 
-	country = GAT #wide brandenburg
+	#country = GWE #conquesd heavy 
+	#country = GAT #wide brandenburg
 	country = GSU #tall brandenburg
 	country = GNL #Norland
 	

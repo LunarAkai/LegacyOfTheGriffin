@@ -12,7 +12,7 @@ lgr_norland_main = {
 	has_country_shield = yes
 
 	lgr_norland_stablize_the_army = {
-		icon = army_reforms
+		icon = lgr_native_build_army_mission
 		position = 1
 		required_missions = {  }
 
@@ -114,7 +114,7 @@ lgr_norland_main = {
 
 	lgr_norland_attack_scandinavia = {
 		position = 5
-		icon = mission_great_wall
+		icon = mission_develop_nevas_port
 		required_missions = {
 			lgr_norland_survive
 		}
@@ -141,6 +141,141 @@ lgr_norland_main = {
 			}
 		}
 	}
+
+	lgr_norland_sweden_mission = {
+		position = 6
+		icon = mission_unite_home_region
+		required_missions = {
+			lgr_norland_attack_scandinavia
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			AND = {
+				owns_core_province = 1
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = scandinavia_region
+					value = 10
+				}
+			}
+		}
+
+		effect = {
+
+			1 = {
+				change_religion = ROOT
+				add_base_tax = 2
+				change_province_name = "Stokksunda"
+				rename_capital = "Stokksunda"
+			}
+
+			finland_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			} 
+			
+			
+		}
+	}
+
+	lgr_norland_norway_mission = {
+		position = 8
+		icon = mission_break_the_tatar_yoke
+		required_missions = {
+			lgr_norland_sweden_mission
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 17
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_core_province = 17
+		}
+
+		effect = {
+			370= {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			
+			371= {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			} 
+		}
+	}
+
+	lgr_norland_Viking_home = {
+		position = 9
+		icon = centralized_empire
+		required_missions = {
+			lgr_norland_humiliate_denmark
+			lgr_norland_seize_neva
+			lgr_norland_norway_mission
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = scandinavia_region
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				region = scandinavia_region 
+			}
+		}
+
+		effect = {
+			override_country_name = LGR_ODINS_EMPIRE
+
+			add_country_modifier = {
+				name = lgr_norse_odins_empire
+				duration = -1
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						ROOT = {
+							government_rank = 3
+						}
+					}
+				}
+				set_government_rank = 3
+			}
+			
+
+		}
+	}
+
+	
 }
 
 lgr_norland_main_side_religious = {
@@ -280,6 +415,222 @@ lgr_norland_main_side_religious = {
 			}
 		}
 	}
+
+	lgr_norland_convert_scandinavia = {
+		icon = mission_buddhist_monk_praying
+		position = 7
+		required_missions = {
+			lgr_norland_sweden_mission
+			lgr_norland_spread_the_true_faith
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = scandinavia_region
+				owned_by = ROOT
+			} NOT = {
+				religion = ROOT
+			}
+		}
+		trigger = {
+			AND = {
+				religious_unity = 1
+				num_of_owned_provinces_with = {
+					religion = ROOT
+					region = scandinavia_region
+					is_overseas = no
+					value = 20
+				}
+			}
+		}
+
+		effect = {
+			every_owned_province = {
+				if = {
+					limit = {
+						religion = ROOT
+						region = scandinavia_region
+					}
+					add_province_modifier = {
+						name = lgr_norse_convert_scandinavia
+						duration = 7300
+					}
+
+					
+				}
+			}
+
+			
+
+			custom_tooltip = lgr_norse_convert_scandinavia_tooltip
+
+			denmark_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	lgr_norland_humiliate_denmark = {
+		icon = fortify_malta
+		position = 8
+		required_missions = {
+			lgr_norland_convert_scandinavia
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = denmark_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				area = denmark_area
+			}
+		}
+
+		effect = {
+			45 = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					hre_size = 1
+				}
+				add_casus_belli = {
+					type = cb_humiliate
+					target = emperor
+				}
+			}
+		}
+	}
+
+	lgr_norland_hanse = {
+		icon = dominant_economy
+		position = 10
+		required_missions = {
+			lgr_norland_humiliate_denmark
+		}
+
+		trigger = {
+			45 = { is_strongest_trade_power = ROOT }
+		}
+
+		effect = {
+			add_years_of_income = 1
+		}
+	}
+
+	lgr_norland_invade_england = {
+		icon = mission_rb_invade_england
+		position = 12
+		required_missions = {
+			lgr_norland_hanse
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					OR = {
+						exists = ENG
+						exists = GBR
+					}
+				}
+				ROOT = {
+					OR = {
+						offensive_war_with = ENG
+						offensive_war_with = GBR
+					}
+					
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = ENG
+							exists = GBR
+						}
+					}
+				}
+				num_of_owned_provinces_with = {
+					region = british_isles_region
+					value = 5
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						exists = ENG
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						target = ENG
+					}
+					
+				}
+			}
+
+			if = {
+				limit = {
+					OR = {
+						exists = GBR
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						type = cb_vassalize_mission
+						target = GBR
+					}
+					
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = ENG
+							exists = GBR
+						}
+					}
+				}
+				236 = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_claim = ROOT
+					}
+				}
+			}
+			add_country_modifier = {
+				name = lgr_norse_invade_england
+				duration = 7300
+			}
+			
+		}
+	}
 }
 
 lgr_norland_religious_side_orders = {
@@ -300,6 +651,12 @@ lgr_norland_religious_side_orders = {
 		position = 4
 		required_missions = {
 			lgr_norland_war_with_the_heathens
+		}
+
+		provinces_to_highlight = {
+			OR= {
+				province_id = 43
+			} NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
@@ -349,6 +706,96 @@ lgr_norland_religious_side_orders = {
 				name = lgr_norse_norse_prussia
 				duration = -1
 			}
+		}
+	}
+
+	lgr_norland_attack_the_empire = {
+		icon = lead_the_empire
+		position = 6
+		required_missions = {
+			lgr_norland_integrate_prussian_culture
+		}
+
+		trigger = {
+			AND = {
+
+				calc_true_if = {
+					any_country = {
+						is_part_of_hre = yes
+						defensive_war_with = ROOT
+					}
+					amount = 1
+					desc = tooltip_lgr_norse_attack_the_empire
+				}
+
+				ROOT = {
+					war_score = 50
+				}
+				
+				
+			}
+		}
+
+		effect = {
+			ROOT = {
+				add_mil_power = 50
+				add_legitimacy = 10
+				add_prestige = 25
+			}
+		}
+	}
+
+	lgr_norland_norse_empire = {
+		icon = lgr_mission_repel_the_missionaries
+		position = 7
+		required_missions = {
+			lgr_norland_attack_the_empire
+			lgr_norland_spread_the_true_faith
+		}
+
+		trigger = {
+			calc_true_if = {
+				any_country = {
+					NOT = { is_subject_of = ROOT }
+					is_part_of_hre = yes
+					religion = ROOT
+				}
+				amount = 10
+				desc = tooltip_lgr_norse_norse_empire
+			}
+		}
+
+		effect = {
+			emperor = {
+				add_country_modifier = {
+					name = lgr_norse_norse_empire
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	lgr_norland_dismantle_hre = {
+		icon = humiliate_austria
+		position = 9
+		required_missions = {
+			lgr_norland_norse_empire
+		}
+
+		trigger = {
+			NOT = {
+				hre_size = 1 
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+				}
+				add_government_reform = norland_norse_empire_reform
+			}
+			set_government_rank = 3
 		}
 	}
 }
@@ -436,18 +883,6 @@ lgr_norland_livonian_order_and_russia = {
 				duration = 5475
 			}
 
-			33 = {
-				if = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-
-
-
 			hidden_effect = {
 				if = {
 					limit = {
@@ -526,6 +961,76 @@ lgr_norland_livonian_order_and_russia = {
 			
 		}
 	}
+
+	lgr_norland_finland_mission = {
+		position = 7
+		icon = mission_conquer_finland
+		required_missions = {
+			lgr_norland_sweden_mission
+			lgr_norland_dev_our_homelands
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = finland_area
+			} NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				area = finland_area
+			}
+		}
+
+		effect = {
+			karelia_area = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}		
+	}
+
+	lgr_norland_seize_neva = {
+		position = 8
+		icon = mission_novgorod_the_great
+		required_missions = {
+			lgr_norland_finland_mission
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = karelia_area
+			} NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+
+			AND = {
+				owns_core_province = 33
+
+				owns_all_provinces = {
+					area = karelia_area
+				}
+			}
+		}
+	
+		effect = {
+
+			33 = {
+				change_culture = norwegian
+				add_province_modifier = {
+					name = lgr_norse_landskrona
+					duration = -1
+				}
+			}
+			
+		}
+	}
 }
 
 lgr_norland_baltic_trade_and_navy = {
@@ -586,6 +1091,366 @@ lgr_norland_baltic_trade_and_navy = {
 					speed = 0.5
 				}
 			}
+		}
+	}
+
+	lgr_norland_ally_muscovy = {
+		position = 7
+		icon = mission_the_third_rome
+		required_missions = {
+			lgr_norland_dev_our_homelands
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					exists = MOS
+				}
+				MOS = {
+					alliance_with = ROOT
+				}                                                                         
+			}
+			if = {
+				limit = {
+					exists = RUS
+				}
+				RUS = {
+					alliance_with = ROOT
+				}                                                                         
+			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = MOS
+							exists = RUS
+						}
+						
+					}
+				}
+
+				any_country = {
+					OR = {
+						capital_scope = {
+							region = russia_region
+						}
+						capital_scope = {
+							region = ural_region
+						}
+						capital_scope = {
+							region = ruthenia_region
+						}
+					}
+					alliance_with = ROOT
+				}
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					exists = MOS
+				}
+				MOS = {
+					add_trust = {
+						who = root
+						value = 25
+						mutual = yes
+					}
+				}
+
+				ROOT = {
+					add_dip_power = 50
+				}
+			}
+
+			if = {
+				limit = {
+					exists = RUS
+				}
+				RUS = {
+					add_trust = {
+						who = root
+						value = 25
+						mutual = yes
+					}
+				}
+				ROOT = {
+					add_dip_power = 50
+				}                                                                         
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							exists = MOS
+							exists = RUS
+						}
+						
+					}
+					any_country = {
+						OR = {
+							capital_scope = {
+								region = russia_region
+							}
+							capital_scope = {
+								region = ural_region
+							}
+							capital_scope = {
+								region = ruthenia_region
+							}
+						}
+						alliance_with = ROOT
+					}
+				}
+
+				ROOT = {
+					add_dip_power = 100
+				}
+				
+			}
+
+			ruthenia_region = {
+				if = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+
+		
+	}
+
+	lgr_norland_rule_ruthenia = {
+		position = 10
+		icon = mission_rule_ruthenia
+		required_missions = {
+			lgr_norland_ally_muscovy
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				region = ruthenia_region
+			} NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				region = ruthenia_region
+				religion = ROOT
+				value = 20
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_norse_rule_ruthenia
+				duration = -1
+			}
+		}
+		
+	}
+}
+
+lgr_norland_missions_buildings = {
+	slot = 4
+	generic = no 
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_build_temples = {
+		icon = mission_conquer_malwa_bng
+		position = 10
+		required_missions = {
+			
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 15 # how many provinces should have the necessary building / buildings
+				OR = { # which buildings should be counted towards this total?
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+
+		effect = {
+			change_government_reform_progress = 50
+		}
+	}
+
+	lgr_norland_own_crownland = {
+		icon = develop_konigsberg
+		position = 12
+		required_missions = {
+			lgr_norland_build_temples
+		}
+
+		trigger = {
+			crown_land_share = 60
+		}
+
+		effect = {
+
+			custom_tooltip = lgr_norland_own_crownland_tooltip
+
+			hidden_effect = {
+				add_absolutism = 10
+			}
+			
+		}
+
+	}
+
+	lgr_norland_golden_age = {
+		icon = bohemian_crystal
+		position = 13
+		required_missions = {
+			lgr_norland_own_crownland
+		}
+
+		trigger = {
+			AND = {
+				if = {
+					limit = { has_dlc = "Mandate of Heaven"	}
+					OR = {
+						in_golden_age = yes
+						has_had_golden_age = yes
+					}
+				}
+				else = {
+					prestige = 80
+				}
+				is_subject = no
+				ROOT = {
+					government_rank = 3
+				}
+			}
+			
+		}
+
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_prestige = 25
+		}
+	}
+}
+
+#buildings side
+lgr_norland_missions_buildings = {
+	slot = 3
+	generic = no 
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		tag = GNL
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_norland_build_universities = {
+		icon = continue_the_renaissance
+		position = 11
+		required_missions = {
+			lgr_norland_build_temples
+		}
+
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5 # how many provinces should have the necessary building / buildings
+				OR = { # which buildings should be counted towards this total?
+					has_building = university
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_norse_universities
+				duration = 7300
+			}
+		}
+	}
+
+	lgr_norland_among_great_powers = {
+		icon = a_place_among_the_great_powers
+		position = 11
+		required_missions = {
+			lgr_norland_build_universities
+		}
+
+		trigger = {
+			AND = {
+				is_great_power = yes
+				any_ally = { is_great_power = yes }
+			}
+		}
+
+		effect = {
+			if = {
+				limit = { 
+					government = monarchy 
+					is_emperor_of_china = no
+				}
+				add_legitimacy = 10
+			}
+			else_if = {
+				limit = { 
+					is_emperor_of_china = yes
+				}
+				add_meritocracy = 10
+			}
+			else_if = {
+				limit = { government = republic }
+				add_republican_tradition = 10
+			}
+			else_if = {
+				limit = { 
+					government = theocracy 
+					has_dlc = "Common Sense"
+				}
+				add_devotion = 10
+			}
+			else = {
+				add_prestige = 10
+			}
+		}
+	}
+
+	lgr_norland_hegemon = {
+		icon = peace_in_europe
+		position = 12
+		required_missions = {
+			lgr_norland_among_great_powers
+		}
+
+		trigger = {
+			ROOT = {
+				is_hegemon = yes
+			}	
+		}
+
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+
+			add_treasury = 500
 		}
 	}
 }

@@ -1,4 +1,4 @@
-version="0.0.1"
+﻿version="0.9.0"
 tags={
 	"Alternative History"
 	"Map"
@@ -10,3 +10,4 @@ tags={
 }
 name="Legacy of the Griffin"
 supported_version="1.32.*"
+picture="thumbnail.png"

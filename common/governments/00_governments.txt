@@ -36,6 +36,7 @@ monarchy = {
 				confucian_bureaucracy
 				musa_rule
 				mossi_federal_kingdom
+				norland_norse_empire_reform #Norland
 			}
 		}
 		hereditary_vs_nobility = {
@@ -53,7 +54,7 @@ monarchy = {
 				legion_of_honor_reform
 				imperial_nobility_reform
 				uparaja_reform
-				norland_missionary_reform
+				norland_missionary_reform #Norland
 			}
 		}
 		bureaucracy = {

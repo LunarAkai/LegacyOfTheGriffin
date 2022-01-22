@@ -1158,8 +1158,10 @@ lgr_rostock_dev = {
 		}
 
 		trigger = {
-			is_great_power = yes
-			any_ally = { is_great_power = yes }
+			AND = {
+				is_great_power = yes
+				any_ally = { is_great_power = yes }
+			}
 		}
 
 		effect = {
