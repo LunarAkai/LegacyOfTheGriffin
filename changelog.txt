@@ -1,0 +1,23 @@
+v1.0.0 -- "Legacy of the Griffin" --
+
+Main Features:
+- New bookmark
+- Update of North Germany & Scandinavia
+- Missions trees for Rostock, Norland & Spandau
+- Rostocker Domfehde disaster
+
+
+Other changes:
+- New achievements
+- New playable and formable countries
+- New goverment reforms
+- New mission trees
+- New national ideas
+- New provinces
+- New mercenary companies
+- New events & disasters
+- New decisions
+- New cosmetic renames
+- New monuments
+- Changed "The Fate of Neumark" Event to make it available for Altmark
+
