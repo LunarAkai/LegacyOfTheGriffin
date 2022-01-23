@@ -1434,7 +1434,7 @@ lgr_norland_missions_buildings = {
 
 	lgr_norland_hegemon = {
 		icon = peace_in_europe
-		position = 12
+		position = 14
 		required_missions = {
 			lgr_norland_among_great_powers
 		}

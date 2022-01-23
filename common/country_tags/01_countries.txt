@@ -21,4 +21,3 @@ GNC = "countries/Northgermanconferadtion.txt" #North German Conferadtion
 
 #Scandinvia
 GNL = "countries/Norland.txt" #Norse Refuge
-GSM = "countries/Sami.txt"
