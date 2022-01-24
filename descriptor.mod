@@ -10,4 +10,3 @@ tags={
 }
 name="Legacy of the Griffin"
 supported_version="1.32.*"
-picture="thumbnail.png"
