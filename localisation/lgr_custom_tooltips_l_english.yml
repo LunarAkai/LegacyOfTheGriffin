@@ -29,4 +29,4 @@ lgr_tbrandenburg_prosperity_mission_upgrade:0 "If we complete this mission, our 
 lgr_unlocked_spandau_mercs_tooltip:0 "Unlocks the §YSpandau Citadele Company§! based in §YSpandau§! With a modifier of §G+5% Discipline§! and a base cost reduction of §G50%§!."
 lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip:0 "\n Unlocks a decision allowing us to form the §YNorth German Confederation§! if we meet the requirements."
 lgr_tbrandenburg_kick_bohemia_out_of_the_hre:0 "If we choosed to §YBuild an Empire without the von Habsburg§! in the §YGerman Question Event§! and if the §YEmperor§! has at least an opinion of 190 towards us, or if §Ywe are the Emperor§!. §YBohemia§! gets an Event that might force them out of the HRE"
-lgr_tbrandenburg_weaken_poland_pu_tooltip:0 "If we finish this mission while we are the §YNorth German Confederation§! we will gain a §YRestore Personal Union Casus Belli§! on Poland."
+lgr_tbrandenburg_weaken_poland_pu_tooltip:0 "If we are the §YNorth German Confederation§! we will gain a §YRestore Personal Union Casus Belli§! on Poland."

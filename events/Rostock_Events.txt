@@ -17,7 +17,7 @@ country_event = {
 		}
 
 
-		ROOT = {
+		GRO = {
 			change_government = monarchy
 			define_ruler = {
 				name = "Friedrich Wilhelm"
@@ -40,7 +40,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		ROOT = {
+		GRO = {
 			add_republican_tradition = 50
 			add_adm_power = 50
 			add_dip_power = 40
@@ -174,7 +174,7 @@ country_event = {
 			factor = 0
 		}
 
-		ROOT = {
+		GRO = {
 			add_adm_power = 100
 			add_dip_power = 100
 			add_mil_power = 100
@@ -355,7 +355,6 @@ country_event = {
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		is_year = 1489
@@ -375,14 +374,19 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				size = 1
-				type = particularist_rebels
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = peasant_rebels
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
 				size = 2
-				type = leadered_peasant_rebels
-				leader = "Dietrich Boldewan"
+				type = peasant_rebels
 			}
 		}
 	}
@@ -395,7 +399,6 @@ country_event = {
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		AND = {
@@ -409,23 +412,27 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		ROOT = {
+		GRO = {
 			exile_ruler_as = stadtrat_exiled_rostock
 		}
-		ROOT = {
+		GRO = {
 			define_ruler = {
 				name = "Dietrich Boldewan"
 				age = 28
 				adm = 2
-				dip = 3
+				dip = 1
 				mil = 6
-				fixed = yes
 				male = yes
 			}
 		}
-		ROOT = {
-			add_republican_tradition = -30
-			add_stability = 2
+		GRO = {
+			add_republican_tradition = -50
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = leadered_peasant_rebels
+			}
 		}
 	}
 
@@ -435,19 +442,25 @@ country_event = {
 			factor = 50
 		}
 
-		ROOT = {
-			add_republican_tradition = 20
+		GRO = {
+			add_republican_tradition = 10
 		}
 		46 = {
 			spawn_rebels = {
 				size = 3
-				type = leadered_peasant_rebels
+				type = noble_rebels
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
 				size = 1
-				type = particularist_rebels
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
 			}
 		}
 	}
@@ -460,7 +473,6 @@ country_event = {
 	picture = ASSASSINATION_eventPicture
 
 	is_triggered_only = yes
-	fire_only_once = yes
 
 	trigger = {
 		NOT = {
@@ -476,19 +488,18 @@ country_event = {
 
 		name = "lgr_rostock_events.9.a"
 
-		ROOT = {
+		GRO = {
 			if = {
 				limit = {
 					GRO = {
 						religion = catholic
 					}
 				}
-				excommunicate = ROOT
 				add_papal_influence = -50
 			}
 			if = {
 				limit = {
-					ROOT = {
+					GRO = {
 						OR = {
 							religion = protestant
 						}
@@ -499,7 +510,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					ROOT = {
+					GRO = {
 						NOT = {
 							OR = {
 								religion = protestant
@@ -516,9 +527,30 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				size = 1
-				type = particularist_rebels
+				type = peasant_rebels
 			}
 		}
 		add_stability = -1
+	}
+}
+
+country_event = {
+	id = lgr_rostock_events.10 #Domfehde Boldewan First Act
+	title = "lgr_rostock_events.10.t"
+	desc = "lgr_rostock_events.10.d"
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+
+		name = "lgr_rostock_events.10.a"
+
+		random_owned_province = {
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+			}
+		}
 	}
 }

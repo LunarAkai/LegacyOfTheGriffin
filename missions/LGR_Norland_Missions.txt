@@ -41,11 +41,6 @@ lgr_norland_main = {
 		}
 
 		trigger = {
-			capital_scope = {
-				NOT = {
-					devastation = 25
-				}
-			}
 			stability = 1
 			army_size_percentage = 1
 			manpower_percentage = 0.5
@@ -320,9 +315,6 @@ lgr_norland_main_side_religious = {
 			add_country_modifier = {
 				name = lgr_norse_norse_religion
 				duration = 5475
-			}
-			capital_scope = {
-				add_devastation = -15
 			}
 		}
 	}
@@ -1286,7 +1278,7 @@ lgr_norland_missions_buildings = {
 
 		trigger = {
 			num_of_owned_provinces_with = {
-				value = 10 # how many provinces should have the necessary building / buildings
+				value = 15 # how many provinces should have the necessary building / buildings
 				OR = { # which buildings should be counted towards this total?
 					has_building = temple
 					has_building = cathedral

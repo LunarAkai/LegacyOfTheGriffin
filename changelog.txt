@@ -19,6 +19,5 @@ Other changes:
 - New decisions
 - New cosmetic renames
 - New monuments
-- moved end date to 18.1.1871
 - Changed "The Fate of Neumark" Event to make it available for Altmark
 
