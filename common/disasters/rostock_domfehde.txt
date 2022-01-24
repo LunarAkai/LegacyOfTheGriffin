@@ -100,7 +100,6 @@ rostock_domfehde = {
 			100 = lgr_rostock_events.7
 			100 = lgr_rostock_events.8
 			100 = lgr_rostock_events.9
-			100 = lgr_rostock_events.10
 		}
 	}
 }

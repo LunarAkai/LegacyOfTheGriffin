@@ -27,46 +27,45 @@ lgr_rostock_events.3.f:0 "Military research should be our top priority"
 
 #Domfehde
 rostock_domfehde:0 "Rostocker Domfehde"
-desc_rostock_domfehde:0 "Missing Loc"
+desc_rostock_domfehde:0 "Conflicts between the burghers on one side and the nobility and clergy on the other side might lead to conflict"
 
 lgr_rostock_events.4.t:0 "Rostocker Domfehde"
-lgr_rostock_events.4.d:0 "Missing Loc"
+lgr_rostock_events.4.d:0 "Our burghers and peasants are revolting. They fear that the influence of the noblilty and clergy might grow too much. However Duke Magnus II. of Mecklenburg pushes his will to incorporate the four churches in Rostock into a cathredral collegiate chapter. His intention is to secure the finances of the university. But not only the professors at the university think that this may lead to a huge conflict..."
 lgr_rostock_events.4.a:0 "We live in worrying times!"
 
 lgr_rostock_events.5.t:0 "End of the Domfehde"
-lgr_rostock_events.5.d:0 "Missing Loc"
+lgr_rostock_events.5.d:0 "The conflict between the nobility and the burghers has been resolved after a long time. We can look into our future with hope."
 lgr_rostock_events.5.a:0 "Good news!"
 
 lgr_rostock_events.6.t:0 "Peasants revolt!"
-lgr_rostock_events.6.d:0 "Missing Loc"
+lgr_rostock_events.6.d:0 "The peasants are revolting!"
 lgr_rostock_events.6.a:0 "Oh no!"
 
 lgr_rostock_events.7.t:0 "Dietrich Boldewan appears"
-lgr_rostock_events.7.d:0 "Missing Loc"
-lgr_rostock_events.7.a:0 "This is worrying."
+lgr_rostock_events.7.d:0 "Boldewan is one of the leading figures of the revolt. He has some influence for sure. "
+lgr_rostock_events.7.a:0 "We should watch him carefully."
 
 lgr_rostock_events.8.t:0 "Make Boldewan Mayor?"
-lgr_rostock_events.8.d:0 "Missing Loc"
+lgr_rostock_events.8.d:0 "Boldewan wants to force us to expand the Stadtrat. Making him mayor of Rostock should be a way to tame the burghers and stabilize our city."
 lgr_rostock_events.8.a:0 "Make him mayor!"
 lgr_rostock_events.8.b:0 "Boldewan can rule his prision cell!"
 
 lgr_rostock_events.9.t:0 "Dean of the cathedral murdered!"
-lgr_rostock_events.9.d:0 "Missing Loc"
+lgr_rostock_events.9.d:0 "Thomas Rode, the dean of the cathedral, has been murdered by the burghers!"
 lgr_rostock_events.9.a:0 "This is terrible!"
 
-lgr_rostock_events.10.t:0 "Noble revolt!"
-lgr_rostock_events.10.d:0 "Missing Loc"
-lgr_rostock_events.10.a:0 "Oh no!"
 
 #NORSE ECLIPSE
 norse_eclipse:0 "Norse Eclipse"
-desc_norse_eclipse:0 "Missing Loc"
+desc_norse_eclipse:0 "Our long conflict between us and the christians is exhausting for our people. They lost hope in our religion. This is worrying."
 
 lgr_norse_events.1.t:0 "Norse Eclipse"
-lgr_norse_events.1.d:0 "Missing Loc"
+lgr_norse_events.1.d:0 "Our long conflict between us and the christians is exhausting for our people. They lost hope in our religion. This has lead to instability within our country. This is might be the end."
+lgr_norse_events.1.a:0 "Ragnarok is near..."
 
-lgr_norse_events.2.t:0 "Missing Loc"
-lgr_norse_events.2.d:0 "Missing Loc"
+lgr_norse_events.2.t:0 "End of our eclipse"
+lgr_norse_events.2.d:0 "This is unbelivable. We have survived the apocalypse! We can belive in ourselves. We belive!"
+lgr_norse_events.2.a:0 "Great news!"
 
 #TALL BRANDENBURG // SPANDAu
 
