@@ -60,7 +60,7 @@ norse_eclipse:0 "Norse Eclipse"
 desc_norse_eclipse:0 "Our long conflict between us and the christians is exhausting for our people. They lost hope in our religion. This is worrying."
 
 lgr_norse_events.1.t:0 "Norse Eclipse"
-lgr_norse_events.1.d:0 "Our long conflict between us and the christians is exhausting for our people. They lost hope in our religion. This has lead to instability within our country. This is might be the end."
+lgr_norse_events.1.d:0 "Our long conflict between us and the christians is exhausting for our people. They lost hope in our religion. This has lead to instability within our country. This might be the end."
 lgr_norse_events.1.a:0 "Ragnarok is near..."
 
 lgr_norse_events.2.t:0 "End of our eclipse"
@@ -108,4 +108,4 @@ lgr_mission_events.2.t:0 "[From.GetName] joins the German Empire"
 lgr_mission_events.2.d:0 "They have chosen wisely."
 
 lgr_mission_events.3.t:0 "[From.GetName] doesn't join the German Empire"
-lgr_mission_events.3.d:0 "They are fools"
+lgr_mission_events.3.d:0 "They are fools."

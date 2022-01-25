@@ -6,49 +6,50 @@
 ############################################################################
 #Main
 lgr_norland_stablize_the_army_title:0 "Stable Army"
-lgr_norland_stablize_the_army_desc:0 "Missing Loc"
+lgr_norland_stablize_the_army_desc:0 "If we can't afford a well equiped army, nobody will take us seriously."
+
 lgr_norland_end_disaster_title:0 "End our Eclipse"
-lgr_norland_end_disaster_desc:0 "Missing Loc"
+lgr_norland_end_disaster_desc:0 "Hope is on the horizon - if we do the right things."
 
 lgr_norland_survive_title:0 "Survive against Heathens"
-lgr_norland_survive_desc:0 "Missing Loc"
+lgr_norland_survive_desc:0 "The Livonian Order and Denmark are a huge threat to our existance. We will need some more time to prepare ourselves if we want to have a chance."
 
 lgr_norland_attack_scandinavia_title:0 "Attack Scandinavia"
-lgr_norland_attack_scandinavia_desc:0 "Missing Loc"
+lgr_norland_attack_scandinavia_desc:0 "Scandinavia, our home. We need to retake it from the christian heathens!"
 
 lgr_norland_sweden_mission_title:0 "Return to Stockholm"
-lgr_norland_sweden_mission_desc:0 "Missing Loc"
+lgr_norland_sweden_mission_desc:0 "Stockholm, now the capital of Sweden, is a prospering city. If we can take it for ourselves we will have a glourious future."
 
 lgr_norland_norway_mission_title:0 "Reintegrate Norway"
-lgr_norland_norway_mission_desc:0 "Missing Loc"
+lgr_norland_norway_mission_desc:0 "Our and the norwegian culture are very similar, some people would say they are the same. Except the Norwegians decided to take the wrong path. They will learn to see their mistakes!"
 
 lgr_norland_Viking_home_title:0 "Odin's Empire"
-lgr_norland_Viking_home_desc:0 "Missing Loc"
+lgr_norland_Viking_home_desc:0 "Odin's Empire on Earth - always and forever!"
 
 #Religious Mission
 lgr_norland_religious_start_title:0 "Strength in Faith"
-lgr_norland_religious_start_desc:0 "Missing Loc"
+lgr_norland_religious_start_desc:0 "Our faith is and always has been a magnificent support for our people. But the times have changed. Our support eroded over the time. We need to restore it."
 
 lgr_norland_war_with_the_heathens_title:0 "War against the Order"
-lgr_norland_war_with_the_heathens_desc:0 "Missing Loc"
+lgr_norland_war_with_the_heathens_desc:0 "Our time has come. Its time to declare war on our heathen neighbours!"
 
 lgr_norland_expel_the_heathens_title:0 "Expel the Heathens"
-lgr_norland_expel_the_heathens_desc:0 "Missing Loc"
+lgr_norland_expel_the_heathens_desc:0 "The christians did terrible things to our forefathers. We should convert them to the true faith, or expel them."
 
 lgr_norland_spread_the_true_faith_title:0 "Spread the True Faith"
-lgr_norland_spread_the_true_faith_desc:0 "Missing Loc"
+lgr_norland_spread_the_true_faith_desc:0 "Bring the light to our blinded neighbors."
 
 lgr_norland_convert_scandinavia_title:0 "Convert Scandinavia"
-lgr_norland_convert_scandinavia_desc:0 "Missing Loc"
+lgr_norland_convert_scandinavia_desc:0 "The christians conquered Iberia back from the muslims. They call it the Reconquista. We need our own norse Reconquista!"
 
 lgr_norland_humiliate_denmark_title:0 "Humiliate Denmark"
-lgr_norland_humiliate_denmark_desc:0 "Missing Loc"
+lgr_norland_humiliate_denmark_desc:0 "Denmark was the first kingdom in Scandinavia who converted to the foolish christian faith. A complete humiliation of the danish crown might be the right response for this lunatic mistake"
 
 lgr_norland_hanse_title:0 "Rival the Hanse"
-lgr_norland_hanse_desc:0 "Missing Loc"
+lgr_norland_hanse_desc:0 "The Hanse is a rich trade union with Lübeck being their crown jewel. But they are not the only dominant force in the Baltic Sea. We will defeat them with their own techniques."
 
 lgr_norland_invade_england_title:0 "Invasion of England"
-lgr_norland_invade_england_desc:0 "Missing Loc"
+lgr_norland_invade_england_desc:0 "Our norwegian brother Harald III. Hardrada tried to subjugate the english lands in 1066. Sadly he failed. We have grown strong enough to finish his mission."
 
 #Religious Side Missions
 lgr_norland_dismantle_teutonic_order_title:0 "Dismantle Teutonic Order"
@@ -68,14 +69,14 @@ lgr_norland_dismantle_hre_desc:0 "Missing Loc"
 
 #Diplomatic Missions
 lgr_norland_have_an_ally_title:0 "Get an Ally"
-lgr_norland_have_an_ally_desc:0 "Our heretic neighors want to conquer our lands, we will need an Ally who doesnt want to kill our families, if we want to survive"
+lgr_norland_have_an_ally_desc:0 "Even though the christians took everything from us, we will need some christian allies to survive in the threatining world."
 
 #Livonian Order And Russia
 lgr_norland_controll_livonian_order_title:0 "Control Livonian Order"
-lgr_norland_controll_livonian_order_desc:0 "Missing Loc"
+lgr_norland_controll_livonian_order_desc:0 "The Livonian Order is a threat to our existance. We should weaken them if we have the chance to do so."
 
 lgr_norland_dev_our_homelands_title:0 "Focus on our Homelands"
-lgr_norland_dev_our_homelands_desc:0 "Missing Loc"
+lgr_norland_dev_our_homelands_desc:0 "Altough this island in the baltic might not be our original home. It is the home we live on. We should show the world that the norse aren't gone yet. Our island should be a jewel that can make us proud."
 
 lgr_norland_finland_mission_title:0 "Invade Finland"
 lgr_norland_finland_mission_desc:0 "Missing Loc"

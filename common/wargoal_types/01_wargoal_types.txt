@@ -4,7 +4,7 @@ superiority_norse_crusade = {
 
         badboy_factor = 2
 		prestige_factor = 2
-		peace_cost_factor = 1
+		peace_cost_factor = 2
 		
 		allowed_provinces = {
 			always = yes

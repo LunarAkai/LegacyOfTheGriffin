@@ -18,7 +18,7 @@ tooltip_lgr_norse_norse_empire:0 " countries within the Holy Roman Empire that a
 
 lgr_norse_convert_scandinavia_tooltip:0 "Every owned province in the §YScandinavia Region§! gets §YConverted to the true faith§! giving the following effect: \nYears of Seperatism §G-10§!"
 
-lgr_norland_own_crownland_tooltip:0 "[Root.GetName] gains §G10 Absolutism§!"
+lgr_norland_own_crownland_tooltip:0 "[Root.GetName] gains §G10§! Absolutism."
 
 #Spandau
 lgr_spandau_austria_elector_tooltip:0 "If the §YEmperor§! has an opinion of §Y150§! towards us, is §Yallied to us§! or if we are the Emperor, the Emperor will transfer the elector status of Altmark to us!  \n"
