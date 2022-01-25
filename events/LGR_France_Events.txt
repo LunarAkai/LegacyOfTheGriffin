@@ -1,0 +1,38 @@
+namespace = lgr_france_events
+country_event = {
+	id = lgr_france_events.1
+	title = "lgr_france_events.1.t"
+	desc = "lgr_france_events.1.d"
+	picture = OVEREXTENSION_eventPicture
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			exists = GNC
+			ROOT = {
+				AND = {
+					has_country_flag = lgr_fra_north_german_confed_formed_flag
+					NOT = {
+						has_country_flag = lgr_fra_fraco_german_war_flag
+					}
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 20
+		modifier = {
+			factor = 0
+			is_year = 1870
+		}
+	}
+	option = {
+		name = "lgr_france_events.1.a"
+		FRA = {
+			declare_war_with_cb = {
+				casus_belli = cb_humiliate
+				who = GNC
+			}
+			set_country_flag = lgr_fra_fraco_german_war_flag
+		}
+	}
+}

@@ -1,21 +1,15 @@
 namespace = lgr_spandau_events
-
 country_event = {
-
-	id = lgr_spandau_events.1 #Constantinople of the North
+	id = lgr_spandau_events.1	#Constantinople of the North
 	title = "lgr_spandau_events.1.t"
 	desc = "lgr_spandau_events.1.d"
 	is_triggered_only = yes
-
 	picture = GREAT_BUILDING_eventPicture
-
 	option = {
-		name = lgr_spandau_events.1.a
-
+		name = "lgr_spandau_events.1.a"
 		ai_chance = {
 			factor = 100
 		}
-
 		4945 = {
 			add_province_modifier = {
 				name = lgr_tbra_constantinople_of_the_north
@@ -24,91 +18,81 @@ country_event = {
 		}
 		add_treasury = -2000
 	}
-
 	option = {
-		name = lgr_spandau_events.1.b
-
+		name = "lgr_spandau_events.1.b"
 		ai_chance = {
 			factor = 1
 		}
-
 		add_prestige = -20
 	}
 }
 
 country_event = {
-	id = lgr_spandau_events.2 #The German Question
+	id = lgr_spandau_events.2	#The German Question
 	title = "lgr_spandau_events.2.t"
 	desc = "lgr_spandau_events.2.d"
 	is_triggered_only = yes
-
 	picture = REFORM_eventPicture
-
 	option = {
-		name = lgr_spandau_events.2.a 
-
+		name = lgr_spandau_events.2.a
 		ai_chance = {
 			factor = 50
 		}
-
 		hidden_effect = {
 			set_country_flag = lgr_tbrandenburg_push_for_emperorship
 		}
-
 		add_country_modifier = {
 			name = lgr_tbra_push_for_emperor_modifier
 			duration = -1
 		}
 	}
-
 	option = {
-		name = lgr_spandau_events.2.b
-
+		name = "lgr_spandau_events.2.b"
 		ai_chance = {
 			factor = 50
 		}
-
 		hidden_effect = {
 			set_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
 			set_country_flag = lgr_tbrandenburg_allow_dis_northgerman_confederation
 		}
-
 		add_country_modifier = {
 			name = lgr_tbra_without_hab_modifier
 			duration = -1
 		}
-
 		custom_tooltip = lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip
 	}
 }
 
-country_event = { 
-	id = lgr_spandau_events.3 #Unification of Germany
-
+country_event = {
+	id = lgr_spandau_events.3	#Unification of Germany
 	title = "lgr_spandau_events.3.t"
 	desc = "lgr_spandau_events.3.d"
 	is_triggered_only = yes
-
 	picture = HRE_eventPicture
-
 	option = {
-		name = lgr_spandau_events.3.a
-
+		name = "lgr_spandau_events.3.a"
 		ai_chance = {
 			factor = 1
 		}
-
 		change_tag = GER
 		add_prestige = 20
-
 		if = {
 			limit = {
 				has_custom_ideas = no
 			}
-			country_event = { id = ideagroups.1 } #Swap Ideas
+			country_event = {
+				id = ideagroups.1
+			}
+			#Swap Ideas
 		}
 		swap_non_generic_missions = yes
-		
+
+		if = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			set_in_empire = no
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -117,7 +101,37 @@ country_event = {
 			}
 			set_government_rank = 3
 		}
-
+		every_country = {
+			limit = {
+				AND = {
+					culture_group = germanic
+					NOT = {
+						OR = {
+							is_subject_of = ROOT
+							tag = HAB
+							tag = SWI
+							tag = RIG
+							tag = ROOT
+							tag = TEU
+							tag = LIV
+							is_subject = yes
+							culture = dutch
+							culture = flemish
+							culture = frisian
+							culture = swiss
+							culture = venetian
+							culture = austrian
+						}
+						
+					}
+				}
+					
+			}
+			country_event = {
+				id = lgr_mission_events.1
+				days = 3
+			}
+		}
 		add_country_modifier = {
 			name = "centralization_modifier"
 			duration = 7300

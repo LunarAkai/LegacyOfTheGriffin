@@ -1,0 +1,118 @@
+namespace = lgr_mission_events
+country_event = {
+	id = lgr_mission_events.1
+	title = "lgr_mission_events.1.t"
+	desc = "lgr_mission_events.1.d"
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	option = {
+		#join germany
+		name = lgr_mission_events.1.a
+		from = {
+			hidden_effect = {
+				country_event = {
+					id = lgr_mission_events.2
+				}
+			}
+			tooltip = {
+				inherit = root
+			}
+		}
+		if = {
+			limit = {
+				ai = no
+			}
+			custom_tooltip = full_annexation_tooltip
+		}
+		ai_chance = {
+			factor = 1.5
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = from
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = from
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = from
+					value = 190
+				}
+			}
+			modifier = {
+				factor = 0.5
+				num_of_cities = 5
+			}
+			modifier = {
+				factor = 0.1
+				num_of_cities = 7
+			}
+		}
+	}
+	option = {
+		name = lgr_mission_events.1.b
+		add_stability = -1
+		from = {
+			country_event = {
+				id = lgr_mission_events.3
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = from
+					value = 120
+				}
+				NOT = {
+					num_of_cities = 7
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = lgr_mission_events.2
+	title = "lgr_mission_events.2.t"
+	desc = "lgr_mission_events.2.d"
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = EXCELLENT
+		inherit = from
+	}
+}
+
+# They said no to .11
+country_event = {
+	id = lgr_mission_events.3
+	title = "lgr_mission_events.3.t"
+	desc = "lgr_mission_events.3.d"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = UNFORTUNATE
+		from = {
+			every_owned_province = {
+				limit = {
+					culture_group = germanic
+				}
+				add_claim = root
+			}
+		}
+	}
+}

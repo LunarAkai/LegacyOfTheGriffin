@@ -92,3 +92,20 @@ lgr_bohemia_events.1.t:0 "Brandenburg wants us to leave the Empire"
 lgr_bohemia_events.1.d:0 "The new kingdom of Brandenburg, who stole our lusatian lands, wants us to leave to Holy Roman Empire. If they have the emperor on their side, we might have no other option..."
 lgr_bohemia_events.1.a:0 "Fine,... we will leave."
 lgr_bohemia_events.1.b:0 "We will never leave the Empire!"
+
+#FRANCE
+lgr_france_events.1.t:0 "Restoration of the French Glory"
+lgr_france_events.1.d:0 "Since the creation of the North German Confederation France has lost most of its prestige and Influence in Europe. We can't tolerate this. We should show the world that France is the true great power of Europa."
+lgr_france_events.1.a:0 "Lets restore the French Glory"
+
+#Mission Events
+lgr_mission_events.1.t:0 "North & South Germany united"
+lgr_mission_events.1.d:0 "The North German Confederation has beaten France, and is from now the leading great power in Europe. We should consider joining this united Germany."
+lgr_mission_events.1.a:0 "We should join."
+lgr_mission_events.1.b:0 "We will never give up our independence!"
+
+lgr_mission_events.2.t:0 "[From.GetName] joins the German Empire"
+lgr_mission_events.2.d:0 "They have chosen wisely."
+
+lgr_mission_events.3.t:0 "[From.GetName] doesn't join the German Empire"
+lgr_mission_events.3.d:0 "They are fools"
