@@ -53,19 +53,19 @@ lgr_norland_invade_england_desc:0 "Our norwegian brother Harald III. Hardrada tr
 
 #Religious Side Missions
 lgr_norland_dismantle_teutonic_order_title:0 "Dismantle Teutonic Order"
-lgr_norland_dismantle_teutonic_order_desc:0 "Missing Loc"
+lgr_norland_dismantle_teutonic_order_desc:0 "The Catholic Orders in the southern baltic area are synonomys with our demise. Dismantling the Teutonic Order to our south should be an important goal for us."
 
 lgr_norland_integrate_prussian_culture_title:0 "Prussian Culture"
-lgr_norland_integrate_prussian_culture_desc:0 "Missing Loc"
+lgr_norland_integrate_prussian_culture_desc:0 "The Prussians are known for military culture. Maybe they could teach us."
 
 lgr_norland_attack_the_empire_title:0 "Attack the Empire"
-lgr_norland_attack_the_empire_desc:0 "Missing Loc"
+lgr_norland_attack_the_empire_desc:0 "The Holy Roman Empire reigns in central Europe. But its weak. Weaking them even more could lead to the Downfall of the von Habsburg!"
 
 lgr_norland_norse_empire_title:0 "Holy Norse Empire"
-lgr_norland_norse_empire_desc:0 "Missing Loc"
+lgr_norland_norse_empire_desc:0 "The Holy Roman Empire claims to be an holy empire. However, heathens cannot be holy. Spreading the true faith in the empire will expand our sphere of influence."
 
 lgr_norland_dismantle_hre_title:0 "Dismantle the Empire"
-lgr_norland_dismantle_hre_desc:0 "Missing Loc"
+lgr_norland_dismantle_hre_desc:0 "The Empire is weak! We should make sure that the von Habsburgs dont have the chance to come back stronger!"
 
 #Diplomatic Missions
 lgr_norland_have_an_ally_title:0 "Get an Ally"
@@ -79,10 +79,10 @@ lgr_norland_dev_our_homelands_title:0 "Focus on our Homelands"
 lgr_norland_dev_our_homelands_desc:0 "Altough this island in the baltic might not be our original home. It is the home we live on. We should show the world that the norse aren't gone yet. Our island should be a jewel that can make us proud."
 
 lgr_norland_finland_mission_title:0 "Invade Finland"
-lgr_norland_finland_mission_desc:0 "Missing Loc"
+lgr_norland_finland_mission_desc:0 "Our northern neighors in Finland may have a different culture. But owning these land will secure our homelands."
 
 lgr_norland_seize_neva_title:0 "Seize Neva"
-lgr_norland_seize_neva_desc:0 "Missing Loc"
+lgr_norland_seize_neva_desc:0 "The Baltic Sea is important for us and our trade. The eastern baltic city of Neva is a key to securing our trade routes."
 
 #Trade Missions
 lgr_norland_baltic_fleet_title:0 "Baltic Fleet"

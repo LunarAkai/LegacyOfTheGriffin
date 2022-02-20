@@ -1,0 +1,31 @@
+﻿l_english:
+#ADM
+adm_tech_cs_33_name: "Improved Cities"
+adm_tech_cs_33_desc: "Improved Cities"
+
+adm_tech_cs_34_name: "Large Scale Industries"
+adm_tech_cs_34_desc: "Large Scale Industries"
+
+adm_tech_cs_35_name: "Global Empires"
+adm_tech_cs_35_desc: "Global Empires"
+
+#DIP
+dip_tech_cs_33_name: "Intercontinental Trading"
+dip_tech_cs_33_desc: "Intercontinental Trading"
+
+dip_tech_cs_34_name: "Large Scale Navies"
+dip_tech_cs_34_desc: "Large Scale Navies"
+
+dip_tech_cs_35_name: "Global Trade"
+dip_tech_cs_35_desc: "Global Trade"
+
+#MIL
+mil_tech_cs_33_name: "Modern Cavalry Tactics"
+mil_tech_cs_33_desc: "Modern Cavalry Tactics"
+
+mil_tech_cs_34_name: "Nationalist Armies"
+mil_tech_cs_34_desc: "Nationalist Armies"
+
+mil_tech_cs_35_name: "New Era Military"
+mil_tech_cs_35_desc: "New Era Military"
+

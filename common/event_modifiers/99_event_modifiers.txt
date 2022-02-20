@@ -16,5 +16,5 @@ lgr_rostock_rektor_reform = {
 }
 
 lgr_rostock_rektor_military = {
-	land_morale = 0.1
+	mil_tech_cost_modifier = -0.1
 }

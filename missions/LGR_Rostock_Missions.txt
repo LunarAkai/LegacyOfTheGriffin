@@ -906,6 +906,17 @@ lgr_rostock_conquest_side = {
 				}
 			}
 				add_dip_power = 75
+
+				weser_area = {
+					if = {
+						limit = {
+							NOT = { is_core = ROOT }
+							NOT = { is_permanent_claim = ROOT }
+						}
+						add_permanent_claim = ROOT
+					}
+				}
+				
 		}
 	}
 
@@ -1672,8 +1683,21 @@ lgr_rostock_flav_side_mission = {
 		}
 
 		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_burghers_control_over_the_mint
+			if = {
+				limit = {
+					has_dlc = "Origins"
+				}
+				unlock_estate_privilege = {
+					estate_privilege = estate_burghers_control_over_the_mint
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Origins"
+					}
+				}
+				add_years_of_income = 0.5
 			}
 		}
 	}

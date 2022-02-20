@@ -169,7 +169,15 @@ lgr_altmark_missions_main = {
 
 			ROOT = {
 				change_tag = BRA
-				swap_free_idea_group = yes
+				if = {
+					limit = {
+						has_custom_ideas = no
+					}
+					country_event = {
+						id = ideagroups.1
+					}
+					#Swap Ideas
+				}
 				swap_non_generic_missions = yes
 				add_country_modifier = {
 					name = "centralization_modifier"

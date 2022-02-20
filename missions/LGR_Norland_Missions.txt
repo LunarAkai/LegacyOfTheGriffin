@@ -634,7 +634,7 @@ lgr_norland_main_side_religious = {
 			}
 			add_country_modifier = {
 				name = lgr_norse_invade_england
-				duration = 7300
+				duration = -1
 			}
 			
 		}
