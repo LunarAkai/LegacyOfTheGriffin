@@ -9,4 +9,5 @@ tags={
 	"Religion"
 }
 name="Legacy of the Griffin"
-supported_version="1.32.*"
+supported_version="1.33.*"
+picture="thumbnail.png"
