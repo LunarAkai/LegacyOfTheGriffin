@@ -1,4 +1,4 @@
-v1.0.0 -- "Legacy of the Griffin" --
+v0.1.0 -- "Legacy of the Griffin" --
 
 Main Features:
 - New bookmark
