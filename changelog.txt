@@ -1,3 +1,11 @@
+v0.1.1
+- added missing localization for Norland missions
+- added missing localization for Norland national ideas
+- added missing localization for Rostock national ideas
+- added missing localization for "Legacy of the Griffin" bookmark
+- renamed "Norse future" idea to "Viking Innovation"
+
+
 v0.1.0 -- "Legacy of the Griffin" --
 
 Main Features:

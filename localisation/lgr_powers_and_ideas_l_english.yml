@@ -6,25 +6,25 @@ GRO_ideas_start:0 "Rostocker Traditions"
 GRO_ideas_bonus:0 "Rostocker Ambition"
 
 lgr_ros_hanseatic_fleet:0 "Hanseatic Fleet"
-lgr_ros_hanseatic_fleet_desc:0 "test"
+lgr_ros_hanseatic_fleet_desc:0 "Our mighty fleet is able to challenge Lübeck and soon we will rule the Baltic Sea."
 
 lgr_ros_stadtrat:0 "Stadtrat"
-lgr_ros_stadtrat_desc:0 "test"
+lgr_ros_stadtrat_desc:0 "The republican values are deeply rooted within our people."
 
 lgr_ros_hanseatic_efficiency:0 "Hanseatic Efficiency"
-lgr_ros_hanseatic_efficiency_desc:0 "test"
+lgr_ros_hanseatic_efficiency_desc:0 "With strong merchants and guilds we shall compete in the game of ducats."
 
 lgr_ros_army_strength:0 "Army of the North"
-lgr_ros_army_strength_desc:0 "test"
+lgr_ros_army_strength_desc:0 "Our glorious city needs a powerful army to defend us from all threats."
 
 lgr_ros_diplomatic_connections:0 "Diplomatic Connections"
-lgr_ros_diplomatic_connections_desc:0 "test"
+lgr_ros_diplomatic_connections_desc:0 "We are players in the game of diplomacy and we know how to achieve the best result for our people."
 
 lgr_ros_gilden:0 "Handelsgilden"
-lgr_ros_gilden_desc:0 "Test"
+lgr_ros_gilden_desc:0 "Our gilds shall be known around this world."
 
 lgr_ros_powerful_traders:0 "Powerful Merchants"
-lgr_ros_powerful_traders_desc:0 "test"
+lgr_ros_powerful_traders_desc:0 "Rich merchants are influencing the Stadtrat. However we can profit from this."
 
 #Hanseatic Empire
 GHE_ideas:0 "Hanseatic Ideas"
@@ -63,25 +63,25 @@ GNL_ideas_start:0 "Norse Traditions"
 GNL_ideas_bonus:0 "Norse Ambition"
 
 lgr_norse_united_against_heathens:0 "United against heathens"
-lgr_norse_united_against_heathens_desc:0 "Missing Loc"
+lgr_norse_united_against_heathens_desc:0 "In struggle our people stand united against our enemies."
 
 lgr_norse_make_norse_great_again:0 "Viking Culture"
-lgr_norse_make_norse_great_again_desc:0 "Missing Loc"
+lgr_norse_make_norse_great_again_desc:0 "The old vikings conquered and settled lands like Normandy and England. Our traditons of intergrating foreign people into our culture shall be continued."
 
 lgr_norse_remember_the_forefathers:0 "Remember the forefathers"
-lgr_norse_remember_the_forefathers_desc:0 "Missing Loc"
+lgr_norse_remember_the_forefathers_desc:0 "Our forefathers are known and feared among the known world."
 
-lgr_norse_norse_future:0 "Norse future"
-lgr_norse_norse_future_desc:0 "Missing Loc"
+lgr_norse_norse_future:0 "Viking Innovation"
+lgr_norse_norse_future_desc:0 "We have overcome great challenges. Our people know how to survive in a hostile world."
 
 lgr_norse_norse_missionaries_idea:0 "Norse Missionaries"
-lgr_norse_norse_missionaries_idea_desc:0 "Missing Loc"
+lgr_norse_norse_missionaries_idea_desc:0 "Odin shall rule the European realm"
 
 lgr_norse_viking_traditions:0 "Viking Traditions"
-lgr_norse_viking_traditions_desc:0 "Missing Loc"
+lgr_norse_viking_traditions_desc:0 "Our forefathers ruled the waves. This tradition is deeply rooted within our people. We shall rule the waves again and forever."
 
 lgr_norse_crusade_against_the_world:0 "Crusade against the world"
-lgr_norse_crusade_against_the_world_desc:0 "Missing Loc"
+lgr_norse_crusade_against_the_world_desc:0 "The waves and the land are ours. The gods gave us this world for us to rule."
 
 #Tall Brandenburg / Spandau
 LGR_TBRA_ideas:0 "Brandenburg Ideas"

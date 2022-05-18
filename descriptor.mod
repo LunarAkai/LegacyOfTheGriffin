@@ -1,4 +1,4 @@
-﻿version="0.9.0"
+version="0.1.1"
 tags={
 	"Alternative History"
 	"Map"
@@ -9,5 +9,6 @@ tags={
 	"Religion"
 }
 name="Legacy of the Griffin"
-supported_version="1.33.*"
 picture="thumbnail.png"
+supported_version="1.33.*"
+remote_file_id="2809373643"
