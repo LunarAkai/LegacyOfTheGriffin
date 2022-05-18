@@ -1,2 +1,2 @@
 Issues & Bugs:
-#001 - Crash between 1.1.1498 (date selection) and 14.8.1499 (observer) [Not Solved]
+#001 - Crash between 1.1.1498 (date selection) and 14.8.1499 (observer) [Fixed]
