@@ -191,7 +191,7 @@ LGR_TBRA_ideas = { #Tall Brandenburg/Spandau // Base
 
 	lgr_tbra_great_spandau = {
 		infantry_power = 0.10
-		core_creation = -0.05
+		core_creation = -0.10
 	}
 }
 

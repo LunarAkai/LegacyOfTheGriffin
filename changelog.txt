@@ -1,3 +1,11 @@
+v0.1.2 // not live yet
+[Balance Changes]
+- "Great Spandau" idea now gives -10% core creation cost
+
+[Other Changes]
+- added missing localization for "tall"/(Spandau) Brandenburg ideas
+- added missing localization for North German Confederation ideas
+
 v0.1.1
 - added missing localization for Norland missions
 - added missing localization for Norland national ideas
