@@ -1,4 +1,4 @@
-﻿lgr_tBrandenburg_Missions_main = {
+﻿lgr_tBrandenburg_Missions_main = { #TODO: everything will be branching missions (well, most missions)
 	slot = 3
 	generic = no
 	ai = yes
@@ -317,9 +317,22 @@
 				}
 			}
 
-			else = {
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = BRA
+						is_emperor = yes
+					}
+				}
+			
 				add_imperial_influence = 10
+				
 			}
+
+			add_prestige = 10
+
+			
 			
 		}
 	}
