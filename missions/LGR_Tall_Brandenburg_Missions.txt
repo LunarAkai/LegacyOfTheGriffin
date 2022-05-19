@@ -177,11 +177,23 @@
 			tbrandenburg_subjugate_hesse
 		}
 		trigger = {
-			ROOT = {
-				tag = GNC
+
+			OR = {
+				ROOT = {
+					tag = GNC
+				}
+
+				ROOT = {
+					is_emperor = yes
+				}
 			}
+
+			
 		}
 		effect = {
+
+			
+
 			alsace_area = {
 				limit = {
 					NOT = {
@@ -203,11 +215,26 @@
 					}
 				}
 				add_permanent_claim = ROOT
+
+
+				
 			}
+
+			
+			
 			hidden_effect = {
-				FRA = {
-					set_country_flag = lgr_fra_north_german_confed_formed_flag
+
+				if = {
+					limit = {
+						root = {
+							tag = GNC
+					}
+					FRA = {
+						set_country_flag = lgr_fra_north_german_confed_formed_flag
+					}
+	
 				}
+				
 			}
 		}
 	}

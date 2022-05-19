@@ -1,3 +1,8 @@
+v.0.1.3 
+[HOTFIX]
+- Changed "North German Confederation" Mission for Brandenburg to be available as HRE Emperor
+    - NOTE: this will be a branching mission later in development
+
 v0.1.2
 [Balance Changes]
 - "Great Spandau" idea now gives -10% core creation cost
