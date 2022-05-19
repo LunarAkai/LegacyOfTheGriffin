@@ -228,12 +228,14 @@
 					limit = {
 						root = {
 							tag = GNC
+						}
 					}
 					FRA = {
 						set_country_flag = lgr_fra_north_german_confed_formed_flag
 					}
 	
 				}
+			
 				
 			}
 		}
@@ -303,9 +305,22 @@
 			}
 		}
 		effect = {
-			country_event = {
-				id = lgr_spandau_events.3
+
+			if = {
+				limit = {
+					ROOT = {
+						tag = GNC
+					}
+				}
+				country_event = {
+					id = lgr_spandau_events.3
+				}
 			}
+
+			else = {
+				add_imperial_influence = 10
+			}
+			
 		}
 	}
 }
