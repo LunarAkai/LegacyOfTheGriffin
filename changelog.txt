@@ -1,10 +1,12 @@
-v0.1.2 // not live yet
+v0.1.2
 [Balance Changes]
 - "Great Spandau" idea now gives -10% core creation cost
+- "Unmatched Quality" idea now gives +15% infantry combat ability
 
 [Other Changes]
 - added missing localization for "tall"/(Spandau) Brandenburg ideas
 - added missing localization for North German Confederation ideas
+- added missing localization for Hanseatic Empire ideas
 
 v0.1.1
 - added missing localization for Norland missions
