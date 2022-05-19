@@ -68,7 +68,7 @@ rostock_domfehde = {
 			has_idea_group = religious_ideas
 		}
 		modifier = {
-			factor = 1 #anpassen!
+			factor = 1
 			tag = GRO
 		}
 		modifier = {

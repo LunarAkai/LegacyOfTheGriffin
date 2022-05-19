@@ -39,7 +39,9 @@ country_event = {
 			factor = 50
 		}
 		hidden_effect = {
+			
 			set_country_flag = lgr_tbrandenburg_push_for_emperorship
+			swap_non_generic_missions = yes
 		}
 		add_country_modifier = {
 			name = lgr_tbra_push_for_emperor_modifier
@@ -53,7 +55,9 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+			swap_non_generic_missions = yes
 			set_country_flag = lgr_tbrandenburg_allow_dis_northgerman_confederation
+			
 		}
 		add_country_modifier = {
 			name = lgr_tbra_without_hab_modifier

@@ -92,3 +92,24 @@ lgr_tbra_religious_lead_desc:0 "Missing Loc"
 
 lgr_tbrandenburg_prot_empire_title:0 "Protestant Empire"
 lgr_tbrandenburg_prot_empire_desc:0 "Missing Loc"
+
+
+#Branching Missions - German Question - Pre
+lgr_tbra_german_question_branching_mission_one_title:0 "Branching mission"
+lgr_tbra_german_question_branching_mission_one_desc:0 "This is a branching mission."
+
+lgr_tbra_german_question_branching_mission_two_title:0 "Branching mission"
+lgr_tbra_german_question_branching_mission_two_desc:0 "This is a branching mission."
+
+lgr_tbra_german_question_branching_mission_three_title:0 "Branching mission"
+lgr_tbra_german_question_branching_mission_three_desc:0 "This is a branching mission."
+
+#Branching Mission - German Question - HRE Path
+lgr_tbrandenburg_dethrone_austria_title:0 "Dethrone Austria"
+lgr_tbrandenburg_dethrone_austria_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_dethrone_austria_two_title:0 "Dethrone Austria"
+lgr_tbrandenburg_dethrone_austria_two_desc:0 "Missing Loc"
+
+lgr_tbrandenburg_dethrone_austria_three_title:0 "Dethrone Austria"
+lgr_tbrandenburg_dethrone_austria_three_desc:0 "Missing Loc"

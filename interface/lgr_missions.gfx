@@ -15,6 +15,10 @@ spriteTypes = {
 		name = "lgr_native_build_army_mission"
 		texturefile = "gfx//interface//missions/lgr_build_army_mission.dds"
 	}
+	spriteType = {
+		name = "lgr_branching_mission"
+		texturefile = "gfx//interface//missions/lgr_mission_unknown_mission.dds"
+	}
 
 	
 }
