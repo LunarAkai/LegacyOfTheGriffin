@@ -7,7 +7,13 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		AND = {
-			exists = GNC
+			OR = {
+				exists = GNC
+				BRA = {
+					is_emperor = yes
+				}
+			}
+			
 			ROOT = {
 				AND = {
 					has_country_flag = lgr_fra_north_german_confed_formed_flag
@@ -28,10 +34,31 @@ country_event = {
 	option = {
 		name = "lgr_france_events.1.a"
 		FRA = {
-			declare_war_with_cb = {
-				casus_belli = cb_humiliate
-				who = GNC
+			if = {
+				limit = {
+					exists = GNC
+				}
+
+				declare_war_with_cb = {
+					casus_belli = cb_humiliate
+					who = GNC
+				}
 			}
+
+			if = {
+				limit = {
+					exists = BRA
+					BRA = {
+						is_emperor = yes
+					}
+				}
+
+				declare_war_with_cb = {
+					casus_belli = cb_humiliate
+					who = BRA
+				}
+			
+			
 			set_country_flag = lgr_fra_fraco_german_war_flag
 		}
 	}
