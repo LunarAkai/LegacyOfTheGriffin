@@ -288,6 +288,12 @@ lgr_tbra_humilate_austria = {
 	legitimacy = 1
 }
 
+lgr_tbra_modifier_regnum_aeternum = {
+	yearly_absolutism = 0.5
+	max_absolutism = 10
+	governing_capacity_modifier = 0.20
+}
+
 #COMMON
 
 lgr_galleys = {
@@ -301,4 +307,17 @@ lgr_military_tradition = {
 
 lgr_grateful_vassal = {
 	liberty_desire = -50
+}
+
+lgr_modifier_papal_throne = {
+	papal_influence = 0.5
+}
+
+lgr_modifier_imperial_authority = {
+	imperial_authority = 0.10
+}
+
+lgr_religious_victory = {
+	warscore_cost_vs_other_religion = -0.10
+	prestige = 1
 }

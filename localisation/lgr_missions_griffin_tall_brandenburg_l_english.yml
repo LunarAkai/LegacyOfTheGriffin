@@ -20,9 +20,7 @@ lgr_tbrandenburg_north_german_confed_desc:0 "Missing Loc"
 lgr_tbrandenburg_germany_title:0 "United Germany"
 lgr_tbrandenburg_germany_desc:0 "Missing Loc"
 
-#Austria
-lgr_tbrandenburg_humiliate_austria_title:0 "Humiliate Austria"
-lgr_tbrandenburg_humiliate_austria_desc:0 "Missing Loc"
+
 
 #Mecklenburg and Beyond
 lgr_tbrandenburg_mecklenburg_beyond_rostock_port_title:0 "Rostock Port"
@@ -83,7 +81,17 @@ lgr_tbrandenburg_germanize_lusatia_mission_desc:0 "Missing Loc"
 lgr_tbrandenburg_weaken_poland_mission_title:0 "Weaken Poland"
 lgr_tbrandenburg_weaken_poland_mission_desc:0 "Missing Loc"
 
-#Religious Missions
+#Branching Missions - Religious - Pre
+lgr_tbra_religious_branching_mission_one_title:0 "Branching mission"
+lgr_tbra_religious_branching_mission_one_desc:0 "This is a branching mission."
+
+lgr_tbra_religious_branching_mission_two_title:0 "Branching mission"
+lgr_tbra_religious_branching_mission_two_desc:0 "This is a branching mission."
+
+lgr_tbra_religious_branching_mission_three_title:0 "Branching mission"
+lgr_tbra_religious_branching_mission_three_desc:0 "This is a branching mission."
+
+#Branching Missions - Religious - Protestant Path
 lgr_tbra_lead_reform_title:0 "Lead the Reformation"
 lgr_tbra_lead_reform_desc:0 "Missing Loc"
 
@@ -92,6 +100,17 @@ lgr_tbra_religious_lead_desc:0 "Missing Loc"
 
 lgr_tbrandenburg_prot_empire_title:0 "Protestant Empire"
 lgr_tbrandenburg_prot_empire_desc:0 "Missing Loc"
+
+#Branching Missions - Religious - Catholic Path
+lgr_tbra_cath_papal_controller_title:0 "Control the Holy See"
+lgr_tbra_cath_papal_controller_desc:0 "Missing Loc"
+
+lgr_tbra_cath_defend_empire_against_reformation_title:0 "Holy War against Heretics"
+lgr_tbra_cath_defend_empire_against_reformation_desc:0 "Missing Loc"
+
+lgr_tbra_cath_true_faith_title:0 "Catholic Empire"
+lgr_tbra_cath_true_faith_desc:0 "Missing Loc"
+
 
 
 #Branching Missions - German Question - Pre
@@ -113,3 +132,29 @@ lgr_tbrandenburg_dethrone_austria_two_desc:0 "Missing Loc"
 
 lgr_tbrandenburg_dethrone_austria_three_title:0 "Dethrone Austria"
 lgr_tbrandenburg_dethrone_austria_three_desc:0 "Missing Loc"
+
+#Branching Missions - German Empire - Pre
+lgr_tbra_german_empire_branching_mission_one_title:0 "Branching mission"
+lgr_tbra_german_empire_branching_mission_one_desc:0 "This is a branching mission."
+
+lgr_tbra_german_empire_branching_mission_two_title:0 "Branching mission"
+lgr_tbra_german_empire_branching_mission_two_desc:0 "This is a branching mission."
+
+#Branching Missions - German Empire - HRE path
+lgr_tbra_empire_holy_empire_title:0 "Holy Empire"
+lgr_tbra_empire_holy_empire_desc:0 "Missing Loc"
+
+lgr_tbra_empire_regnum_aeternum_title:0 "Regnum Aeternum"
+lgr_tbra_empire_regnum_aeternum_desc:0 "Missing Loc"
+
+#Branching Missions - Austria - Pre
+lgr_tbra_austria_branching_mission_one_title:0 "Branching mission"
+lgr_tbra_austria_branching_mission_one_desc:0 "This is a branching mission."
+
+#Branching Missions - Austria - Humiliate Austria / GNC Path
+lgr_tbrandenburg_humiliate_austria_title:0 "Humiliate Austria"
+lgr_tbrandenburg_humiliate_austria_desc:0 "Missing Loc"
+
+#Branching Missions - Austria - HRE Path
+lgr_tbra_austria_no_heathens_title:0 "Drive out the muslims"
+lgr_tbra_austria_no_heathens_desc:0 "Missing Loc"

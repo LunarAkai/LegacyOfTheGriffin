@@ -168,6 +168,109 @@
 			}
 		}
 	}
+}
+
+#Branching Missions - HRE / North German Confed - Pre
+
+lgr_tbrandenburg_german_empire_branch_missions = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_push_for_emperorship
+		}
+
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+		}
+	}
+	has_country_shield = yes
+
+	lgr_tbra_german_empire_branching_mission_one = {
+		icon = lgr_branching_mission
+		position = 7
+		required_missions = {
+			lgr_tbrandenburg_north_rhine_area
+			lgr_tbrandenburg_noble_privilege
+			tbrandenburg_subjugate_hesse
+			lgr_tbra_german_question_branching_mission_three
+			lgr_tbrandenburg_dethrone_austria_three
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_tbra_german_empire_branching_mission_two = {
+		icon = lgr_branching_mission
+		position = 9
+		required_missions = {
+			lgr_tbra_german_empire_branching_mission_one
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+}
+
+lgr_tbrandenburg_german_empire_gnc_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+
+ 
+		has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+		
+	}
+	has_country_shield = yes
+
 	lgr_tbrandenburg_north_german_confed = {
 		position = 7
 		icon = lgr_mission_kaiserreich
@@ -185,17 +288,11 @@
 					tag = GNC
 				}
 
-				ROOT = {
-					is_emperor = yes
-				}
 			}
 
 			
 		}
 		effect = {
-
-			
-
 			alsace_area = {
 				limit = {
 					NOT = {
@@ -217,13 +314,8 @@
 					}
 				}
 				add_permanent_claim = ROOT
-
-
-				
 			}
-
-			
-			
+		
 			hidden_effect = {
 
 				if = {
@@ -237,11 +329,12 @@
 					}
 	
 				}
-			
 				
+				complete_mission = lgr_tbra_empire_holy_empire
 			}
 		}
 	}
+
 	lgr_tbrandenburg_germany = {
 		position = 9
 		icon = lgr_mission_junkers
@@ -308,37 +401,104 @@
 		}
 		effect = {
 
-			if = {
-				limit = {
-					ROOT = {
-						tag = GNC
-					}
-				}
-				country_event = {
-					id = lgr_spandau_events.3
-				}
+		
+			country_event = {
+				id = lgr_spandau_events.3
 			}
-
-
-			if = {
-				limit = {
-					ROOT = {
-						tag = BRA
-						is_emperor = yes
-					}
-				}
-			
-				add_imperial_influence = 10
-				
-			}
-
-			add_prestige = 10
-
-			
-			
+		
+			add_prestige = 10				
 		}
 	}
 }
+
+#Branching Missions - German Empire - HRE Path 
+lgr_tbrandenburg_german_empire_hre_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+		has_country_flag = lgr_tbrandenburg_push_for_emperorship
+	}
+	has_country_shield = yes
+
+	lgr_tbra_empire_holy_empire = {
+		position = 7
+		icon = the_holy_league
+		required_missions = {
+			lgr_tbrandenburg_north_rhine_area
+			lgr_tbrandenburg_noble_privilege
+			tbrandenburg_subjugate_hesse
+			lgr_tbra_german_question_branching_mission_three
+			lgr_tbrandenburg_dethrone_austria_three
+		}
+
+		trigger = {
+			papacy_active = yes
+			hre_religion_locked = yes
+			hre_religion = catholic
+			
+			PAP = {
+				is_part_of_hre = yes
+				is_elector = yes
+			}
+
+			hre_reform_passed = emperor_perpetual_diet
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_modifier_imperial_authority
+				duration = 7300
+			}
+
+			hidden_effect = {
+				complete_mission = lgr_tbrandenburg_north_german_confed
+			}
+		}
+	}
+
+	lgr_tbra_empire_regnum_aeternum = {
+		position = 9
+		icon = a.e.i.o.u.
+		required_missions = {
+			lgr_tbra_empire_holy_empire
+		}
+
+		trigger = {
+			hre_size = 60
+			hre_reform_passed = emperor_privilegia_de_non_appelando
+			ROOT = {
+				OR = {
+					in_golden_age = yes
+					has_had_golden_age = yes
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_tbra_modifier_regnum_aeternum
+				duration = -1
+			}
+
+		}
+	}
+}
+
 
 lgr_tbrandenburg_missions_mecklenburg_and_beyond = {
 	slot = 2
@@ -1146,6 +1306,92 @@ lgr_tbrandenburg_german_question_emperor_path = {
 	}
 }
 
+lgr_tbrandenburg_religious_branching_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_push_for_emperorship
+		}
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+		}
+	}
+	has_country_shield = yes
+
+	lgr_tbra_religious_branching_mission_one = {
+		icon = lgr_branching_mission
+		position = 5
+		required_missions = {
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_tbra_religious_branching_mission_two = {
+		icon = lgr_branching_mission
+		position = 6
+		required_missions = {
+			lgr_tbra_religious_branching_mission_one
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_tbra_religious_branching_mission_three = {
+		icon = lgr_branching_mission
+		position = 7
+		required_missions = {
+			lgr_tbra_religious_branching_mission_two
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+}
+
+#Branch - Religious - Protestant path
 lgr_tbrandenburg_protestant_mission = {
 	slot = 1
 	generic = no
@@ -1165,6 +1411,7 @@ lgr_tbrandenburg_protestant_mission = {
 		NOT = {
 			map_setup = map_setup_random
 		}
+		has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
 	}
 	has_country_shield = yes
 	lgr_tbra_lead_reform = {
@@ -1237,6 +1484,118 @@ lgr_tbrandenburg_protestant_mission = {
 		}
 	}
 }
+
+#Branch - Religious - Catholic Path
+lgr_tbrandenburg_branch_reli_cath_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+		has_country_flag = lgr_tbrandenburg_push_for_emperorship
+	}
+	has_country_shield = yes
+
+	lgr_tbra_cath_papal_controller = {
+		icon = new_st_peters_basilica
+		position = 5
+		required_missions = {
+		}
+
+		trigger = {
+			ROOT = {
+				is_papal_controller = yes
+			}
+		}
+
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						is_emperor = yes
+					}
+				}
+				add_imperial_influence = 5
+			}
+
+			add_country_modifier = {
+				name = lgr_modifier_papal_throne
+				duration = 7300
+			}
+
+		}
+	}
+
+	lgr_tbra_cath_defend_empire_against_reformation = {
+		icon = spread_piety
+		position = 6
+		required_missions = {
+			lgr_tbra_cath_papal_controller
+		}
+
+		trigger = {
+			AND = {
+				religious_unity = 0.9
+				hre_leagues_enabled = yes
+				in_league = catholic
+				is_in_league_war = yes
+			}
+		}
+
+		effect = {
+			create_general = {
+				tradition = 100
+			}
+			if = {
+				limit = {
+					is_league_leader = yes
+				}
+				add_country_modifier = {
+					name = lgr_tbra_religious_leadership
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	lgr_tbra_cath_true_faith = {
+		icon = connect_further_austria
+		position = 7
+		required_missions = {
+			lgr_tbra_cath_defend_empire_against_reformation
+		}
+
+		trigger = {
+			ROOT = {
+				is_emperor = yes
+			}
+			hre_religion = catholic
+			hre_religion_locked = yes
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_tbra_true_faith
+				duration = -1
+			}
+		}
+	}
+}
+
+
 
 lgr_prussian_missions_main_slot = {
 	#copied from vanilla
@@ -1494,7 +1853,7 @@ lgr_prussian_missions_main_slot = {
 	}
 }
 
-lgr_tbrandenburg_mission_austria = {
+lgr_tbrandenburg_austria_branch = {
 	slot = 4
 	generic = no
 	ai = yes
@@ -1513,8 +1872,61 @@ lgr_tbrandenburg_mission_austria = {
 		NOT = {
 			map_setup = map_setup_random
 		}
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_push_for_emperorship
+		}
+		NOT = { 
+			has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+		}
 	}
 	has_country_shield = yes
+
+	lgr_tbra_austria_branching_mission_one = {
+		icon = lgr_branching_mission
+		position = 8
+		required_missions = {
+			lgr_tbrandenburg_north_german_confed
+			lgr_tbra_empire_holy_empire
+			lgr_tbra_german_empire_branching_mission_one
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+}
+
+lgr_tbrandenburg_mission_austria_humilite = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+
+		has_country_flag = lgr_tbrandenburg_build_an_empire_without_hab
+	}
+	has_country_shield = yes
+
 	lgr_tbrandenburg_humiliate_austria = {
 		icon = humiliate_austria
 		position = 8
@@ -1543,6 +1955,60 @@ lgr_tbrandenburg_mission_austria = {
 				add_base_tax = -3
 				add_base_production = -3
 				add_base_manpower = -3
+			}
+		}
+	}
+}
+
+lgr_tbrandenburg_austria_no_heathens_in_europe = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}
+	potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GNC
+			AND = {
+				tag = BRA
+				was_tag = GSU
+			}
+		}
+		NOT = {
+			map_setup = map_setup_random
+		}
+
+		has_country_flag = lgr_tbrandenburg_push_for_emperorship
+	}
+	has_country_shield = yes
+
+	lgr_tbra_austria_no_heathens = {
+		icon = the_imperial_border
+		position = 8
+		required_missions = {
+			lgr_tbra_empire_holy_empire
+		}
+
+		trigger = {
+			AND = {
+				NOT = {
+					exists = TUR
+				}
+				NOT = {
+					europe = {
+						type = all
+						NOT = { religion_group = muslim }
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_religious_victory
+				duration = -1
 			}
 		}
 	}

@@ -77,8 +77,12 @@ lgr_tbra_religious_leadership:0 "Religious leadership"
 lgr_tbra_true_faith:0 "True faith leads the empire"
 lgr_tbra_german_netherlands:0 "German Netherlands"
 lgr_tbra_humilate_austria:0 "Humiliate Austria"
+lgr_tbra_modifier_regnum_aeternum:0 "Regnum Aeternum"
 
 #Common Mission Modifiers
 lgr_galleys:0 "Galley Fleet"
 lgr_military_tradition:0 "Military Tradition"
 lgr_grateful_vassal:0 "Grateful vassal"
+lgr_modifier_papal_throne:0 "Control the Holy See"
+lgr_modifier_imperial_authority:0 "Imperial authority"
+lgr_religious_victory:0 "Religious victory"

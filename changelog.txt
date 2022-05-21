@@ -1,7 +1,11 @@
-v0.2.0
+v0.2.0 ~ Spandau Update ~
 [Missions]
 - updated (Spandau)Brandenburg missions 
     - added branching missions for German Question path
+
+[Other Changes]
+- added missing loc for "Viking Empire" goverment reform
+
 
 
 v0.1.3d
