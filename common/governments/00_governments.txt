@@ -306,6 +306,7 @@ republic = {
 				administrative_divisions_reform
 				union_of_states_reform
 				penal_colonies_reform
+				lgr_reform_ruthless_trading #Rostock & Lübeck
 			}
 		}
 		parliamentary_vs_presidential = {

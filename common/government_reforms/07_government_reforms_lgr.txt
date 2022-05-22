@@ -46,3 +46,27 @@ norland_missionary_reform = {
 		factor = 50
 	}
 }
+
+#Common (Rostock & Lübeck)
+lgr_reform_ruthless_trading = {
+	icon = "paper_money_map"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+
+	potential = {
+		OR = {
+			tag = GRO
+			was_tag = GRO
+			tag = HSA
+			was_tag = HSA
+		}
+	}
+
+	modifiers = {
+		global_trade_power = 0.2
+		global_unrest = 2
+		min_autonomy = 5
+	}
+	
+}

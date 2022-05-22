@@ -3,10 +3,13 @@ v0.2.0 ~ Spandau Update ~
 - updated (Spandau)Brandenburg missions 
     - added branching missions for German Question path
 
+[Goverment reforms]
+- added "Ruthless Trade" Goverment Reform for Rostock & Lübeck
+
 [Other Changes]
 - added missing loc for "Viking Empire" goverment reform
 
-
+-----------------------------------------------------------------------
 
 v0.1.3d
 [HOTFIX]

@@ -1996,12 +1996,11 @@ lgr_tbrandenburg_austria_no_heathens_in_europe = {
 				NOT = {
 					exists = TUR
 				}
-				NOT = {
-					europe = {
-						type = all
-						NOT = { religion_group = muslim }
-					}
-				}
+			
+				all_province = {
+					continent = europe
+					NOT = { religion_group = muslim }
+				}				
 			}
 		}
 
