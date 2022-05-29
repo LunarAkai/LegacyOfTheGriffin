@@ -1,7 +1,7 @@
 v0.2.0 ~ Spandau Update ~
 [Missions]
 - updated (Spandau)Brandenburg missions 
-    - added branching missions for German Question path
+    - added branching missions (HRE // North German Confederation)
 
 [Goverment reforms]
 - added "Ruthless Trade" Goverment Reform for Rostock & Lübeck
