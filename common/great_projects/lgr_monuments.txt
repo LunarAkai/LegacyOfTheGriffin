@@ -172,5 +172,4 @@ lgr_st_peters_church = {
 			}
 		}
 	}
-
 }

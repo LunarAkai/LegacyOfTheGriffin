@@ -279,6 +279,51 @@ LGR_GSN_ideas = {
 	union_and_security_act = {
 		global_manpower_modifier = 0.20
 	}
-
 }
 
+LGR_GAH_ideas = {
+
+	start = {
+		global_missionary_strength = 0.01
+		missionaries = 1
+	}
+
+	bonus = {
+		same_culture_advisor_cost = -0.25
+	}
+
+	trigger = {
+		tag = GAH
+	}
+	free = yes
+
+	lgr_gah_idea_divine_rule = {
+		devotion = 1
+		legitimacy = 1
+		republican_tradition = 0.25		
+	}
+
+	lgr_gah_holy_mount_athos = {
+		defensiveness = 0.25
+	}
+
+	lgr_gah_blessed_ships = {
+		naval_morale = 0.15
+	}
+
+	lgr_gah_ae_reduction = {
+		ae_impact = -0.2
+	}
+
+	lgr_gah_diplo_rep = {
+		diplomatic_reputation = 1
+	}
+
+	lgr_gah_build_cost = {
+		build_cost = -0.2
+	}
+
+	lgr_gah_idea_cost = {
+		production_efficiency = 0.1
+	}
+}

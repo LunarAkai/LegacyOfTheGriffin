@@ -22,3 +22,6 @@ GNC = "countries/Northgermanconferadtion.txt" #North German Conferadtion
 #Scandinvia
 GNL = "countries/Norland.txt" #Norse Refuge
 GSN = "countries/Sweden_Norway.txt" #Sweden-Norway
+
+#Greece & Balkans
+GAH = "countries/Athos.txt" #Athos

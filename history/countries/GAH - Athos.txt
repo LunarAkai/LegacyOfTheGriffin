@@ -1,0 +1,21 @@
+government = theocracy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = greek
+religion = orthodox
+technology_group = eastern
+capital = 4947 # Athos
+fixed_capital = 4947 # Cannot move capital away from this province & no power cost to move to it
+
+1440.1.1 = {
+	monarch = {
+		name = "Gregorios Voulgaris"
+		dynasty = "Voulgaris"
+		adm = 6
+		dip = 4
+		mil = 1
+		birth_date = 1407.11.23
+		religion = orthodox
+		culture = greek
+	}
+}

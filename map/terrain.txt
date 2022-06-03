@@ -226,6 +226,8 @@ categories =  {
 			4840 # Mandala
 			
 			4856
+			#LGR
+			4946 4947
 		}
 	}
 
