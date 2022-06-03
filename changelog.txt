@@ -1,3 +1,16 @@
+v0.2.0 ~ Spandau Update ~
+[Missions]
+- updated (Spandau)Brandenburg missions 
+    - added branching missions (HRE // North German Confederation)
+
+[Goverment reforms]
+- added "Ruthless Trade" Goverment Reform for Rostock & Lübeck
+
+[Other Changes]
+- added missing loc for "Viking Empire" goverment reform
+
+-----------------------------------------------------------------------
+
 v0.1.3d
 [HOTFIX]
 - Changed "United Germany" Mission effects for Brandenburg to be available as HRE Emperor, see note of v0.1.3 for the future of this
