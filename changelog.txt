@@ -1,4 +1,11 @@
-v0.2.0 ~ Spandau Update ~
+v0.2.0
+[Tags]
++ Athos (GAH)
+
+[Provinces]
++ Athos
++ Phaistos 
+
 [Missions]
 - updated (Spandau)Brandenburg missions 
     - added branching missions (HRE // North German Confederation)

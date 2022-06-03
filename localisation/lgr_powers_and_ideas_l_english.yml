@@ -135,3 +135,32 @@ lgr_gnc_kohle_und_stahl_desc:0 "The Rheinland is our industrial heart. The futur
 lgr_gnc_navy:0 "Naval Ambitions"
 lgr_gnc_navy_desc:0 "The British ruled the waves for far too long. Our navy shall overshine the British navy."
 
+#---------------------------------------------------------------------------------------------------------------------------------
+#ATHOS IDEAS
+
+LGR_GAH_ideas:0 "Athos ideas"
+LGR_GAH_ideas_start:0 "Athos Traditions"
+LGR_GAH_ideas_bonus:0 "Athos Ambitions"
+
+lgr_gah_idea_divine_rule:0 "Divine Rule"
+lgr_gah_idea_divine_rule_desc:0 "Missing Loc"
+
+lgr_gah_holy_mount_athos:0 "Holy Mount Athos"
+lgr_gah_holy_mount_athos_desc:0 "Missing Loc"
+
+lgr_gah_blessed_ships:0 "Blessed Ships"
+lgr_gah_blessed_ships_desc:0 "Missing Loc"
+
+lgr_gah_ae_reduction:0 "Orthodox Realm"
+lgr_gah_ae_reduction_desc:0 "Missing Loc"
+
+lgr_gah_diplo_rep:0 "Monastic Diplomacy"
+lgr_gah_diplo_rep_desc:0 "Missing Loc"
+
+lgr_gah_build_cost:0 "A house of glory"
+lgr_gah_build_cost_desc:0 "Missing Loc"
+
+lgr_gah_idea_cost:0 "Ora et labora"
+lgr_gah_idea_cost_desc:0 "Missing loc"
+
+

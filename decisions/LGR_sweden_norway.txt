@@ -1,90 +1,90 @@
-country_decisions = {
-
-	lgr_sweden_norway_descision = {
-		major = yes
-		potential = {
-			normal_or_historical_nations = yes
-			was_never_end_game_tag_trigger = yes
-			NOT = {
-				has_country_flag = lgr_formed_sweden_norway_flag
-			}
-			NOT = {
-				exists = GSN
-			}
-			is_colonial_nation = no
-			tag = SWE
-		}
-
-		provinces_to_highlight = {
-			OR = {
-				owned_by = NOR
-				culture = swedish
-				province_id = 17
-			}
-			NOT = { 
-				AND = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					province_id = 27
-				}
-			}
-		}
-
-		allow = {
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			stability = 2
-			AND = {
-				owns_core_province = 1
-				OR = {
-					AND = {
-						NOR = {
-							is_subject_of_type_with_overlord = {
-								who = SWE
-								type = personal_union
-							}
-							NOT = {
-								liberty_desire = 25
-							}
-						}
-					}
-					AND = {
-						num_of_owned_provinces_with = {
-							region = scandinavia_region
-							value = 35
-						}
-						owns_core_province = 17
-						owns_core_province = 20
-					}
-				}
-				owns_core_province = 6
-				owns_core_province = 25
-			}
-		}
-
-		effect = {
-			change_tag = GSN
-			restore_country_name_effect = yes
-			if = {
-				limit = {
-					is_playing_custom_nation = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			add_country_modifier = {
-				name = "centralization_modifier"
-				duration = 7300
-			}
-
-			set_in_empire = no
-
-			add_prestige = 25
-			set_country_flag = lgr_formed_sweden_norway_flag
-		}
-
-		ai_will_do = {
-			factor = 1
-		}
-		ai_importance = 400
-	}
-}
+#country_decisions = {
+#
+#	lgr_sweden_norway_descision = {
+#		major = yes
+#		potential = {
+#			normal_or_historical_nations = yes
+#			was_never_end_game_tag_trigger = yes
+#			NOT = {
+#				has_country_flag = lgr_formed_sweden_norway_flag
+#			}
+#			NOT = {
+#				exists = GSN
+#			}
+#			is_colonial_nation = no
+#			tag = SWE
+#		}
+#
+#		provinces_to_highlight = {
+#			OR = {
+#				owned_by = NOR
+#				culture = swedish
+#				province_id = 17
+#			}
+#			NOT = { 
+#				AND = {
+#					country_or_non_sovereign_subject_holds = ROOT 
+#					province_id = 27
+#				}
+#			}
+#		}
+#
+#		allow = {
+#			is_free_or_tributary_trigger = yes
+#			is_nomad = no
+#			is_at_war = no
+#			stability = 2
+#			AND = {
+#				owns_core_province = 1
+#				OR = {
+#					AND = {
+#						NOR = {
+#							is_subject_of_type_with_overlord = {
+#								who = SWE
+#								type = personal_union
+#							}
+#							NOT = {
+#								liberty_desire = 25
+#							}
+#						}
+#					}
+#					AND = {
+#						num_of_owned_provinces_with = {
+#							region = scandinavia_region
+#							value = 35
+#						}
+#						owns_core_province = 17
+#						owns_core_province = 20
+#					}
+#				}
+#				owns_core_province = 6
+#				owns_core_province = 25
+#			}
+#		}
+#
+#		effect = {
+#			change_tag = GSN
+#			restore_country_name_effect = yes
+#			if = {
+#				limit = {
+#					is_playing_custom_nation = no
+#				}
+#				country_event = { id = ideagroups.1 } #Swap Ideas
+#			}
+#			add_country_modifier = {
+#				name = "centralization_modifier"
+#				duration = 7300
+#			}
+#
+#			set_in_empire = no
+#
+#			add_prestige = 25
+#			set_country_flag = lgr_formed_sweden_norway_flag
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#		ai_importance = 400
+#	}
+#}

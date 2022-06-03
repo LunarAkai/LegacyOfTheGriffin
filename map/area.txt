@@ -1053,11 +1053,11 @@ mecklenburg_area = { #5
 ########################################
 
 macedonia_area = { #5 (Macedonia)
-	148 1853 3001 4702 4780
+	148 1853 3001 4702 4780 4947
 }
 
 morea_area = { #4 Central Greece & Crete
-	145 146 163 1773 4701
+	145 146 163 1773 4701 4946
 }
 
 northern_greece_area = { #3 #Northern Greece
