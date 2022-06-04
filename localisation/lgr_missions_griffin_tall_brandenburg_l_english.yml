@@ -12,7 +12,7 @@ lgr_tbrandenburg_spandau_merc_title:0 "Spandau Company"
 lgr_tbrandenburg_spandau_merc_desc:0 "Our Mercanaries have gathered a lot of experience during the Brandenburgian Unification Wars. We should use them to our advantage."
 
 lgr_tbrandenburg_noble_privilege_title:0 "Nobles in Court"
-lgr_tbrandenburg_noble_privilege_desc:0 "Having the estates under our control will be advantageous for our future expansion."
+lgr_tbrandenburg_noble_privilege_desc:0 "Having the estates under our control will be advantageous for our further expansion."
 
 lgr_tbrandenburg_north_german_confed_title:0 "North German Confederation"
 lgr_tbrandenburg_north_german_confed_desc:0 "Our strength made us rich and powerful. We are the leading power within the German realm. We shall lead the new German Nation."
@@ -27,7 +27,7 @@ lgr_tbrandenburg_mecklenburg_beyond_rostock_port_title:0 "Rostock Port"
 lgr_tbrandenburg_mecklenburg_beyond_rostock_port_desc:0 "If we get acces to the baltic sea, we might be able to compete and rival the mighty Hanse."
 
 lgr_tbrandenburg_build_galleys_title:0 "Build galley fleet"
-lgr_tbrandenburg_build_galleys_desc:0 "Missing Loc"
+lgr_tbrandenburg_build_galleys_desc:0 "With access the the Baltic Sea it might be nessessary for us to construct a worthy navy."
 
 lgr_tbrandenburg_challenge_luebeck_title:0 "Challenge Lübeck"
 lgr_tbrandenburg_challenge_luebeck_desc:0 "Our trading ambitions will not be unheard of. We can and will take the crown from the Hanse."
@@ -36,23 +36,23 @@ lgr_tbrandenburg_take_holstein_title:0 "Retake Holstein"
 lgr_tbrandenburg_take_holstein_desc:0 "The realm of Holstein is an strategicly important land. Because it has acces to both the North and the Baltic Sea."
 
 lgr_tbrandenburg_north_rhine_area_title:0 "Conquest of Cologne"
-lgr_tbrandenburg_north_rhine_area_desc:0 "The city of Cologne, founded by the Roman Empire, holds a lot of prestige."
+lgr_tbrandenburg_north_rhine_area_desc:0 "The city of Cologne, founded by the Roman Empire, holds a lot of prestige. Having it under our control will be beneficial for us."
 
 lgr_tbrandenburg_german_netherlands_title:0 "German Netherlands"
-lgr_tbrandenburg_german_netherlands_desc:0 "Missing Loc"
+lgr_tbrandenburg_german_netherlands_desc:0 "The Lowlands offer an easy acces to the open ocean of the west. Having acces to the ports will benefit our trade income greatly."
 
 #North German Expansion 
 lgr_tbrandenburg_subjugate_brunswick_title:0 "Subjugate Brunswick"
-lgr_tbrandenburg_subjugate_brunswick_desc:0 "Missing Loc"
+lgr_tbrandenburg_subjugate_brunswick_desc:0 "Brunswick has always been a rival to us. Subjugating them will bring us a lot of prestige within the Empire."
 
 lgr_tbrandenburg_german_question_mission_title:0 "German Question"
-lgr_tbrandenburg_german_question_mission_desc:0 "Missing Loc"
+lgr_tbrandenburg_german_question_mission_desc:0 "With our clear vision for our path to glory, we will need to consolidate this vision of a united German Realm under our wise rulership."
 
 lgr_tbrandenburg_saxony_thuringia_title:0 "Rule Saxony"
-lgr_tbrandenburg_saxony_thuringia_desc:0 "Missing Loc"
+lgr_tbrandenburg_saxony_thuringia_desc:0 "Controlling the prosperous Saxon lands to our south will benefit our income, as well as our prestige."
 
 tbrandenburg_subjugate_hesse_title:0 "Subjugate Hesse"
-tbrandenburg_subjugate_hesse_desc:0 "Missing Loc"
+tbrandenburg_subjugate_hesse_desc:0 "The bustling Hessian city of Frankfurt is well known all around the known world. Our ministers advice us to take this city and the region around it to collect all these nice taxes."
 
 
 #Dev Capital Mission
@@ -93,23 +93,23 @@ lgr_tbra_religious_branching_mission_three_desc:0 "This is a branching mission."
 
 #Branching Missions - Religious - Protestant Path
 lgr_tbra_lead_reform_title:0 "Lead the Reformation"
-lgr_tbra_lead_reform_desc:0 "Missing Loc"
+lgr_tbra_lead_reform_desc:0 "We must lead the prostestant faith against the catholic Emperor. "
 
 lgr_tbra_religious_lead_title:0 "Faithful Leadership"
-lgr_tbra_religious_lead_desc:0 "Missing Loc"
+lgr_tbra_religious_lead_desc:0 "The tensions between protestants and catholics have risen so high that war broke out. We must lead the true faith to glory!"
 
 lgr_tbrandenburg_prot_empire_title:0 "Protestant Empire"
-lgr_tbrandenburg_prot_empire_desc:0 "Missing Loc"
+lgr_tbrandenburg_prot_empire_desc:0 "The true faith has won against the heretics, our faith shall be the one and only for the German realm."
 
 #Branching Missions - Religious - Catholic Path
 lgr_tbra_cath_papal_controller_title:0 "Control the Holy See"
-lgr_tbra_cath_papal_controller_desc:0 "Missing Loc"
+lgr_tbra_cath_papal_controller_desc:0 "The Holy See within the Papal States is the center of the catholic world. All the power of Catholicism lies within it."
 
 lgr_tbra_cath_defend_empire_against_reformation_title:0 "Holy War against Heretics"
-lgr_tbra_cath_defend_empire_against_reformation_desc:0 "Missing Loc"
+lgr_tbra_cath_defend_empire_against_reformation_desc:0 "The tensions between protestants and catholics have risen so high that war broke out. We must lead the true faith to glory!"
 
 lgr_tbra_cath_true_faith_title:0 "Catholic Empire"
-lgr_tbra_cath_true_faith_desc:0 "Missing Loc"
+lgr_tbra_cath_true_faith_desc:0 "The true faith has won against the heretics, our faith shall be the one and only for the German realm."
 
 
 
@@ -125,13 +125,13 @@ lgr_tbra_german_question_branching_mission_three_desc:0 "This is a branching mis
 
 #Branching Mission - German Question - HRE Path
 lgr_tbrandenburg_dethrone_austria_title:0 "Dethrone Austria"
-lgr_tbrandenburg_dethrone_austria_desc:0 "Missing Loc"
+lgr_tbrandenburg_dethrone_austria_desc:0 "The Holy Roman throne shall belong to us!" 
 
-lgr_tbrandenburg_dethrone_austria_two_title:0 "Dethrone Austria"
-lgr_tbrandenburg_dethrone_austria_two_desc:0 "Missing Loc"
+lgr_tbrandenburg_dethrone_austria_two_title:0 "Secure the Throne"
+lgr_tbrandenburg_dethrone_austria_two_desc:0 "We need to secure the Holy Roman throne for many decades to come."
 
-lgr_tbrandenburg_dethrone_austria_three_title:0 "Dethrone Austria"
-lgr_tbrandenburg_dethrone_austria_three_desc:0 "Missing Loc"
+lgr_tbrandenburg_dethrone_austria_three_title:0 "Subjugate Bohemia"
+lgr_tbrandenburg_dethrone_austria_three_desc:0 "Bohemia is a strong elector. If we want to keep our throne, we need to subjugate them!"
 
 #Branching Missions - German Empire - Pre
 lgr_tbra_german_empire_branching_mission_one_title:0 "Branching mission"
@@ -142,10 +142,10 @@ lgr_tbra_german_empire_branching_mission_two_desc:0 "This is a branching mission
 
 #Branching Missions - German Empire - HRE path
 lgr_tbra_empire_holy_empire_title:0 "Holy Empire"
-lgr_tbra_empire_holy_empire_desc:0 "Missing Loc"
+lgr_tbra_empire_holy_empire_desc:0 "With the joining of the Papal State to the Holy Roman Empire, we shall have God on our side."
 
 lgr_tbra_empire_regnum_aeternum_title:0 "Regnum Aeternum"
-lgr_tbra_empire_regnum_aeternum_desc:0 "Missing Loc"
+lgr_tbra_empire_regnum_aeternum_desc:0 "We are the Empire and Europe is our subject."
 
 #Branching Missions - Austria - Pre
 lgr_tbra_austria_branching_mission_one_title:0 "Branching mission"
@@ -153,8 +153,8 @@ lgr_tbra_austria_branching_mission_one_desc:0 "This is a branching mission."
 
 #Branching Missions - Austria - Humiliate Austria / GNC Path
 lgr_tbrandenburg_humiliate_austria_title:0 "Humiliate Austria"
-lgr_tbrandenburg_humiliate_austria_desc:0 "Missing Loc"
+lgr_tbrandenburg_humiliate_austria_desc:0 "With the fall of Austria and our glorious ascension, we should totally humiliate the von Habsburg, so they will never play a role in the global theatre again."
 
 #Branching Missions - Austria - HRE Path
 lgr_tbra_austria_no_heathens_title:0 "Drive out the muslims"
-lgr_tbra_austria_no_heathens_desc:0 "Missing Loc"
+lgr_tbra_austria_no_heathens_desc:0 "We shall not tolerate any other faith on this holy continent besides the only true Catholic faith."

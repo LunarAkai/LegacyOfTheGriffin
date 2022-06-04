@@ -1,6 +1,6 @@
-v1.0.0
+v1.0.0 ~~ "Legacy of the Griffin" ~~
 [Tags]
-+ Athos (GAH)
++ Athos (GAH) / Little preview for v1.1 :eyes:
 
 [Provinces]
 + Athos
