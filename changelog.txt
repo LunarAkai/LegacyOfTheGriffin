@@ -1,4 +1,4 @@
-v0.2.0
+v1.0.0
 [Tags]
 + Athos (GAH)
 
@@ -13,8 +13,14 @@ v0.2.0
 [Goverment reforms]
 - added "Ruthless Trade" Goverment Reform for Rostock & Lübeck
 
+[Estates]
++ "Byzantine City States" privilege
+
 [Other Changes]
 - added missing loc for "Viking Empire" goverment reform
+- Morea & Achea now start as released vassals of Byzantium
+- Byzantium now starts with the "Byzantine City States" estate privilege
+- addes missing loc for flavor events
 
 -----------------------------------------------------------------------
 
