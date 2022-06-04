@@ -13,3 +13,18 @@ guarantee = {
 	start_date = 1453.5.30
 	end_date = 1800.1.1
 }
+
+#Morea & Achea, Byzantine vassals 
+vassal = {
+	first = BYZ
+	second = MOE
+	start_date = 1444.6.1
+	end_date = 1453.5.29
+}
+
+vassal = {
+	first = BYZ
+	second = ACH
+	start_date = 1444.6.1
+	end_date = 1453.5.29
+}

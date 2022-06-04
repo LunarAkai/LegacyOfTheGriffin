@@ -1250,7 +1250,8 @@ lgr_tbrandenburg_german_question_emperor_path = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige = 15
+			add_imperial_influence = 5
 
 			hidden_effect = {
 				complete_mission = lgr_tbra_german_question_branching_mission_one
@@ -1260,20 +1261,96 @@ lgr_tbrandenburg_german_question_emperor_path = {
 	}
 
 	lgr_tbrandenburg_dethrone_austria_two = {
-		icon = humiliate_austria
+		icon = mission_alliances
 		position = 5
 		required_missions = {
 			lgr_tbrandenburg_dethrone_austria
 		}
 
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					owner = { is_emperor = yes }
+					root = { is_emperor = no }
+				}
+				AND = {
+					owner = {
+						is_elector = yes
+						OR = {
+							NOT = { preferred_emperor = ROOT }
+							NOT = { has_opinion = { who = ROOT value = 100 } }
+						}
+					}
+					NOT = {
+						ROOT = {
+							calc_true_if = {
+								all_elector = {
+									preferred_emperor = ROOT
+									has_opinion = { who = ROOT value = 100 }
+								}
+								amount = 5
+							}
+						}
+					}
+				}
+			}
+		}
+
+
 		trigger = {
-			ROOT = {
-				is_emperor = yes
+			is_emperor = yes
+			calc_true_if = {
+				desc = secure_the_imperial_crown.tooltip
+				all_elector = {
+					preferred_emperor = ROOT
+					has_opinion = { who = ROOT value = 100 }
+				}
+				amount = 5
 			}
 		}
 
 		effect = {
-			add_prestige = 25
+			if = {
+				limit = {
+					exists = BOH
+					valid_for_personal_unions_trigger = yes
+					BOH = {
+						valid_for_personal_unions_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = BOH
+				}
+			}
+			else = {
+				bohemia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				erzgebirge_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				moravia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			add_country_modifier = {
+				name = "succesful_bid_for_imperial_crown"
+				duration = 5475 #15 years
+			}
 
 			hidden_effect = {
 				complete_mission = lgr_tbra_german_question_branching_mission_two
@@ -1283,22 +1360,76 @@ lgr_tbrandenburg_german_question_emperor_path = {
 	}
 
 	lgr_tbrandenburg_dethrone_austria_three = {
-		icon = humiliate_austria
+		icon = mission_empire
 		position = 6
 		required_missions = {
 			lgr_tbrandenburg_dethrone_austria_two
 		}
 
+		provinces_to_highlight = {
+			OR = {
+				province_id = 266
+				AND = {
+					ROOT = {
+						NOT = {
+							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+								value = 8
+								OR = {
+									area = bohemia_area
+									area = erzgebirge_area
+									area = moravia_area
+								}
+							}
+						}
+					}
+					OR = {
+						area = bohemia_area
+						area = erzgebirge_area
+						area = moravia_area
+					}
+				}
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
 		trigger = {
-			ROOT = {
-				is_emperor = yes
+			owns_or_non_sovereign_subject_of = 266
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = bohemia_area
+					area = erzgebirge_area
+					area = moravia_area
+				}
 			}
 		}
 
 		effect = {
 			add_prestige = 25
 
+			silesia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
+			malopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+
 			hidden_effect = {
+
+				remove_casus_belli = {
+					type = cb_restore_personal_union
+					target = BOH
+				}
+
 				complete_mission = lgr_tbra_german_question_branching_mission_three
 				complete_mission = tbrandenburg_subjugate_hesse
 			}
