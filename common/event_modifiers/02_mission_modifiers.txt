@@ -294,6 +294,31 @@ lgr_tbra_modifier_regnum_aeternum = {
 	governing_capacity_modifier = 0.20
 }
 
+#ATHOS 
+lgr_athos_modifier_alexandria = {
+	prestige = 0.5
+	monthly_splendor = 1
+}
+
+lgr_athos_modifier_divine_ideas = {
+	idea_cost = -0.1
+}
+
+lgr_athos_modifier_holy_land = {
+	local_development_cost = -0.2
+	local_monthly_devastation = -0.1
+	local_defensiveness = 0.2
+}
+
+lgr_athos_modifier_ora_et_labora = {
+	local_production_efficiency = 0.2
+}
+
+lgr_athos_divine_art = {
+	monthly_favor_modifier = 0.15
+	administrative_efficiency = 0.05
+}
+
 #COMMON
 
 lgr_galleys = {
@@ -320,4 +345,24 @@ lgr_modifier_imperial_authority = {
 lgr_religious_victory = {
 	warscore_cost_vs_other_religion = -0.10
 	prestige = 1
+}
+
+lgr_trade_income = {
+	trade_efficiency = 0.1
+}
+
+lgr_tax_income = {
+	global_tax_modifier = 0.1
+}
+
+lgr_dev_cost_reduction = {
+	development_cost = -0.1
+}
+
+lgr_improve_relations = {
+	improve_relation_modifier = 0.2
+}
+
+lgr_great_power_abs = {
+	max_absolutism = 10
 }

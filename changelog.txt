@@ -1,3 +1,7 @@
+v1.0.5 ~ Athos Mini Update ~
+[Goverment Reforms]
+- added "Monkrepublic" Gov Reform
+
 v1.0.0 ~~ "Legacy of the Griffin" ~~
 [Tags]
 + Athos (GAH) / Little preview for v1.1 :eyes:

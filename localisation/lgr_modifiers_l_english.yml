@@ -79,6 +79,13 @@ lgr_tbra_german_netherlands:0 "German Netherlands"
 lgr_tbra_humilate_austria:0 "Humiliate Austria"
 lgr_tbra_modifier_regnum_aeternum:0 "Regnum Aeternum"
 
+#Athos Mission Modifiers
+lgr_athos_modifier_alexandria:0 "Patriarch of Alexandria"
+lgr_athos_modifier_divine_ideas:0 "Divine Ideas"
+lgr_athos_modifier_holy_land:0 "The Holy Land"
+lgr_athos_modifier_ora_et_labora:0 "Ora Et Labora"
+lgr_athos_divine_art:0 "Divine Art"
+
 #Common Mission Modifiers
 lgr_galleys:0 "Galley Fleet"
 lgr_military_tradition:0 "Military Tradition"
@@ -86,3 +93,8 @@ lgr_grateful_vassal:0 "Grateful vassal"
 lgr_modifier_papal_throne:0 "Control the Holy See"
 lgr_modifier_imperial_authority:0 "Imperial authority"
 lgr_religious_victory:0 "Religious victory"
+lgr_trade_income:0 "Increased Trade"
+lgr_tax_income:0 "Increased Tax Income"
+lgr_dev_cost_reduction:0 "Increased Development"
+lgr_improve_relations:0 "Diplomatic Success"
+lgr_great_power_abs:0 "Great Power"

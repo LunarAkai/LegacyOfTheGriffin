@@ -31,5 +31,13 @@ lgr_tbrandenburg_allow_dis_northgerman_confederation_tooltip:0 "\n Unlocks a dec
 lgr_tbrandenburg_kick_bohemia_out_of_the_hre:0 "If we choosed to §YBuild an Empire without the von Habsburg§! in the §YGerman Question Event§! and if the §YEmperor§! has at least an opinion of 190 towards us, or if §Ywe are the Emperor§!. §YBohemia§! gets an Event that might force them out of the HRE"
 lgr_tbrandenburg_weaken_poland_pu_tooltip:0 "If we finish this mission while we are the §YNorth German Confederation§! we will gain a §Yrestoration of Union Casus Belli§! on Poland."
 
+#ATHOS 
+lgr_athos_tooltip_alexandria:0 "If §Y[MAM.GetName]§! is allied to us and has at least §G75 Trust§! towards us, §Y[MAM.GetName]§! will cede §Y[358.GetName]§! to us. However we will have to pay them §R100§! Ducats in exchange.\n"
+
+lgr_athos_tooltip_venice:0 "If §Y[VEN.GetName]§! is allied to us, has at least §G70 Trust§! towards us and we have at least §G4§! Diplomatic Reputation, §Y[VEN.GetName]§! will cede §Y[3003.GetName]§!, §Y[164.GetName]§!, §Y[4946.GetName]§! and §Y[163.GetName]§! to us. However we will have to pay them §R200§! Ducats in exchange.\nAdditionally we will get '§YDiplomatic Success§!' for §Y20 years§!, giving the following effect:\nImprove Relations Modifier §G+20%§!\n" 
+
+lgr_athos_tooltip_venice_two:0 "If we have §Yinsulted§! §Y[VEN.GetName]§! and have rivaled them we will enact §YPlaceholder§! §YTier X§! Goverment Reform.\nGrants a §Ypermament Claim§! on §YPalestine Area§!"
+
 #branching mission
 lgr_branch_tooltip:0 "This is a branching mission, the effects will depend on your previous choices."
+

@@ -5,9 +5,9 @@ primary_culture = greek
 religion = orthodox
 technology_group = eastern
 capital = 4947 # Athos
-fixed_capital = 4947 # Cannot move capital away from this province & no power cost to move to it
 
 1440.1.1 = {
+	add_government_reform = lgr_reform_monkrepublic_athos
 	monarch = {
 		name = "Gregorios Voulgaris"
 		dynasty = "Voulgaris"

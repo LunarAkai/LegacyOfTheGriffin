@@ -1,0 +1,82 @@
+﻿l_english:
+#Athos Missions Trade
+lgr_athos_trade_navy_title:0 "Build a Navy"
+lgr_athos_trade_navy_desc:0 "Missing Loc"
+
+lgr_athos_trade_build_ports_title:0 "Construct a Port"
+lgr_athos_trade_build_ports_desc:0 "Missing Loc"
+
+lgr_athos_trade_trade_income_title:0 "Growing Trade Income"
+lgr_athos_trade_trade_income_desc:0 "Missing Loc"
+
+lgr_athos_trade_rival_venice_title:0 "Rival Venice"
+lgr_athos_trade_rival_venice_desc:0 "Missing Loc"
+
+lgr_athos_trade_alexandria_title:0 "Patriarch of Alexandria"
+lgr_athos_trade_alexandria_desc:0 "Missing Loc"
+
+#Athos Missions Trade Branch
+lgr_athos_trade_branch_wine_title:0 "Blood of Christ"
+lgr_athos_trade_branch_wine_desc:0 "Missing Loc"
+
+lgr_athos_trade_branch_religion_title:0 "For the [Root.Religion.GetName] Faith!"
+lgr_athos_trade_branch_religion_desc:0 "Missing Loc"
+
+#Athos Missions Dev
+lgr_athos_dev_agriculture_title:0 "Monk Agriculture"
+lgr_athos_dev_agriculture_desc:0 "Missing Loc"
+
+lgr_athos_dev_divine_ideas_title:0 "Divine Ideas"
+lgr_athos_dev_divine_ideas_desc:0 "Missing Loc"
+
+lgr_athos_dev_holy_studies_title:0 "Holy Studies"
+lgr_athos_dev_holy_studies_desc:0 "Missing Loc"
+
+#Athos Independence Missions
+lgr_athos_indie_ottomans_title:0 "Relations with [TUR.GetName]"
+lgr_athos_indie_ottomans_desc:0 "Missing Loc"
+
+lgr_athos_indie_independence_title:0 "Independent Athos"
+lgr_athos_indie_independence_desc:0 "Missing Loc"
+
+lgr_athos_indie_secure_independence_title:0 "An Army for Mt. Athos"
+lgr_athos_indie_secure_independence_desc:0 "Missing Loc"
+
+lgr_athos_indie_greek_islands_title:0 "Greek Islands"
+lgr_athos_indie_greek_islands_desc:0 "Missing Loc"
+
+lgr_athos_indie_holy_land_title:0 "Holy Land"
+lgr_athos_indie_holy_land_desc:0 "Missing Loc"
+
+#Athos Church Missions
+lgr_athos_church_build_churches_title:0 "Criste Lux Mundi"
+lgr_athos_church_build_churches_desc:0 "Missing Loc"
+
+lgr_athos_church_ora_et_labora_title:0 "Ora Et Labora"
+lgr_athos_church_ora_et_labora_desc:0 "Missing Loc"
+
+lgr_athos_church_icon_title:0 "Laudate Omnes Gentes"
+lgr_athos_church_icon_desc:0 "Missing Loc"
+
+lgr_athos_church_cathedral_title:0 "Gloria"
+lgr_athos_church_cathedral_desc:0 "Missing Loc"
+
+lgr_athos_church_great_power_title:0 "In Excelsis Deo"
+lgr_athos_church_great_power_desc:0 "Missing Loc"
+
+
+#Branching Missions - Cath vs Orth - Base
+lgr_athos_cath_orth_branching_branch_1_title:0 "Branching Mission"
+lgr_athos_cath_orth_branching_branch_1_desc:0 "This is a branching mission"
+
+lgr_athos_cath_orth_branching_branch_2_title:0 "Branching Mission"
+lgr_athos_cath_orth_branching_branch_2_desc:0 "This is a branching mission"
+
+lgr_athos_cath_orth_branching_branch_3_title:0 "Branching Mission"
+lgr_athos_cath_orth_branching_branch_3_desc:0 "This is a branching mission"
+
+lgr_athos_cath_orth_branching_branch_4_title:0 "Branching Mission"
+lgr_athos_cath_orth_branching_branch_4_desc:0 "This is a branching mission"
+
+lgr_athos_cath_orth_branching_branch_5_title:0 "Branching Mission"
+lgr_athos_cath_orth_branching_branch_5_desc:0 "This is a branching mission"

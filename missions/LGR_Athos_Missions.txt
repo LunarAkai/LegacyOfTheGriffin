@@ -1,0 +1,982 @@
+lgr_athos_missions_trade = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_trade_navy = {
+		icon = mission_galleys_in_port
+		position = 1
+		required_missions = {  }
+
+		provinces_to_highlight = {
+			
+		}
+
+		trigger = {
+			navy_size_percentage = 0.9
+			num_of_galley = 3
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_trade_income
+				duration = 7300
+			}
+		}
+	}
+
+	lgr_athos_trade_build_ports = {
+		icon = secure_the_republic
+		position = 2
+		required_missions = { 
+			lgr_athos_trade_navy
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4947
+			} country_or_non_sovereign_subject_holds = ROOT
+		}
+
+		trigger = {
+			ROOT = {
+				capital_scope = {
+					has_building = shipyard
+				}
+			}
+		}
+
+		effect = {
+			add_dip_power = 25
+		}
+	}
+
+	lgr_athos_trade_trade_income = {
+		icon = balance_the_estates
+		position = 3
+		required_missions = { 
+			lgr_athos_trade_build_ports
+		}
+
+		provinces_to_highlight = {
+			
+		}
+
+		trigger = {
+			home_trade_node = {
+				trade_share = {
+					country = ROOT
+					share = 25
+				}
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 3
+					cost = 0.1
+					speed = 0.5
+				}
+			}
+		}
+	}
+
+	lgr_athos_trade_rival_venice = {
+		icon = nuova_promissione_ducale
+		position = 4
+		required_missions = { 
+			lgr_athos_trade_trade_income
+		}
+
+		provinces_to_highlight = {
+			owned_by = VEN
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					exists = VEN
+				}
+				VEN = {
+					is_rival = ROOT
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = VEN
+					}
+					
+				}
+
+				italy_region = {
+					any_country = {
+						num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+							value = 5
+						}
+						is_rival = ROOT
+					}
+				}
+			}		
+		}
+
+		effect = {
+			ROOT = {
+				add_prestige = 25
+			}
+		}
+	}
+
+	lgr_athos_trade_alexandria = {
+		icon = emperor_and_autocrat
+		position = 5
+		required_missions = { 
+			lgr_athos_trade_rival_venice
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 358
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			OR = {
+				ROOT = {
+					owns_core_province = 358
+				}
+
+				AND = {
+					MAM = {
+						AND = {
+							
+							owns_core_province = 358
+							alliance_with = ROOT
+							trust = {
+								who = ROOT
+								value = 75
+							}
+							
+							
+						}
+					}
+					ROOT = {
+						treasury = 100
+					}
+				}
+			}
+		}
+
+		effect = {
+
+			custom_tooltip = lgr_athos_tooltip_alexandria 
+			
+			hidden_effect = {
+				if = {
+					limit = {
+						MAM = {											
+							owns_core_province = 358						
+						}
+					}
+	
+					MAM = {
+						358 = {
+							cede_province = ROOT
+						}
+						add_treasury = 100
+					}
+	
+					ROOT = {
+						add_treasury = -100
+					}
+				}
+			}
+
+			add_country_modifier = {
+				name = lgr_athos_modifier_alexandria
+				duration = 3650
+			}
+		}
+	}
+}
+
+#Dev Missions
+lgr_athos_missions_dev = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_dev_agriculture = {
+		icon = prosperity_for_all
+		position = 1
+		required_missions = { 
+			
+		}
+
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
+
+		trigger = {
+			capital_scope = {
+				base_production = 6
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_tax_income
+				duration = 7300
+			}
+		}
+	}
+
+	lgr_athos_dev_divine_ideas = {
+		icon = the_fountain_of_youth
+		position = 2
+		required_missions = { 
+			lgr_athos_dev_agriculture
+		}
+
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
+
+		trigger = {
+			has_institution = renaissance
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_athos_modifier_divine_ideas
+				duration = 7300
+			}
+		}
+
+	}
+
+	lgr_athos_dev_holy_studies = {
+		icon = bibliotheca_corviana
+		position = 3
+		required_missions = { 
+			lgr_athos_dev_divine_ideas
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 4947
+			} country_or_non_sovereign_subject_holds = ROOT
+		}
+
+		trigger = {
+
+			4947 = {
+				AND = {
+					country_or_non_sovereign_subject_holds = ROOT
+					has_building = university
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_dev_cost_reduction
+				duration = 7300
+			}
+		}
+	}
+}
+
+
+#Trade Branch Missions 
+lgr_athos_missions_trade_branch = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_trade_branch_wine = {
+		icon = spread_piety
+		position = 4
+		required_missions = { 
+			lgr_athos_trade_trade_income
+		}
+
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
+
+		trigger = {
+			production_leader = {
+				trade_goods = wine
+			} 
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	lgr_athos_trade_branch_religion = {
+		icon = protectors_of_christendom
+		position = 5
+		required_missions = { 
+			lgr_athos_trade_branch_wine
+		}
+
+		provinces_to_highlight = {
+			AND = {
+				region = balkan_region
+				NOT = {
+					religion = ROOT
+				}
+			}
+			
+			
+		}
+
+		trigger = {
+			OR = {
+				AND = {
+					ROOT = {
+						owns_all_provinces = {
+							region = balkan_region
+						}
+					}
+					religious_unity = 1
+				}
+				balkan_region = {
+					
+					religion = ROOT
+					type = all
+					
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+
+	}
+}
+
+
+lgr_athos_missions_independence = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_indie_ottomans = {
+		icon = mission_ottoman_diplomacy
+		position = 1
+		required_missions = { 
+			
+		}
+
+		provinces_to_highlight = {
+			owned_by = TUR
+		}
+
+		trigger = {
+			TUR = {
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+
+			ROOT = {
+				AND = {
+					vassal_of = BYZ
+					liberty_desire = 50
+				}
+			}
+		}
+
+		effect = {
+			TUR = {
+				add_trust = {
+					who = ROOT
+					value = 10
+					mutual = yes
+				}
+				support_independence_of = ROOT
+			}
+		}
+	}
+
+	lgr_athos_indie_independence = {
+		icon = kingdom_of_heaven
+		position = 2
+		required_missions = { 
+			lgr_athos_indie_ottomans
+		}
+
+		provinces_to_highlight = {
+			
+		}
+
+		trigger = {
+			is_subject = no
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	lgr_athos_indie_secure_independence = {
+		icon = knights_of_the_new_world
+		position = 3
+		required_missions = { 
+			lgr_athos_indie_independence
+		}
+
+		provinces_to_highlight = {
+			
+		}
+
+		trigger = {
+			AND = {
+				ROOT = {
+					army_size_percentage = 1
+					OR = {
+						guaranteed_by = TUR
+						alliance_with = TUR
+					}
+					grown_by_development = 20
+				}
+				TUR = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+		}
+
+		effect = {
+			add_prestige = 25
+		}
+	}
+
+	lgr_athos_indie_greek_islands = {
+		icon = reclaim_the_aegean
+		position = 4
+		required_missions = { 
+			lgr_athos_indie_secure_independence
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3003
+				province_id = 164
+				province_id = 4946
+				province_id = 163
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			OR = {
+				AND = {
+					VEN = {
+						AND = {
+							is_rival = ROOT
+							has_been_insulted_by_root = yes
+						}
+					}
+				}
+				AND = {
+					ROOT = {
+						AND = {
+							alliance_with = VEN
+							treasury = 200
+							diplomatic_reputation = 4
+						}			
+					}
+					VEN = {
+						trust = {
+							who = ROOT
+							value = 70
+						}
+					}
+				}
+			}
+		}
+
+		effect = {
+
+			custom_tooltip = lgr_athos_tooltip_venice
+			custom_tooltip = lgr_athos_tooltip_venice_two
+
+			hidden_effect = {
+				if = {
+					limit = {
+						VEN = {
+							is_rival = ROOT
+							has_been_insulted_by_root = yes
+						}
+					}
+
+					#New gov reform
+
+					palestine_area = {
+						if = {
+							limit = {
+								NOT = {
+									is_core = ROOT
+								}
+								NOT = {
+									is_permanent_claim = ROOT
+								}
+							}
+							add_permanent_claim = ROOT
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						AND = {
+							ROOT = {
+								alliance_with = VEN
+								treasury = 100
+							}
+							VEN = {
+								trust = {
+									who = ROOT
+									value = 70
+								}
+								
+							}
+
+							3003 = {
+								country_or_non_sovereign_subject_holds = VEN
+							}
+							164 = {
+								country_or_non_sovereign_subject_holds = VEN
+							}
+							4946 = {
+								country_or_non_sovereign_subject_holds = VEN
+							}
+							163 = {
+								country_or_non_sovereign_subject_holds = VEN
+							}
+
+							
+
+						}
+					}
+
+					#Diplomatic Solution
+
+				
+					3003 = {
+						cede_province = ROOT
+					}
+
+					4946 = {
+						cede_province = ROOT
+					}
+
+					163 = {
+						cede_province = ROOT
+					}
+					
+
+					if = {
+						limit = {
+							164 = {
+								owned_by = VEN
+							}
+						}
+
+						164 = {
+							cede_province = ROOT
+						}
+					}
+
+					if = {
+						limit = {
+							164 = {
+								owned_by = NAX
+							}
+						}
+
+						ROOT = {
+							inherit = NAX
+						}
+					}
+
+					ROOT = {
+						add_treasury = -200
+						add_country_modifier = {
+							name = lgr_improve_relations
+							duration = 7300
+						}
+					}
+
+					VEN = {
+						add_treasury = 200
+					}
+					
+				}
+			}
+		}
+	}
+
+	lgr_athos_indie_holy_land = {
+		icon = jerusalem
+		position = 5
+		required_missions = { 
+			lgr_athos_indie_greek_islands
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = palestine_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		trigger = {
+			AND = {
+				owns_all_provinces = {
+					area = holstein_area
+				}
+			}
+		}
+
+		effect = {
+			ROOT = {
+				add_treasury = 250
+				add_prestige = 10
+			}
+
+			379 = {
+				change_religion = ROOT 
+				add_province_modifier = {
+					name = lgr_athos_modifier_holy_land
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+lgr_athos_cath_orth_branching_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+
+		NOT = { 
+			has_country_flag = lgr_athos_latin_empire_ambition
+		}
+
+		NOT = { 
+			has_country_flag = lgr_athos_pentarchy_ambition
+		}
+
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_cath_orth_branching_branch_1 = {
+		icon = lgr_branching_mission
+		position = 1
+		required_missions = { 
+			
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_athos_cath_orth_branching_branch_2 = {
+		icon = lgr_branching_mission
+		position = 2
+		required_missions = { 
+			lgr_athos_cath_orth_branching_branch_1
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_athos_cath_orth_branching_branch_3 = {
+		icon = lgr_branching_mission
+		position = 3
+		required_missions = { 
+			lgr_athos_cath_orth_branching_branch_2
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_athos_cath_orth_branching_branch_4 = {
+		icon = lgr_branching_mission
+		position = 4
+		required_missions = { 
+			lgr_athos_cath_orth_branching_branch_3
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+
+	lgr_athos_cath_orth_branching_branch_5 = {
+		icon = lgr_branching_mission
+		position = 5
+		required_missions = { 
+			lgr_athos_cath_orth_branching_branch_4
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = selectable_mission_trigger_tt
+				always = no
+			}
+		}
+
+		effect = {
+			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+}
+
+lgr_athos_church_missions = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_church_build_churches = {
+		icon = mission_european_church
+		position = 1
+		required_missions = { 
+			
+		}
+
+		trigger = {
+			capital_scope = {
+				has_building = temple
+				base_tax = 7
+			}
+		}
+
+		effect = {
+			add_devotion = 10
+		}
+	}
+
+	lgr_athos_church_ora_et_labora = {
+		icon = reissue_the_mining_code
+		position = 2
+		required_missions = { 
+			lgr_athos_church_build_churches
+		}
+
+		trigger = {
+			capital_scope = {
+				has_building = workshop
+				base_production = 10
+			}
+
+			ROOT = {
+				monthly_income = 10
+			}
+		}
+
+		effect = {
+			capital_scope = {
+				add_province_modifier = {
+					name = lgr_athos_modifier_ora_et_labora
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	lgr_athos_church_icon = {
+		icon = guardians_of_saint_sava
+		position = 3
+		required_missions = { 
+			lgr_athos_church_ora_et_labora
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					ROOT = {
+						religion = orthodox
+					}
+				}
+				patriarch_authority = 0.6
+			}
+
+			OR = {
+				in_golden_age = yes
+				has_had_golden_age = yes
+			}
+			religious_unity = 1
+		}
+
+		effect = {
+			add_patriarch_authority = -0.1
+			add_country_modifier = {
+				name = lgr_athos_divine_art
+				duration = -1
+			}
+		}
+	}
+
+
+	lgr_athos_church_cathedral = {
+		icon = despot_stefans_legacy
+		position = 4
+		required_missions = { 
+			lgr_athos_church_icon
+		}
+
+		trigger = {
+			capital_scope = {
+				has_building = cathedral
+				grown_by_development = 25
+			}
+			ROOT = {
+				OR = {
+					AND = {
+						devotion = 100
+						patriarch_authority = 0.8
+					}
+					is_papal_controller = yes
+				}
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_religious_victory
+				duration = 7300
+			}
+		}
+	}
+
+	lgr_athos_church_great_power = {
+		icon = mission_european_church
+		position = 5
+		required_missions = { 
+			lgr_athos_church_cathedral
+		}
+
+		trigger = {
+			ROOT = {
+				is_great_power = yes
+			}
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = lgr_great_power_abs
+				duration = -1
+			}
+		}
+	}
+
+}

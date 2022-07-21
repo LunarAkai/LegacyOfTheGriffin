@@ -47,6 +47,29 @@ norland_missionary_reform = {
 	}
 }
 
+#Monkrepublic (Athos)
+lgr_reform_monkrepublic_athos = {
+	icon = "kingdom_of_god"
+	allow_normal_conversion = yes
+	valid_for_nation_designer = yes
+	nation_designer_cost = 0
+	lock_level_when_selected = yes
+
+	potential = {
+		OR = {
+			tag = GAH
+			was_tag = GAH
+		}
+	}
+
+	modifiers = {
+		female_advisor_chance = -1
+		stability_cost_to_declare_war = 1
+		yearly_patriarch_authority = 0.15
+		improve_relation_modifier = 0.2
+	}
+}
+
 #Common (Rostock & Lübeck)
 lgr_reform_ruthless_trading = {
 	icon = "paper_money_map"
