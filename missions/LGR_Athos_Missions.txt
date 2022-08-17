@@ -689,7 +689,7 @@ lgr_athos_missions_independence = {
 		trigger = {
 			AND = {
 				owns_all_provinces = {
-					area = holstein_area
+					area = palestine_area
 				}
 			}
 		}
