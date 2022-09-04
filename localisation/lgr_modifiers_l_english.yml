@@ -85,6 +85,11 @@ lgr_athos_modifier_divine_ideas:0 "Divine Ideas"
 lgr_athos_modifier_holy_land:0 "The Holy Land"
 lgr_athos_modifier_ora_et_labora:0 "Ora Et Labora"
 lgr_athos_divine_art:0 "Divine Art"
+lgr_athos_modifier_orthodox_balkan:0 "Church of God"
+lgr_athos_modifier_holy_army:0 "God's Soldiers"
+lgr_athos_constantinople:0 "Constantinople!"
+
+lgr_athos_religious_enemies:0 "Religious Enemies"
 
 #Common Mission Modifiers
 lgr_galleys:0 "Galley Fleet"
@@ -98,3 +103,4 @@ lgr_tax_income:0 "Increased Tax Income"
 lgr_dev_cost_reduction:0 "Increased Development"
 lgr_improve_relations:0 "Diplomatic Success"
 lgr_great_power_abs:0 "Great Power"
+

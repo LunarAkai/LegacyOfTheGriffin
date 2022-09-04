@@ -319,6 +319,21 @@ lgr_athos_divine_art = {
 	administrative_efficiency = 0.05
 }
 
+lgr_athos_modifier_orthodox_balkan = {
+	missionary_maintenance_cost = -0.25
+	global_missionary_strength = 0.02
+}
+
+lgr_athos_modifier_holy_army = {
+	land_morale = 0.10
+	fire_damage_received = -0.05
+}
+
+lgr_athos_constantinople = {
+	prestige_decay = -0.03
+	monarch_admin_power = 1
+}
+
 #COMMON
 
 lgr_galleys = {

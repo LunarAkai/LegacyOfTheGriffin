@@ -1,3 +1,7 @@
 ﻿lgr_gnc_fra_formed_german_confederation = {
 	opinion = -100
 }
+
+lgr_athos_religious_enemies = {
+	opinion = -100
+}

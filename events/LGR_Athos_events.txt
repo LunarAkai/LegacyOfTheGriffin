@@ -1,7 +1,7 @@
 namespace = lgr_athos_events
 
 country_event = {
-	id = lgr_athos_events.1 #Pentarchy or Lation Empire
+	id = lgr_athos_events.1 #Pentarchy or Latin Empire
 
 	title = "lgr_athos_events.1.t"
 	desc = "lgr_athos_events.1.d"
@@ -54,7 +54,12 @@ country_event = {
 			factor = 80
 		}
 
+		swap_non_generic_missions = yes
+
 		OR = {
+
+			
+
 			MOS = {
 				add_trust = {
 					who = ROOT
@@ -87,12 +92,12 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = lgr_athos_pentarchy_ambition
+			set_country_flag = lgr_athos_pentarchy_ambition^
 		}
 		
 	}
 
-	option = { #Catholic / Lation Empire
+	option = { #Catholic / Latin Empire
 		name = "lgr_athos_events.1.b"
 
 		ai_chance = {
@@ -103,9 +108,12 @@ country_event = {
 			change_religion = catholic
 			set_ruler_religion = catholic
 			set_heir_religion = catholic
+			swap_non_generic_missions = yes
 		}
 
 		OR = {
+
+			
 			if = {
 				limit = {
 					PAP = {
@@ -146,6 +154,7 @@ country_event = {
 
 		hidden_effect = {
 			set_country_flag = lgr_athos_latin_empire_ambition
+
 		}
 	}
 }

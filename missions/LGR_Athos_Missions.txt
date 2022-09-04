@@ -135,7 +135,22 @@ lgr_athos_missions_trade = {
 
 		effect = {
 			ROOT = {
-				add_prestige = 25
+
+				add_prestige = 10
+
+				delta_area = {
+					if = {
+						limit = {
+							NOT = {
+								is_core = ROOT
+							}
+							NOT = {
+								is_permanent_claim = ROOT
+							}
+						}
+						add_permanent_claim = ROOT
+					}
+				}
 			}
 		}
 	}
@@ -346,7 +361,7 @@ lgr_athos_missions_trade_branch = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_years_of_income = 0.75
 		}
 	}
 
@@ -388,7 +403,10 @@ lgr_athos_missions_trade_branch = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = lgr_athos_modifier_orthodox_balkan
+				duration = -1
+			}
 		}
 
 	}
@@ -465,7 +483,8 @@ lgr_athos_missions_independence = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_prestige = 10
+			add_splendor = 20
 		}
 	}
 
@@ -500,7 +519,10 @@ lgr_athos_missions_independence = {
 		}
 
 		effect = {
-			add_prestige = 25
+			add_country_modifier = {
+				name = lgr_athos_modifier_holy_army
+				duration = 7300
+			}
 		}
 	}
 
@@ -827,6 +849,296 @@ lgr_athos_cath_orth_branching_missions = {
 
 		effect = {
 			custom_tooltip = lgr_branch_tooltip
+		}
+	}
+}
+
+lgr_athos_orth_branching_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential_on_load = {
+		has_dlc = "Emperor"
+	}potential = {
+		has_dlc = "Emperor"
+		OR = {
+			tag = GAH
+		}
+
+		NOT = { 
+			has_country_flag = lgr_athos_latin_empire_ambition
+		}
+
+
+		has_country_flag = lgr_athos_pentarchy_ambition
+		
+
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	lgr_athos_orth_branch_ally_muscovy = {
+		icon = mission_european_church
+		position = 1
+		required_missions = {
+			
+		}
+
+		trigger = {
+			if = {
+				limit = {
+					exists = MOS
+				}
+
+				ROOT = {
+					alliance_with = MOS
+				}
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						exists = MOS
+					}
+				}
+
+				any_country = {
+					AND = {
+						religion = orthodox
+						total_development = 100
+						alliance_with = ROOT
+					}
+				}
+			}
+		}
+
+		effect = {
+			macedonia_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			northern_greece_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			if = {
+				limit = {
+					AND = {
+						MOS = {
+							is_rival = TUR
+						}
+						TUR = {
+							alliance_with = ROOT
+						}
+					}
+				}
+
+				TUR = {
+					add_opinion = {
+						who = ROOT
+						modifier = lgr_athos_religious_enemies
+					}
+				}
+
+			}
+		}
+	}
+
+	lgr_athos_orth_branch_orthodox_greece = {
+		icon = mission_european_church
+		position = 2
+		required_missions = {
+			lgr_athos_orth_branch_ally_muscovy
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = northern_greece_area
+				area = macedonia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				AND = {
+					area = macedonia_area
+					area = northern_greece_area
+				}
+			}
+
+			ROOT = {
+				religious_unity = 0.80
+			}
+		}
+
+		effect = {
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				religion = ROOT
+				cost_multiplier = 0.50
+			}
+
+			thrace_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	lgr_athos_orth_branch_constantinople = {
+		icon = mission_european_church
+		position = 3
+		required_missions = {
+			lgr_athos_orth_branch_orthodox_greece
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				area = thrace_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_all_provinces = {
+				AND = {
+					area = thrace_area
+				}
+			}
+		}
+
+		effect = {
+			151 = {
+				change_religion = orthodox
+			}
+
+			add_country_modifier = {
+				name = lgr_athos_constantinople
+				duration = 7300
+			}
+
+			aleppo_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+
+			lazio_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_core = ROOT
+						}
+						NOT = {
+							is_permanent_claim = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	lgr_athos_orth_branch_antioch = {
+		icon = mission_european_church
+		position = 4
+		required_missions = {
+			lgr_athos_orth_branch_constantinople
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2313
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			owns_core_province = 2313
+		}
+
+		effect = {
+			2313 = {
+				add_base_manpower = 2
+				add_base_production = 2
+				add_base_tax = 2
+			}
+		}
+	}
+
+	lgr_athos_orth_branch_pentarchy = {
+		icon = mission_european_church
+		position = 5
+		required_missions = {
+			lgr_athos_orth_branch_antioch
+		}
+
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2313
+				province_id = 151
+				province_id = 358
+				province_id = 379
+				province_id = 118
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+
+		trigger = {
+			AND = {
+				owns_core_province = 2313
+				owns_core_province = 151
+				owns_core_province = 358
+				owns_core_province = 379
+				owns_core_province = 118
+
+				ROOT = {
+					religious_unity = 1
+				}
+			}
+		}
+
+		effect = {
+			//FORM PENTARCHY
+			add_prestige = 25
 		}
 	}
 }
