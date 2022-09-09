@@ -54,7 +54,7 @@ country_event = {
 			factor = 80
 		}
 
-		swap_non_generic_missions = yes
+	
 
 		OR = {
 
@@ -92,7 +92,8 @@ country_event = {
 		}
 
 		hidden_effect = {
-			set_country_flag = lgr_athos_pentarchy_ambition^
+			swap_non_generic_missions = yes
+			set_country_flag = lgr_athos_pentarchy_ambition
 		}
 		
 	}
@@ -108,7 +109,6 @@ country_event = {
 			change_religion = catholic
 			set_ruler_religion = catholic
 			set_heir_religion = catholic
-			swap_non_generic_missions = yes
 		}
 
 		OR = {
@@ -153,6 +153,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			swap_non_generic_missions = yes
 			set_country_flag = lgr_athos_latin_empire_ambition
 
 		}

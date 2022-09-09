@@ -98,6 +98,14 @@ lgr_france_events.1.t:0 "Restoration of the French Glory"
 lgr_france_events.1.d:0 "Since the creation of the North German Confederation France has lost most of its prestige and Influence in Europe. We can't tolerate this. We should show the world that France is the true great power of Europa."
 lgr_france_events.1.a:0 "Let us restore the French Glory"
 
+#ATHOS
+lgr_athos_events.1.t:0 "A Question of Faith"
+lgr_athos_events.1.d:0 "Missing Loc"
+lgr_athos_events.1.a:0 "We shall never abandon our orthodox roots!"
+lgr_athos_events.1.b:0 "Missing Loc"
+
+
+
 #Mission Events
 lgr_mission_events.1.t:0 "North & South Germany united"
 lgr_mission_events.1.d:0 "The North German Confederation has beaten France, and is from now the leading great power in Europe. We should consider joining this united Germany."
