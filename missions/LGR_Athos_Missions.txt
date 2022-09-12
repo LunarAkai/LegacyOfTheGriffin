@@ -8,6 +8,7 @@ lgr_athos_missions_trade = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -240,6 +241,7 @@ lgr_athos_missions_dev = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -338,6 +340,7 @@ lgr_athos_missions_trade_branch = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -423,6 +426,7 @@ lgr_athos_missions_independence = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -743,6 +747,7 @@ lgr_athos_cath_orth_branching_missions = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 
 		NOT = { 
@@ -863,13 +868,8 @@ lgr_athos_orth_branching_missions = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
-
-		NOT = { 
-			has_country_flag = lgr_athos_latin_empire_ambition
-		}
-
-
 		has_country_flag = lgr_athos_pentarchy_ambition
 		
 
@@ -878,7 +878,7 @@ lgr_athos_orth_branching_missions = {
 	has_country_shield = yes
 
 	lgr_athos_orth_branch_ally_muscovy = {
-		icon = mission_european_church
+		icon = mission_the_third_rome
 		position = 1
 		required_missions = {
 			
@@ -964,7 +964,7 @@ lgr_athos_orth_branching_missions = {
 	}
 
 	lgr_athos_orth_branch_orthodox_greece = {
-		icon = mission_european_church
+		icon = retake_thessaly
 		position = 2
 		required_missions = {
 			lgr_athos_orth_branch_ally_muscovy
@@ -979,16 +979,18 @@ lgr_athos_orth_branching_missions = {
 		}
 
 		trigger = {
-			owns_all_provinces = {
-				AND = {
-					area = macedonia_area
-					area = northern_greece_area
+			AND = {
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					value = 7
+					OR = {
+						area = macedonia_area
+						area = northern_greece_area
+					}	
 				}
-			}
 
-			ROOT = {
-				religious_unity = 0.80
+				religious_unity = 1
 			}
+			
 		}
 
 		effect = {
@@ -1016,7 +1018,7 @@ lgr_athos_orth_branching_missions = {
 	}
 
 	lgr_athos_orth_branch_constantinople = {
-		icon = mission_european_church
+		icon = take_constantinople
 		position = 3
 		required_missions = {
 			lgr_athos_orth_branch_orthodox_greece
@@ -1078,7 +1080,7 @@ lgr_athos_orth_branching_missions = {
 	}
 
 	lgr_athos_orth_branch_antioch = {
-		icon = mission_european_church
+		icon = fortress_of_belgrade
 		position = 4
 		required_missions = {
 			lgr_athos_orth_branch_constantinople
@@ -1105,7 +1107,7 @@ lgr_athos_orth_branching_missions = {
 	}
 
 	lgr_athos_orth_branch_pentarchy = {
-		icon = mission_european_church
+		icon = promote_the_patriarchate
 		position = 5
 		required_missions = {
 			lgr_athos_orth_branch_antioch
@@ -1137,7 +1139,8 @@ lgr_athos_orth_branching_missions = {
 		}
 
 		effect = {
-			//FORM PENTARCHY
+			change_tag = GPT
+			swap_free_idea_group = yes
 			add_prestige = 25
 		}
 	}
@@ -1153,6 +1156,7 @@ lgr_athos_church_missions = {
 		has_dlc = "Emperor"
 		OR = {
 			tag = GAH
+			tag = GPT
 		}
 		NOT = { map_setup = map_setup_random }
 	}

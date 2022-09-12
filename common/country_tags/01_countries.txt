@@ -25,3 +25,5 @@ GSN = "countries/Sweden_Norway.txt" #Sweden-Norway
 
 #Greece & Balkans
 GAH = "countries/Athos.txt" #Athos
+GPT = "countries/Pentarchy.txt" #Pentarchy
+# GLM = "countries/Latin_Empire.txt"

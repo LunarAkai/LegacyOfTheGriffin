@@ -325,3 +325,43 @@ LGR_GAH_ideas = {
 		production_efficiency = 0.1
 	}
 }
+
+LGR_GPT_ideas = {
+	start = {
+		global_missionary_strength = 0.02
+		missionaries = 1
+	}
+
+	bonus = {
+		same_culture_advisor_cost = -0.33
+	}
+
+	trigger = {
+		tag = GPT
+	}
+	free = yes
+
+	lgr_gah_holy_mount_athos = {
+		#defensiveness = 0.25
+	}
+
+	lgr_gah_blessed_ships = {
+		#naval_morale = 0.15
+	}
+
+	lgr_gah_ae_reduction = {
+		#ae_impact = -0.2
+	}
+
+	lgr_gah_diplo_rep = {
+		#diplomatic_reputation = 1
+	}
+
+	lgr_gah_build_cost = {
+		#build_cost = -0.2
+	}
+
+	lgr_gah_idea_cost = {
+		#production_efficiency = 0.1
+	}
+}

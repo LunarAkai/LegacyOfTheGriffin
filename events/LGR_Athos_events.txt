@@ -1,7 +1,7 @@
 namespace = lgr_athos_events
 
-country_event = {
-	id = lgr_athos_events.1 #Pentarchy or Latin Empire
+country_event = { # TURN THIS INTO AN EVENT VIA MISSION!!
+	id = lgr_athos_events.1 #Pentarchy or Latin Empire // 
 
 	title = "lgr_athos_events.1.t"
 	desc = "lgr_athos_events.1.d"
@@ -11,151 +11,40 @@ country_event = {
 
 	trigger = {
 		OR = {
-			OR = {
-				ROOT = {
-					alliance_with = PAP
-				}
-
-				any_known_country = {
-					alliance_with = ROOT
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					religion = catholic
-					is_great_power = yes
-				}
+			ROOT = {
+				alliance_with = MOS
 			}
-			OR = {
-				ROOT = {
-					alliance_with = MOS
-				}
-				any_known_country = {
-					alliance_with = ROOT
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-					religion = orthodox
-					is_great_power = yes
-				}
+			
+			ROOT = {
+				alliance_with = PAP
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 2
 	}
 
 	option = { #Stay Orthodox
 		name = "lgr_athos_events.1.a"
-
 		ai_chance = {
 			factor = 80
 		}
-
-	
-
-		OR = {
-
-			
-
-			MOS = {
-				add_trust = {
-					who = ROOT
-					value = 10
-				}
-				create_guarantee = ROOT
-			}
-			
-			if = {
-				limit = {
-					any_known_country = {
-						alliance_with = ROOT
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-						religion = orthodox
-						is_great_power = yes
-					}
-				}
-				PREV = {
-					add_trust = {
-						who = ROOT
-						value = 10
-					}
-					create_guarantee = ROOT
-				}
-
-			}
-		}
-
 		hidden_effect = {
-			swap_non_generic_missions = yes
 			set_country_flag = lgr_athos_pentarchy_ambition
+			swap_non_generic_missions = yes
 		}
-		
 	}
 
 	option = { #Catholic / Latin Empire
 		name = "lgr_athos_events.1.b"
-
 		ai_chance = {
 			factor = 20
 		}
-
 		ROOT = {
 			change_religion = catholic
 			set_ruler_religion = catholic
 			set_heir_religion = catholic
 		}
-
-		OR = {
-
-			
-			if = {
-				limit = {
-					PAP = {
-						alliance_with = ROOT
-					}
-				}
-				PAP = {
-					add_trust = {
-						who = ROOT
-						value = 10
-					}
-					create_guarantee = ROOT
-				}
-			}
-
-			if = {
-				limit = {
-					any_known_country = {
-						alliance_with = ROOT
-						has_opinion = {
-							who = ROOT
-							value = 100
-						}
-						religion = catholic
-						is_great_power = yes
-					}
-				}
-
-				PREV = {
-					add_trust = {
-						who = ROOT
-						value = 10
-					}
-					create_guarantee = ROOT
-				}
-			}
-		}
-
-		hidden_effect = {
-			swap_non_generic_missions = yes
+		hidden_effect = {	
 			set_country_flag = lgr_athos_latin_empire_ambition
-
+			swap_non_generic_missions = yes
 		}
 	}
 }
