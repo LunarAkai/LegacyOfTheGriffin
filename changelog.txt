@@ -1,3 +1,8 @@
+v1.0.1 
+- "Legacy of the Griffin" is now compatible with EU4 v1.34 "Sweden" update
+
+-----------------------------------------------------------------------
+
 v1.0.0 ~~ "Legacy of the Griffin" ~~
 [Tags]
 + Athos (GAH) / Little preview for v1.1 :eyes:

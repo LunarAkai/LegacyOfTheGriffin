@@ -1,4 +1,4 @@
-version="1.0.0"
+version="1.0.1"
 tags={
 	"Alternative History"
 	"Map"
@@ -10,5 +10,5 @@ tags={
 }
 name="Legacy of the Griffin"
 picture="thumbnail.png"
-supported_version="1.33.*"
+supported_version="1.34.*"
 remote_file_id="2809373643"
